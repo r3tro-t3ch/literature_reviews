@@ -1,0 +1,1 @@
+function revealHash(){const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.matches('details')){target.open=true;target.scrollIntoView({block:'start'});}}window.addEventListener('hashchange',revealHash);revealHash();

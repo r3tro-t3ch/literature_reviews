@@ -1,0 +1,603 @@
+{
+  "item_1": {
+    "evidence": "Simulation only",
+    "setting": "Simulation; physical validation not established by this paper.",
+    "order": "Planar analytical model; special dimensionless inertia assumptions.",
+    "architecture": "Model-based",
+    "overview": "Uses a simplified running-quadruped model to regulate apex height and forward speed.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary full-text simulation / future-work evidence checked.",
+    "sources": [
+      {
+        "url": "https://nereus.mech.ntua.gr/pdf_ps/icra08_1.pdf",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  "item_2": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; SLIP and PD",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_3": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; controller parameter optimization",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_4": {
+    "evidence": "Simulation only",
+    "setting": "Simulation; physical validation not established by this paper.",
+    "order": "Planar quadruped plus reaction wheel and compliant ground.",
+    "architecture": "Model-based; reaction wheel",
+    "overview": "A reaction wheel supplies pitch authority while the controller regulates hopping over compliant terrain.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary full-text simulation / future-work evidence checked.",
+    "sources": [
+      {
+        "url": "https://people.csail.mit.edu/vvasilo/pdf/icra-2016.pdf",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  "item_5": {
+    "evidence": "Hardware + simulation",
+    "setting": "Physical quadruped hopping and bounding; controlled terrain / drop experiments.",
+    "order": "Trajectory optimizer supplies a reference; RL executes a learned policy.",
+    "architecture": "Two-stage imitation-to-task RL; optimized teacher.",
+    "overview": "A single optimized demonstration helps exploration before task-driven reinforcement learning improves robustness.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Full text checked, including hardware uneven-terrain experiment in Section 3.2.",
+    "sources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9484268/",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_6": {
+    "evidence": "Hardware",
+    "setting": "DLR bert; direct learning on the physical elastic quadruped.",
+    "order": "Model-free hardware learning; no explicit planning dynamics.",
+    "architecture": "CPG gait generator + residual RL.",
+    "overview": "Optimize a central pattern generator, then learn feedback corrections directly on the elastic robot.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2209.07171",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": "https://araffin.github.io/publication/exploit-bert/",
+    "videoLabel": "Author page & video"
+  },
+  "item_7": {
+    "evidence": "Simulation",
+    "setting": "Sagittal elastic quadruped simulation.",
+    "order": "Sagittal nonlinear elastic model.",
+    "architecture": "Mechanical design + nonlinear modal control.",
+    "overview": "Elastic design and nonlinear modes exploit natural oscillations to obtain trotting and pronking.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://elib.dlr.de/197472/",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_8": {
+    "evidence": "Hardware",
+    "setting": "Real-robot continuous omnidirectional jumping; controlled demonstrations.",
+    "order": "Body-level acceleration command + whole-body controller.",
+    "architecture": "Hierarchical hybrid: residual RL + optimal control.",
+    "overview": "A learned residual corrects a hand-designed acceleration controller; whole-body control converts the result into motor commands.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2304.08663",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": "https://sites.google.com/view/learning-to-jump",
+    "videoLabel": "Project & demonstration videos"
+  },
+  "item_9": {
+    "evidence": "Hardware + simulation",
+    "setting": "Physical parallel-elastic quadruped; continuous jumping experiments.",
+    "order": "Reduced-order soft anchor model.",
+    "architecture": "Trajectory optimization + iterative learning control (ILC), not RL.",
+    "overview": "Iterative learning updates feedforward commands over repeated hops, without resetting after each repetition.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "DLR abstract checked; full text unavailable in repository. RDF year 2024 reflects journal issue; online publication was 2023.",
+    "sources": [
+      {
+        "url": "https://elib.dlr.de/202328/",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "achievement": "Repository abstract reports continuous jumping learned within minutes and robustness across tested terrain types. E-Go robot identification is retained from the supplied review."
+  },
+  "item_10": {
+    "evidence": "Hardware + simulation",
+    "setting": "Rigid and parallel-elastic quadrupeds; matched laboratory comparisons.",
+    "order": "Reduced-order dual-legged actuated SLIP with trunk rotation.",
+    "architecture": "Two-layer trajectory optimization + singularity-free feedback.",
+    "overview": "A compliant template separates active motor forces from spring forces to plan several explosive motions.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2504.12854",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_11": {
+    "evidence": "Hardware",
+    "setting": "Solo-12 physical experiments with terrain changes and perturbations.",
+    "order": "Reduced-order 2D single rigid body.",
+    "architecture": "Contact-implicit optimal planning + ILC.",
+    "overview": "Optimizes longitudinal body motion and the contact sequence together, then improves execution through repetition.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arpi.unipi.it/handle/11568/1347627",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_12": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; TO, tracking and landing control",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_13": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; perceptive running-jump planning",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_14": {
+    "evidence": "Hardware",
+    "setting": "MIT Mini Cheetah physical platforms, flips and running-jump demonstrations.",
+    "order": "Centroidal momentum model.",
+    "architecture": "Nonlinear trajectory optimization + variational optimal feedback.",
+    "overview": "Plans an aerial motion once before launch, then tracks it with fast feedback.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2110.06330",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_15": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; rotation-matrix MPC",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_16": {
+    "evidence": "Hardware + simulation",
+    "setting": "Physical box-launch diagonal jumps / barrel rolls; separate simulated double-backflip.",
+    "order": "Reduced rigid-body timing stage + full-body trajectory optimization.",
+    "architecture": "Sequential two-level model-based optimization.",
+    "overview": "A reduced dynamics stage chooses timing; full nonlinear optimization refines the body and limb trajectory.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2110.06764",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_17": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; learned feasibility classifier, not RL",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_18": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; evolutionary optimization, not RL",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_19": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; accelerated differential evolution",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_20": {
+    "evidence": "Hardware + simulation",
+    "setting": "Uneven-terrain tests on two quadrupeds, according to the primary abstract.",
+    "order": "Coupled kinodynamic planning; detailed state reduction not audited.",
+    "architecture": "Warm-started trajectory optimization + perception.",
+    "overview": "Couples body dynamics, foot kinematics and perception to plan directional jumps over uneven terrain.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked, including warm-start timing and relocalization.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2411.04494",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_21": {
+    "evidence": "Simulation · RDF report",
+    "setting": "Simulation only, according to supplied review.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; full-body TO and variational integration",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_22": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; TO and phase-aware iLQR",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_23": {
+    "evidence": "Hardware",
+    "setting": "Quadruped real-world jumps with perturbed foot heights.",
+    "order": "TO reference + articulated robot training model; deployed policy has no explicit optimizer.",
+    "architecture": "Hybrid trajectory-optimization-guided RL.",
+    "overview": "Reinforcement learning extends optimized jump references to uncertain terrain and dynamics, while accounting for actuator limits.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked. RDF year 2024 is the later publication label; linked preprint first appeared in 2020.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2011.07089",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_24": {
+    "evidence": "Simulation · RDF report",
+    "setting": "Simulation only, according to supplied review.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "RL; PPO with environment and task curricula",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_25": {
+    "evidence": "Hardware + simulation",
+    "setting": "Solo 8 physical skill demonstrations; MPI author page confirms hardware backflip.",
+    "order": "Articulated robot simulation for training; no online planning model.",
+    "architecture": "Wasserstein adversarial imitation + RL.",
+    "overview": "WASABI learns an adversarial imitation reward from rough, partial demonstrations, including manually guided motions.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Paper abstract and MPI author project checked.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2206.11693",
+        "label": "Paper"
+      },
+      {
+        "url": "https://is.mpg.de/dlg/en/projects/learning-agile-skills-via-adversarial-imitation-of-rough-partial-demonstrations",
+        "label": "MPI project"
+      }
+    ],
+    "video": "https://is.mpg.de/dlg/en/projects/learning-agile-skills-via-adversarial-imitation-of-rough-partial-demonstrations",
+    "videoLabel": "Author page & demonstrations"
+  },
+  "item_26": {
+    "evidence": "Hardware",
+    "setting": "Physical Solo 8 after simulation training; controlled demonstrations.",
+    "order": "TO-derived references; exact model order not audited.",
+    "architecture": "Trajectory optimization + imitation RL.",
+    "overview": "Tracks optimized references through learned policies and studies how feedforward design affects transfer.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "arXiv v3 abstract checked; 2022 is the first-preprint year.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2210.01247",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "achievement": "Trot, front hop, 180° backflip and biped stepping transfer to physical Solo 8 without further adaptation."
+  },
+  "item_27": {
+    "evidence": "Simulation only",
+    "setting": "Simulation; physical validation not established by this paper.",
+    "order": "Articulated rigid and parallel-elastic robot simulations.",
+    "architecture": "Learning; evolution strategy then PPO",
+    "overview": "Searches for a compact motion policy with evolution strategies, then refines it with PPO.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary full-text simulation / future-work evidence checked.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2309.09682",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  "item_28": {
+    "evidence": "Hardware · includes outdoors",
+    "setting": "Physical omnidirectional jumps and repeated jumping on soft grass.",
+    "order": "Articulated simulation training; no explicit online planner.",
+    "architecture": "Goal-conditioned RL with staged curriculum.",
+    "overview": "A reference-free curriculum progresses from vertical jumps to directional and obstacle-crossing tasks.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2401.16337",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_29": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "RL; constrained multi-objective stage-wise rewards",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_30": {
+    "evidence": "Simulation only",
+    "setting": "Rigid and parallel-elastic robot simulations; hardware is explicitly future work.",
+    "order": "Reduced-order TO demonstration + articulated simulation.",
+    "architecture": "Example-guided RL and curriculum.",
+    "overview": "Imitate one coarse optimized jump, then train for varied targets and uneven ground.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Full-text conclusion checked; hardware is future work.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2503.16197",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_31": {
+    "evidence": "Hardware + simulation",
+    "setting": "KLEIYN quadruped physical jump, backflip and lateral-flip demonstrations.",
+    "order": "RL in articulated simulation; no explicit online planning model.",
+    "architecture": "External-force curriculum; assistance decays to zero.",
+    "overview": "Like a gymnastics spotter, simulated assistive forces make successful exploration easier and fade during training.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Author project checked; physical skill demonstrations described separately from training.",
+    "sources": [
+      {
+        "url": "https://keitayoneda.github.io/kleiyn-efgcl/",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": "https://keitayoneda.github.io/kleiyn-efgcl/",
+    "videoLabel": "Author project & videos"
+  },
+  "item_32": {
+    "evidence": "Hardware · indoor + outdoor",
+    "setting": "Publisher reports real-robot indoor and outdoor complex-terrain tests.",
+    "order": "No explicit deployed model-based optimizer described in abstract.",
+    "architecture": "Adversarial RL + H∞ regularization + adaptation.",
+    "overview": "Train with disturbances applied to both legs and body, using a learned disturbance generator and adaptation module.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Publisher abstract and method summary checked; full experiments not audited.",
+    "sources": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S096706612500512X",
+        "label": "Publisher evidence"
+      }
+    ],
+    "achievement": "Publisher reports robust real-robot jumping under body and leg disturbances in indoor and outdoor tests.",
+    "gap": "Full trial distributions and operating limits were not audited. H∞ regularization should not be treated as a universal hardware safety guarantee."
+  },
+  "item_33": {
+    "evidence": "Hardware + simulation",
+    "setting": "Mini Cheetah: physical drops up to 2 m; 8 m drops only in simulation.",
+    "order": "Optimal landing model; detailed model order not independently audited.",
+    "architecture": "Real-time model-based landing optimization.",
+    "overview": "Jointly selects touchdown posture and reaction-force profiles without requiring a preset contact schedule.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2110.02799",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_34": {
+    "evidence": "Hardware + simulation",
+    "setting": "Mini Cheetah reorientation experiments; controlled falling conditions.",
+    "order": "TO teacher and learned trajectory outputs.",
+    "architecture": "Supervised learning + trajectory optimization; not automatically RL.",
+    "overview": "Compares ways to learn the output of a trajectory optimizer for feet-first reorientation.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked, including hardware evidence and initial pitch range.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2109.04424",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_35": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; compliant TO and landing regulation",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_36": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "TO; variable impedance; behavior cloning, not RL",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_37": {
+    "evidence": "Hardware",
+    "setting": "Physical rough / slippery landing tests; offboard RTX 3060 laptop, 50 Hz policy and 1 kHz PD control.",
+    "order": "Reduced centroidal dynamics with joint kinematic constraints.",
+    "architecture": "Trajectory optimization + RL; terrain-adaptive landing reward.",
+    "overview": "Relaxes reference tracking near touchdown so a learned policy can adapt the landing to the terrain.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Full-text method and hardware experiment sections inspected.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2509.12776v1",
+        "label": "Method and hardware experiments"
+      }
+    ]
+  },
+  "item_38": {
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Hybrid; visual RL and model-based impulse control",
+    "overview": "",
+    "environment": "Earth gravity / terrestrial research (RDF context)."
+  },
+  "item_39": {
+    "evidence": "Simulation + single-jump hardware",
+    "setting": "Continuous stepping-stone traversal in simulation; physical tests cover a single jump.",
+    "order": "Full nonlinear TO references + online MPC.",
+    "architecture": "Model-based; TO and MPC",
+    "overview": "Precomputes periodic jump references and uses receding-horizon feedback to connect them over stepping stones.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "v2 full-text conclusion checked; corrected the RDF’s simulation-only characterization.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2204.01147v2",
+        "label": "Conclusion: hardware versus future work"
+      }
+    ],
+    "achievement": "Full text reports simulated consecutive stepping-stone jumps and hardware experiments supporting single-jump robustness.",
+    "gap": "Continuous jumping on stepping stones remains explicit future hardware work. A physical single jump is not physical validation of the complete sequence."
+  },
+  "item_40": {
+    "evidence": "Hardware",
+    "setting": "ANYmal physical obstacle-course navigation; curated parkour environment.",
+    "order": "Articulated training simulation; no explicit deployed dynamics optimizer.",
+    "architecture": "Hierarchical RL: perception, navigation and specialized skills.",
+    "overview": "A navigation policy chooses and commands locomotion skills, supported by learned obstacle reconstruction.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked; hardware speed retained as RDF-reported.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2306.14874",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_41": {
+    "evidence": "Hardware",
+    "setting": "Two physical low-cost quadruped platforms; obstacle-course tests.",
+    "order": "Simulation-trained control; no explicit deployed planner.",
+    "architecture": "RL curriculum + skill distillation + depth vision.",
+    "overview": "Uses a learning curriculum and distilled visual control to connect several obstacle-traversal behaviors.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked; detailed skill list retained from supplied RDF.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2309.05665",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_42": {
+    "evidence": "Hardware",
+    "setting": "Depth-camera quadruped tests on obstacle courses with varied properties.",
+    "order": "Articulated training simulation; model-free deployed policy.",
+    "architecture": "End-to-end visual RL at policy level.",
+    "overview": "A single camera-conditioned policy learns precise traversal despite imperfect sensing and actuation.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Primary abstract checked. Obstacle height is not airborne body clearance.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2309.14341",
+        "label": "Primary paper / repository"
+      }
+    ]
+  },
+  "item_43": {
+    "evidence": "Hardware · controlled course",
+    "setting": "Go1 with D435i depth camera; offboard Mac Mini inference.",
+    "order": "Centroidal-level policy + leg controller.",
+    "architecture": "Hierarchical hybrid; perception + RL + model-based tracking.",
+    "overview": "Combines learned terrain height prediction, a body-motion policy and model-based leg control.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "verification": "Full-text experimental setup and limitations checked.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2409.10923v1",
+        "label": "Paper: setup and conclusion"
+      }
+    ],
+    "gap": "Authors explicitly limit motion to the sagittal plane: no sideways/turning motions and no strategic path planning. Offboard inference is part of the tested setup.",
+    "video": "https://yxyang.github.io/jumping_cod/",
+    "videoLabel": "Project & experiment videos"
+  },
+  "item_44": {
+    "evidence": "Earth-based gravity testbed",
+    "setting": "SpaceBok Earth-based reduced-gravity rigs, including constrained motion.",
+    "order": "Model-based planning with elastic legs; source-specific model order not audited.",
+    "architecture": "Leg control + reaction-wheel attitude stabilization.",
+    "overview": "Elastic legs and a reaction wheel support repeated hopping when low gravity lengthens flight.",
+    "environment": "Moon-oriented research; not tested on the Moon.",
+    "verification": "ESA test report and ETH platform page checked; paper-specific jump metrics not independently audited.",
+    "sources": [
+      {
+        "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jumping_space_robot_flies_like_a_spacecraft",
+        "label": "ESA test report"
+      },
+      {
+        "url": "https://rsl.ethz.ch/robots-media/spacebok.html/",
+        "label": "ETH platform status"
+      }
+    ],
+    "achievement": "ESA reports repetitive jumps up to 1.3 m in simulated lunar conditions. This is Earth-based gravity emulation, not a lunar field result.",
+    "gap": "Constrained rigs do not validate unrestricted 3D hopping on regolith. SpaceBok is a research platform and is not space-qualified.",
+    "video": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jumping_space_robot_flies_like_a_spacecraft",
+    "videoLabel": "ESA tests & video"
+  },
+  "item_45": {
+    "evidence": "Simulation + 2D hardware testbed",
+    "setting": "SpaceBok physical 2D microgravity testbed; 3D behaviors in simulation.",
+    "order": "Articulated simulation training; learned policy at deployment.",
+    "architecture": "Deep RL for limb-driven flight and landing.",
+    "overview": "Moves the legs to change aerial attitude, rather than relying on a reaction wheel.",
+    "environment": "Low-gravity celestial-body target; experiments on Earth.",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2106.09357",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "achievement": "Learns 3D reorientation and low-gravity locomotion in simulation; transfers policies to SpaceBok on a 2D microgravity-emulation testbed.",
+    "gap": "The physical test restricts motion to 2D. This does not establish free 3D control on the Moon, Mars, or under shorter Earth-gravity flight times."
+  }
+}

@@ -1,0 +1,942 @@
+[
+  {
+    "id": "item_1",
+    "title": "Speed and height control for a special class of running quadruped robots",
+    "date": "2008-05",
+    "url": "https://nereus.mech.ntua.gr/pdf_ps/icra08_1.pdf",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based   Achievements and evidence:  Simulation: controls pronking speed and apex height while accounting for motor limits, collisions and slipping.   Remaining gap — review assessment:  Special morphology and dimensionless inertia assumptions; general 3D hardware pronking not established.   Review year/version:  2008   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based</p><p><strong>Achievements and evidence:</strong> Simulation: controls pronking speed and apex height while accounting for motor limits, collisions and slipping.</p><p><strong>Remaining gap — review assessment:</strong> Special morphology and dimensionless inertia assumptions; general 3D hardware pronking not established.</p><p><strong>Review year/version:</strong> 2008</p><p><a href=\"https://nereus.mech.ntua.gr/pdf_ps/icra08_1.pdf\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Nicholas Cherouvim",
+      "Evangelos Papadopoulos"
+    ]
+  },
+  {
+    "id": "item_2",
+    "title": "Computer simulation and dynamic modeling of a quadrupedal pronking gait robot with SLIP model",
+    "date": "2012-01",
+    "url": "https://doi.org/10.1016/j.compeleceng.2011.11.007",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; SLIP and PD   Achievements and evidence:  Simulation and experiments with four active legs; virtual-leg stance and flight control simplifies pronking.   Remaining gap — review assessment:  Simplified dynamics and limited experimental setting; precise spatial jumps and flips not established.   Review year/version:  2012   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; SLIP and PD</p><p><strong>Achievements and evidence:</strong> Simulation and experiments with four active legs; virtual-leg stance and flight control simplifies pronking.</p><p><strong>Remaining gap — review assessment:</strong> Simplified dynamics and limited experimental setting; precise spatial jumps and flips not established.</p><p><strong>Review year/version:</strong> 2012</p><p><a href=\"https://doi.org/10.1016/j.compeleceng.2011.11.007\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Servet Soyguder",
+      "Hasan Alli"
+    ]
+  },
+  {
+    "id": "item_3",
+    "title": "Practice Makes Perfect: An Optimization-Based Approach to Controlling Agile Motions for a Quadruped Robot",
+    "date": "2016-03",
+    "url": "https://doi.org/10.1109/MRA.2015.2505910",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; controller parameter optimization   Achievements and evidence:  StarlETH hardware performs squat jumps, running trot, pronking and bounding after simulated practice.   Remaining gap — review assessment:  Requires a structured controller and an accurate compliant-actuator simulator; not arbitrary skill discovery.   Review year/version:  2016   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; controller parameter optimization</p><p><strong>Achievements and evidence:</strong> StarlETH hardware performs squat jumps, running trot, pronking and bounding after simulated practice.</p><p><strong>Remaining gap — review assessment:</strong> Requires a structured controller and an accurate compliant-actuator simulator; not arbitrary skill discovery.</p><p><strong>Review year/version:</strong> 2016</p><p><a href=\"https://doi.org/10.1109/MRA.2015.2505910\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Christian Gehring",
+      "Mark Hoepflinger",
+      "Roland Siegwart",
+      "Stelian Coros",
+      "Marco Hutter",
+      "Carmine Dario Bellicoso",
+      "Huub Heijnen",
+      "Remo Diethelm",
+      "Michael Bloesch",
+      "Peter Fankhauser",
+      "Jemin Hwangbo"
+    ]
+  },
+  {
+    "id": "item_4",
+    "title": "Quadruped pronking on compliant terrains using a reaction wheel",
+    "date": "2016-05",
+    "url": "https://people.csail.mit.edu/vvasilo/pdf/icra-2016.pdf",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; reaction wheel   Achievements and evidence:  Simulation tracks apex height and speed on compliant terrains using a reaction wheel for pitch control.   Remaining gap — review assessment:  Planar simulation; extra reaction-wheel hardware; no physical validation in this paper.   Review year/version:  2016   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; reaction wheel</p><p><strong>Achievements and evidence:</strong> Simulation tracks apex height and speed on compliant terrains using a reaction wheel for pitch control.</p><p><strong>Remaining gap — review assessment:</strong> Planar simulation; extra reaction-wheel hardware; no physical validation in this paper.</p><p><strong>Review year/version:</strong> 2016</p><p><a href=\"https://people.csail.mit.edu/vvasilo/pdf/icra-2016.pdf\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Vasileios Vasilopoulos",
+      "Konstantinos Machairas",
+      "Evangelos Papadopoulos"
+    ]
+  },
+  {
+    "id": "item_5",
+    "title": "Model-free reinforcement learning for robust locomotion using demonstrations from trajectory optimization",
+    "date": "2022-08-31",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9484268/",
+    "abstract": "We present a general, two-stage reinforcement learning approach to create robust policies that can be deployed on real robots without any additional training using a single demonstration generated by trajectory optimization. The demonstration is used in the first stage as a starting point to facilitate initial exploration. In the second stage, the relevant task reward is optimized directly and a policy robust to environment uncertainties is computed. We demonstrate and examine in detail the performance and robustness of our approach on highly dynamic hopping and bounding tasks on a quadruped robot.",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; trajectory optimization and RL   Achievements and evidence:  Hardware hopping and bounding with recovery from varied drop heights and uneven terrain approximately 1–5 cm high.   Remaining gap — review assessment:  Periodic behaviors, rather than goal-directed flips or visual navigation. Base height is not jump clearance.   Review year/version:  2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; trajectory optimization and RL</p><p><strong>Achievements and evidence:</strong> Hardware hopping and bounding with recovery from varied drop heights and uneven terrain approximately 1–5 cm high.</p><p><strong>Remaining gap — review assessment:</strong> Periodic behaviors, rather than goal-directed flips or visual navigation. Base height is not jump clearance.</p><p><strong>Review year/version:</strong> 2022</p><p><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9484268/\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Miroslav Bogdanovic",
+      "Majid Khadiv",
+      "Ludovic Righetti"
+    ]
+  },
+  {
+    "id": "item_6",
+    "title": "Learning to Exploit Elastic Actuators for Quadruped Locomotion",
+    "date": "2022-09-15",
+    "url": "https://arxiv.org/abs/2209.07171",
+    "abstract": "Spring-based actuators in legged locomotion provide energy-efficiency and improved performance, but increase the difficulty of controller design. While previous work has focused on extensive modeling and simulation to find optimal controllers for such systems, we propose to learn model-free controllers directly on the real robot. In our approach, gaits are first synthesized by central pattern generators (CPGs), whose parameters are optimized to quickly obtain an open-loop controller that achieves efficient locomotion. Then, to make this controller more robust and further improve the performance, we use reinforcement learning to close the loop, to learn corrective actions on top of the CPGs. We evaluate the proposed approach on the DLR elastic quadruped bert. Our results in learning trotting and pronking gaits show that exploitation of the spring actuator dynamics emerges naturally from optimizing for dynamic motions, yielding high-performing locomotion, particularly the fastest walking gait recorded on bert, despite being model-free. The whole process takes no more than 1.5 hours on the real robot and results in natural-looking gaits.",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "CPG optimization"
+    ],
+    "notes": " Research review   Method and idea:  CPG optimization; residual RL   Achievements and evidence:  DLR bert learns trotting and pronking directly on hardware, exploiting elasticity; reported learning process at most 1.5 hours.   Remaining gap — review assessment:  Structured gait learning; precise obstacle landing and large-rotation acrobatics are outside the demonstrated scope.   Review year/version:  2022/2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> CPG optimization; residual RL</p><p><strong>Achievements and evidence:</strong> DLR bert learns trotting and pronking directly on hardware, exploiting elasticity; reported learning process at most 1.5 hours.</p><p><strong>Remaining gap — review assessment:</strong> Structured gait learning; precise obstacle landing and large-rotation acrobatics are outside the demonstrated scope.</p><p><strong>Review year/version:</strong> 2022/2023</p><p><a href=\"https://arxiv.org/abs/2209.07171\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Antonin Raffin",
+      "Daniel Seidel",
+      "Jens Kober",
+      "Alin Albu-Schäffer",
+      "João Silvério",
+      "Freek Stulp"
+    ]
+  },
+  {
+    "id": "item_7",
+    "title": "Embodying Quasi-Passive Modal Trotting and Pronking in a Sagittal Elastic Quadruped",
+    "date": "2023-04",
+    "url": "https://elib.dlr.de/197472/",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; nonlinear modal control   Achievements and evidence:  Simulation excites efficient natural trotting and pronking oscillations using elastic design and pitch decoupling.   Remaining gap — review assessment:  Sagittal simulation; spatial contacts and hardware generalization remain open.   Review year/version:  2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; nonlinear modal control</p><p><strong>Achievements and evidence:</strong> Simulation excites efficient natural trotting and pronking oscillations using elastic design and pitch decoupling.</p><p><strong>Remaining gap — review assessment:</strong> Sagittal simulation; spatial contacts and hardware generalization remain open.</p><p><strong>Review year/version:</strong> 2023</p><p><a href=\"https://elib.dlr.de/197472/\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Davide Calzolari",
+      "Cosimo Della Santina",
+      "Alessandro M. Giordano",
+      "Annika Schmidt",
+      "Alin Albu-Schäffer"
+    ]
+  },
+  {
+    "id": "item_8",
+    "title": "Continuous Versatile Jumping Using Learned Action Residuals",
+    "date": "2023-04-17",
+    "url": "https://arxiv.org/abs/2304.08663",
+    "abstract": "Jumping is essential for legged robots to traverse through difficult terrains. In this work, we propose a hierarchical framework that combines optimal control and reinforcement learning to learn continuous jumping motions for quadrupedal robots. The core of our framework is a stance controller, which combines a manually designed acceleration controller with a learned residual policy. As the acceleration controller warm starts policy for efficient training, the trained policy overcomes the limitation of the acceleration controller and improves the jumping stability. In addition, a low-level whole-body controller converts the body pose command from the stance controller to motor commands. After training in simulation, our framework can be deployed directly to the real robot, and perform versatile, continuous jumping motions, including omni-directional jumps at up to 50cm high, 60cm forward, and jump-turning at up to 90 degrees. Please visit our website for more results: https://sites.google.com/view/learning-to-jump.",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; residual RL and whole-body control   Achievements and evidence:  Hardware continuous omnidirectional jumps, reported up to 50 cm high, 60 cm forward and 90-degree jump-turns.   Remaining gap — review assessment:  Pronking-specific formulation; perception and other gait transitions were future directions.   Review year/version:  2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; residual RL and whole-body control</p><p><strong>Achievements and evidence:</strong> Hardware continuous omnidirectional jumps, reported up to 50 cm high, 60 cm forward and 90-degree jump-turns.</p><p><strong>Remaining gap — review assessment:</strong> Pronking-specific formulation; perception and other gait transitions were future directions.</p><p><strong>Review year/version:</strong> 2023</p><p><a href=\"https://arxiv.org/abs/2304.08663\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Yuxiang Yang",
+      "Xiangyun Meng",
+      "Wenhao Yu",
+      "Tingnan Zhang",
+      "Jie Tan",
+      "Byron Boots"
+    ]
+  },
+  {
+    "id": "item_9",
+    "title": "Robust Jumping With an Articulated Soft Quadruped Via Trajectory Optimization and Iterative Learning",
+    "date": "2024-01",
+    "url": "https://elib.dlr.de/202328/",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; TO and ILC, not RL   Achievements and evidence:  E-Go hardware learns continuous jumping within minutes. A compliant reduced model supplies references and ILC updates feedforward inputs without resets.   Remaining gap — review assessment:  Periodic, largely sagittal pronking; arbitrary nonperiodic spatial acrobatics and one-shot adaptation not established.   Review year/version:  2023/2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; TO and ILC, not RL</p><p><strong>Achievements and evidence:</strong> E-Go hardware learns continuous jumping within minutes. A compliant reduced model supplies references and ILC updates feedforward inputs without resets.</p><p><strong>Remaining gap — review assessment:</strong> Periodic, largely sagittal pronking; arbitrary nonperiodic spatial acrobatics and one-shot adaptation not established.</p><p><strong>Review year/version:</strong> 2023/2024</p><p><a href=\"https://elib.dlr.de/202328/\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Jiatao Ding",
+      "Mees A. van Löben Sels",
+      "Franco Angelini",
+      "Jens Kober",
+      "Cosimo Della Santina"
+    ]
+  },
+  {
+    "id": "item_10",
+    "title": "Versatile, Robust, and Explosive Locomotion with Rigid and Articulated Compliant Quadrupeds",
+    "date": "2025-04-17",
+    "url": "https://arxiv.org/abs/2504.12854",
+    "abstract": "Achieving versatile and explosive motion with robustness against dynamic uncertainties is a challenging task. Introducing parallel compliance in quadrupedal design is deemed to enhance locomotion performance, which, however, makes the control task even harder. This work aims to address this challenge by proposing a general template model and establishing an efficient motion planning and control pipeline. To start, we propose a reduced-order template model-the dual-legged actuated spring-loaded inverted pendulum with trunk rotation-which explicitly models parallel compliance by decoupling spring effects from active motor actuation. With this template model, versatile acrobatic motions, such as pronking, froggy jumping, and hop-turn, are generated by a dual-layer trajectory optimization, where the singularity-free body rotation representation is taken into consideration. Integrated with a linear singularity-free tracking controller, enhanced quadrupedal locomotion is achieved. Comparisons with the existing template model reveal the improved accuracy and generalization of our model. Hardware experiments with a rigid quadruped and a newly designed compliant quadruped demonstrate that i) the template model enables generating versatile dynamic motion; ii) parallel elasticity enhances explosive motion. For example, the maximal pronking distance, hop-turn yaw angle, and froggy jumping distance increase at least by 25%, 15% and 25%, respectively; iii) parallel elasticity improves the robustness against dynamic uncertainties, including modelling errors and external disturbances. For example, the allowable support surface height variation increases by 100% for robust froggy jumping.",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; compliant template and TO   Achievements and evidence:  Hardware pronking, froggy jumping and hop-turns. Tested compliance improves maximal pronking distance at least 25%, yaw 15%, and froggy distance 25%.   Remaining gap — review assessment:  Robot-, spring- and task-specific comparisons; not universal evidence for compliance or arbitrary flip sequences.   Review year/version:  2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; compliant template and TO</p><p><strong>Achievements and evidence:</strong> Hardware pronking, froggy jumping and hop-turns. Tested compliance improves maximal pronking distance at least 25%, yaw 15%, and froggy distance 25%.</p><p><strong>Remaining gap — review assessment:</strong> Robot-, spring- and task-specific comparisons; not universal evidence for compliance or arbitrary flip sequences.</p><p><strong>Review year/version:</strong> 2025</p><p><a href=\"https://arxiv.org/abs/2504.12854\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Jiatao Ding",
+      "Peiyu Yang",
+      "Fabio Boekel",
+      "Jens Kober",
+      "Wei Pan",
+      "Matteo Saveriano",
+      "Cosimo Della Santina"
+    ]
+  },
+  {
+    "id": "item_11",
+    "title": "Contact-Implicit Optimal Planning and Iterative Learning Control for Quadrupedal Robots",
+    "date": "2026-06",
+    "url": "https://arpi.unipi.it/handle/11568/1347627",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Pronking and repeated hopping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; contact-implicit TO and ILC   Achievements and evidence:  Solo-12 hardware: adaptive gait generation under terrain changes and perturbations; optimizes body motion and contact sequence together.   Remaining gap — review assessment:  Simplified 2D model and repetition-based adaptation; unrestricted 3D acrobatics not established.   Review year/version:  2026   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; contact-implicit TO and ILC</p><p><strong>Achievements and evidence:</strong> Solo-12 hardware: adaptive gait generation under terrain changes and perturbations; optimizes body motion and contact sequence together.</p><p><strong>Remaining gap — review assessment:</strong> Simplified 2D model and repetition-based adaptation; unrestricted 3D acrobatics not established.</p><p><strong>Review year/version:</strong> 2026</p><p><a href=\"https://arpi.unipi.it/handle/11568/1347627\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Pietro Gori",
+      "Vincenzo Degiacomo",
+      "Michele Pierallini",
+      "Franco Angelini",
+      "Manolo Garabini"
+    ]
+  },
+  {
+    "id": "item_12",
+    "title": "Optimized Jumping on the MIT Cheetah 3 Robot",
+    "date": "2019-05",
+    "url": "https://bpb-us-w1.wpmucdn.com/sites.usc.edu/dist/9/447/files/2020/09/ICRA19_1685_Final_Submission.pdf",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; TO, tracking and landing control   Achievements and evidence:  Cheetah 3 hardware repeatedly jumps onto and down from a 0.76 m desk using a planar articulated model.   Remaining gap — review assessment:  Sagittal planning and manually selected timing structure; arbitrary spatial flips and continuous perceptive jumping not addressed.   Review year/version:  2019   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; TO, tracking and landing control</p><p><strong>Achievements and evidence:</strong> Cheetah 3 hardware repeatedly jumps onto and down from a 0.76 m desk using a planar articulated model.</p><p><strong>Remaining gap — review assessment:</strong> Sagittal planning and manually selected timing structure; arbitrary spatial flips and continuous perceptive jumping not addressed.</p><p><strong>Review year/version:</strong> 2019</p><p><a href=\"https://bpb-us-w1.wpmucdn.com/sites.usc.edu/dist/9/447/files/2020/09/ICRA19_1685_Final_Submission.pdf\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Quan Nguyen",
+      "Matthew J. Powell",
+      "Benjamin Katz",
+      "Jared Di Carlo",
+      "Sangbae Kim"
+    ]
+  },
+  {
+    "id": "item_13",
+    "title": "Jumping over obstacles with MIT Cheetah 2",
+    "date": "2021-02",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0921889020305431",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; perceptive running-jump planning   Achievements and evidence:  Hardware autonomous running obstacle clearance; associated MIT project reports 40 cm obstacles at 2.5 m/s.   Remaining gap — review assessment:  Running clearance rather than arbitrary aerial orientation or precise small-foothold landings.   Review year/version:  2021   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; perceptive running-jump planning</p><p><strong>Achievements and evidence:</strong> Hardware autonomous running obstacle clearance; associated MIT project reports 40 cm obstacles at 2.5 m/s.</p><p><strong>Remaining gap — review assessment:</strong> Running clearance rather than arbitrary aerial orientation or precise small-foothold landings.</p><p><strong>Review year/version:</strong> 2021</p><p><a href=\"https://www.sciencedirect.com/science/article/pii/S0921889020305431\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Hae-Won Park",
+      "Patrick M. Wensing",
+      "Sangbae Kim"
+    ]
+  },
+  {
+    "id": "item_14",
+    "title": "Online Trajectory Optimization for Dynamic Aerial Motions of a Quadruped Robot",
+    "date": "2021-10-12",
+    "url": "https://arxiv.org/abs/2110.06330",
+    "abstract": "This work presents a two part framework for online planning and execution of dynamic aerial motions on a quadruped robot. Motions are planned via a centroidal momentum-based nonlinear optimization that is general enough to produce rich sets of novel dynamic motions based solely on the user-specified contact schedule and desired launch velocity of the robot. Since this nonlinear optimization is not tractable for real-time receding horizon control, motions are planned once via nonlinear optimization in preparation of an aerial motion and then tracked continuously using a variational-based optimal controller that offers robustness to the uncertainties that exist in the real hardware such as modeling error or disturbances. Motion planning typically takes between 0.05-0.15 seconds, while the optimal controller finds stabilizing feedback inputs at 500 Hz. Experimental results on the MIT Mini Cheetah demonstrate that the framework can reliably produce successful aerial motions such as jumps onto and off of platforms, spins, flips, barrel rolls, and running jumps over obstacles.",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; centroidal TO and variational feedback   Achievements and evidence:  Mini Cheetah hardware jumps, spins, flips and barrel rolls; typical planning 0.05–0.15 s and feedback at 500 Hz.   Remaining gap — review assessment:  Supplied contact schedule and launch velocity; nonlinear motion is planned before execution rather than continuously replanned.   Review year/version:  2021   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; centroidal TO and variational feedback</p><p><strong>Achievements and evidence:</strong> Mini Cheetah hardware jumps, spins, flips and barrel rolls; typical planning 0.05–0.15 s and feedback at 500 Hz.</p><p><strong>Remaining gap — review assessment:</strong> Supplied contact schedule and launch velocity; nonlinear motion is planned before execution rather than continuously replanned.</p><p><strong>Review year/version:</strong> 2021</p><p><a href=\"https://arxiv.org/abs/2110.06330\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Matthew Chignoli",
+      "Sangbae Kim"
+    ]
+  },
+  {
+    "id": "item_15",
+    "title": "Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds",
+    "date": "2021-08",
+    "url": "https://arxiv.org/abs/2012.10002",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; rotation-matrix MPC   Achievements and evidence:  Hardware dynamic gaits and a controlled backflip; 250 Hz MPC avoids orientation-coordinate singularities.   Remaining gap — review assessment:  Feedback around reference motions; does not automatically discover all skills and contact schedules.   Review year/version:  2021   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; rotation-matrix MPC</p><p><strong>Achievements and evidence:</strong> Hardware dynamic gaits and a controlled backflip; 250 Hz MPC avoids orientation-coordinate singularities.</p><p><strong>Remaining gap — review assessment:</strong> Feedback around reference motions; does not automatically discover all skills and contact schedules.</p><p><strong>Review year/version:</strong> 2021</p><p><a href=\"https://arxiv.org/abs/2012.10002\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Yanran Ding",
+      "Abhishek Pandala",
+      "Chuanzheng Li",
+      "Young-Ha Shin",
+      "Hae-Won Park"
+    ]
+  },
+  {
+    "id": "item_16",
+    "title": "Contact-timing and Trajectory Optimization for 3D Jumping on Quadruped Robots",
+    "date": "2021-10-13",
+    "url": "https://arxiv.org/abs/2110.06764",
+    "abstract": "Performing highly agile acrobatic motions with a long flight phase requires perfect timing, high accuracy, and coordination of the full-body motion. To address these challenges, we present a novel approach on timings and trajectory optimization framework for legged robots performing aggressive 3D jumping. In our method, we firstly utilize an effective optimization framework using simplified rigid body dynamics to solve for contact timings and a reference trajectory of the robot body. The solution of this module is then used to formulate a full-body trajectory optimization based on the full nonlinear dynamics of the robot. This combination allows us to effectively optimize for contact timings while ensuring that the jumping trajectory can be effectively realized in the robot hardware. We first validate the efficiency of the proposed framework on the A1 robot model for various 3D jumping tasks such as double-backflips off the high altitude of 2m. Experimental validation was then successfully conducted for various aggressive 3D jumping motions such as diagonal jumps, barrel roll, and double barrel roll from a box of heights 0.4m and 0.9m, respectively.",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; timing and full-body TO   Achievements and evidence:  Hardware diagonal jumps, barrel roll from a 0.4 m box and double barrel roll from a 0.9 m box. Simulation double backflips from 2 m elevation.   Remaining gap — review assessment:  Elevated takeoff differs from level-ground takeoff. General online adaptation and autonomous maneuver selection remain separate.   Review year/version:  2021/2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; timing and full-body TO</p><p><strong>Achievements and evidence:</strong> Hardware diagonal jumps, barrel roll from a 0.4 m box and double barrel roll from a 0.9 m box. Simulation double backflips from 2 m elevation.</p><p><strong>Remaining gap — review assessment:</strong> Elevated takeoff differs from level-ground takeoff. General online adaptation and autonomous maneuver selection remain separate.</p><p><strong>Review year/version:</strong> 2021/2022</p><p><a href=\"https://arxiv.org/abs/2110.06764\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Chuong Nguyen",
+      "Quan Nguyen"
+    ]
+  },
+  {
+    "id": "item_17",
+    "title": "Rapid and Reliable Quadruped Motion Planning with Omnidirectional Jumping",
+    "date": "2021-11-26",
+    "url": "https://arxiv.org/abs/2111.13648",
+    "abstract": "Dynamic jumping with legged robots poses a challenging problem in planning and control. Formulating the jump optimization to allow fast online execution is difficult; efficiently using this capability to generate long-horizon motion plans further complicates the problem. In this work, we present a hierarchical planning framework to address this problem. We first formulate a real-time tractable trajectory optimization for performing omnidirectional jumping. We then embed the results of this optimization into a low dimensional jump feasibility classifier. This classifier is leveraged to produce geometric motion plans that select dynamically feasible jumps while mitigating the effects of the process noise. We deploy our framework on the Mini Cheetah Vision quadruped, demonstrating the robot's ability to generate and execute reliable, goal-oriented plans that involve forward, lateral, and rotational jumps onto surfaces as tall as the robot's nominal hip height. The ability to plan through omnidirectional jumping greatly expands the robot's mobility relative to planners that restrict jumping to the sagittal or frontal planes.",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; learned feasibility classifier, not RL   Achievements and evidence:  Mini Cheetah Vision hardware plans forward, lateral and rotational jumps onto elevated surfaces using an optimized-jump feasibility classifier.   Remaining gap — review assessment:  Depends on feasibility approximation and environmental modeling; moving or poorly observed landing surfaces require more work.   Review year/version:  2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; learned feasibility classifier, not RL</p><p><strong>Achievements and evidence:</strong> Mini Cheetah Vision hardware plans forward, lateral and rotational jumps onto elevated surfaces using an optimized-jump feasibility classifier.</p><p><strong>Remaining gap — review assessment:</strong> Depends on feasibility approximation and environmental modeling; moving or poorly observed landing surfaces require more work.</p><p><strong>Review year/version:</strong> 2022</p><p><a href=\"https://arxiv.org/abs/2111.13648\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Matthew Chignoli",
+      "Savva Morozov",
+      "Sangbae Kim"
+    ]
+  },
+  {
+    "id": "item_18",
+    "title": "An Optimal Motion Planning Framework for Quadruped Jumping",
+    "date": "2022-07-25",
+    "url": "https://arxiv.org/abs/2207.12002",
+    "abstract": "This paper presents an optimal motion planning framework to generate versatile energy-optimal quadrupedal jumping motions automatically (e.g., flips, spin). The jumping motions via the centroidal dynamics are formulated as a 12-dimensional black-box optimization problem subject to the robot kino-dynamic constraints. Gradient-based approaches offer great success in addressing trajectory optimization (TO), yet, prior knowledge (e.g., reference motion, contact schedule) is required and results in sub-optimal solutions. The new proposed framework first employed a heuristics-based optimization method to avoid these problems. Moreover, a prioritization fitness function is created for heuristics-based algorithms in robot ground reaction force (GRF) planning, enhancing convergence and searching performance considerably. Since heuristics-based algorithms often require significant time, motions are planned offline and stored as a pre-motion library. A selector is designed to automatically choose motions with user-specified or perception information as input. The proposed framework has been successfully validated only with a simple continuously tracking PD controller in an open-source Mini-Cheetah by several challenging jumping motions, including jumping over a window-shaped obstacle with 30 cm height and left-flipping over a rectangle obstacle with 27 cm height.",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; evolutionary optimization, not RL   Achievements and evidence:  Hardware flips/spins, a 30 cm window-shaped obstacle jump and a side flip over a 27 cm obstacle; optimized motions stored in a library.   Remaining gap — review assessment:  Offline optimization and finite motion library; compound body rotations restricted by the formulation.   Review year/version:  2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; evolutionary optimization, not RL</p><p><strong>Achievements and evidence:</strong> Hardware flips/spins, a 30 cm window-shaped obstacle jump and a side flip over a 27 cm obstacle; optimized motions stored in a library.</p><p><strong>Remaining gap — review assessment:</strong> Offline optimization and finite motion library; compound body rotations restricted by the formulation.</p><p><strong>Review year/version:</strong> 2022</p><p><a href=\"https://arxiv.org/abs/2207.12002\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Zhitao Song",
+      "Linzhu Yue",
+      "Guangli Sun",
+      "Yihu Ling",
+      "Hongshuo Wei",
+      "Linhai Gui",
+      "Yun-Hui Liu"
+    ]
+  },
+  {
+    "id": "item_19",
+    "title": "Evolutionary-Based Online Motion Planning Framework for Quadruped Robot Jumping",
+    "date": "2023-09-14",
+    "url": "https://arxiv.org/abs/2309.07633",
+    "abstract": "Offline evolutionary-based methodologies have supplied a successful motion planning framework for the quadrupedal jump. However, the time-consuming computation caused by massive population evolution in offline evolutionary-based jumping framework significantly limits the popularity in the quadrupedal field. This paper presents a time-friendly online motion planning framework based on meta-heuristic Differential evolution (DE), Latin hypercube sampling, and Configuration space (DLC). The DLC framework establishes a multidimensional optimization problem leveraging centroidal dynamics to determine the ideal trajectory of the center of mass (CoM) and ground reaction forces (GRFs). The configuration space is introduced to the evolutionary optimization in order to condense the searching region. Latin hypercube sampling offers more uniform initial populations of DE under limited sampling points, accelerating away from a local minimum. This research also constructs a collection of pre-motion trajectories as a warm start when the objective state is in the neighborhood of the pre-motion state to drastically reduce the solving time. The proposed methodology is successfully validated via real robot experiments for online jumping trajectory optimization with different jumping motions (e.g., ordinary jumping, flipping, and spinning).",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; accelerated differential evolution   Achievements and evidence:  Hardware online generation of jumps, flips and spins via search-space restriction, improved sampling and warm starts.   Remaining gap — review assessment:  Faster solving does not guarantee a feasible solution in every contact window or robustness to unexpected contacts.   Review year/version:  2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; accelerated differential evolution</p><p><strong>Achievements and evidence:</strong> Hardware online generation of jumps, flips and spins via search-space restriction, improved sampling and warm starts.</p><p><strong>Remaining gap — review assessment:</strong> Faster solving does not guarantee a feasible solution in every contact window or robustness to unexpected contacts.</p><p><strong>Review year/version:</strong> 2023</p><p><a href=\"https://arxiv.org/abs/2309.07633\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Linzhu Yue",
+      "Zhitao Song",
+      "Hongbo Zhang",
+      "Xuanqi Zeng",
+      "Lingwei Zhang",
+      "Yun-Hui Liu"
+    ]
+  },
+  {
+    "id": "item_20",
+    "title": "Online Omnidirectional Jumping Trajectory Planning for Quadrupedal Robots on Uneven Terrains",
+    "date": "2024-11-07",
+    "url": "https://arxiv.org/abs/2411.04494",
+    "abstract": "Natural terrain complexity often necessitates agile movements like jumping in animals to improve traversal efficiency. To enable similar capabilities in quadruped robots, complex real-time jumping maneuvers are required. Current research does not adequately address the problem of online omnidirectional jumping and neglects the robot's kinodynamic constraints during trajectory generation. This paper proposes a general and complete cascade online optimization framework for omnidirectional jumping for quadruped robots. Our solution systematically encompasses jumping trajectory generation, a trajectory tracking controller, and a landing controller. It also incorporates environmental perception to navigate obstacles that standard locomotion cannot bypass, such as jumping from high platforms. We introduce a novel jumping plane to parameterize omnidirectional jumping motion and formulate a tightly coupled optimization problem accounting for the kinodynamic constraints, simultaneously optimizing CoM trajectory, Ground Reaction Forces (GRFs), and joint states. To meet the online requirements, we propose an accelerated evolutionary algorithm as the trajectory optimizer to address the complexity of kinodynamic constraints. To ensure stability and accuracy in environmental perception post-landing, we introduce a coarse-to-fine relocalization method that combines global Branch and Bound (BnB) search with Maximum a Posteriori (MAP) estimation for precise positioning during navigation and jumping. The proposed framework achieves jump trajectory generation in approximately 0.1 seconds with a warm start and has been successfully validated on two quadruped robots on uneven terrains. Additionally, we extend the framework's versatility to humanoid robots.",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; coupled kinodynamic TO and perception   Achievements and evidence:  Hardware on two quadrupeds: uneven-terrain omnidirectional jumps; approximately 0.1 s planning with a warm start; post-landing relocalization.   Remaining gap — review assessment:  Timing is conditional on warm starts; arbitrary compound rotations and unmodeled conditions remain beyond the demonstrated claim.   Review year/version:  2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; coupled kinodynamic TO and perception</p><p><strong>Achievements and evidence:</strong> Hardware on two quadrupeds: uneven-terrain omnidirectional jumps; approximately 0.1 s planning with a warm start; post-landing relocalization.</p><p><strong>Remaining gap — review assessment:</strong> Timing is conditional on warm starts; arbitrary compound rotations and unmodeled conditions remain beyond the demonstrated claim.</p><p><strong>Review year/version:</strong> 2024</p><p><a href=\"https://arxiv.org/abs/2411.04494\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Linzhu Yue",
+      "Zhitao Song",
+      "Jinhu Dong",
+      "Zhongyu Li",
+      "Hongbo Zhang",
+      "Lingwei Zhang",
+      "Xuanqi Zeng",
+      "Koushil Sreenath",
+      "Yun-hui Liu"
+    ]
+  },
+  {
+    "id": "item_21",
+    "title": "High Accuracy Aerial Maneuvers on Legged Robots using Variational Integrator Discretized Trajectory Optimization",
+    "date": "2025-05-19",
+    "url": "https://existentialrobotics.org/ref/BeckNguyen_VITO_ICRA25.pdf",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; full-body TO and variational integration   Achievements and evidence:  Simulation A1 triple backflips with 2–10x lower prediction/execution error and landing-angle errors of a few degrees in tested cases.   Remaining gap — review assessment:  Triple-flip hardware validation absent; numerical integration does not remove model mismatch or state-estimation errors.   Review year/version:  2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; full-body TO and variational integration</p><p><strong>Achievements and evidence:</strong> Simulation A1 triple backflips with 2–10x lower prediction/execution error and landing-angle errors of a few degrees in tested cases.</p><p><strong>Remaining gap — review assessment:</strong> Triple-flip hardware validation absent; numerical integration does not remove model mismatch or state-estimation errors.</p><p><strong>Review year/version:</strong> 2025</p><p><a href=\"https://existentialrobotics.org/ref/BeckNguyen_VITO_ICRA25.pdf\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Scott Beck",
+      "Chuong Nguyen",
+      "Thai Duong",
+      "Nikolay Atanasov",
+      "Quan Nguyen"
+    ]
+  },
+  {
+    "id": "item_22",
+    "title": "Trajectory tracking and jumping control of quadruped via phase-aware iLQR controller",
+    "date": "2026-03",
+    "url": "https://doi.org/10.1016/j.birob.2026.100284",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Model-based jumping and acrobatics",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; TO and phase-aware iLQR   Achievements and evidence:  Lite3 hardware and simulation: phase-specific full-state feedback improves tracking and disturbance rejection over evaluated baselines.   Remaining gap — review assessment:  Planar full-body dynamics and predefined phases; not a general spatial acrobatics/navigation solution.   Review year/version:  2026   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; TO and phase-aware iLQR</p><p><strong>Achievements and evidence:</strong> Lite3 hardware and simulation: phase-specific full-state feedback improves tracking and disturbance rejection over evaluated baselines.</p><p><strong>Remaining gap — review assessment:</strong> Planar full-body dynamics and predefined phases; not a general spatial acrobatics/navigation solution.</p><p><strong>Review year/version:</strong> 2026</p><p><a href=\"https://doi.org/10.1016/j.birob.2026.100284\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Shuomo Zhang",
+      "Wei Zou",
+      "Hu Su",
+      "Chi Zhang",
+      "Hongxuan Ma"
+    ]
+  },
+  {
+    "id": "item_23",
+    "title": "Robust quadruped jumping via deep reinforcement learning",
+    "date": "2024-12",
+    "url": "https://arxiv.org/abs/2011.07089",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; TO and RL   Achievements and evidence:  Hardware jumps under uncertainty, including foot-height disturbances up to 6 cm and distances around twice body length; models torque-speed and power limits.   Remaining gap — review assessment:  Depends on optimized reference behavior; unrestricted acrobatic discovery and visual long-horizon navigation not established.   Review year/version:  2020/2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; TO and RL</p><p><strong>Achievements and evidence:</strong> Hardware jumps under uncertainty, including foot-height disturbances up to 6 cm and distances around twice body length; models torque-speed and power limits.</p><p><strong>Remaining gap — review assessment:</strong> Depends on optimized reference behavior; unrestricted acrobatic discovery and visual long-horizon navigation not established.</p><p><strong>Review year/version:</strong> 2020/2024</p><p><a href=\"https://arxiv.org/abs/2011.07089\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Guillaume Bellegarda",
+      "Chuong Nguyen",
+      "Quan Nguyen"
+    ]
+  },
+  {
+    "id": "item_24",
+    "title": "Learning Agile Motor Skills on Quadrupedal Robots using Curriculum Learning",
+    "date": "2021",
+    "url": "https://faculty.cc.gatech.edu/~sha9/projects/tang2021learning.pdf",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; PPO with environment and task curricula   Achievements and evidence:  Simulation running jumps, backflips, barrel rolls, double jumps and wall-backflips.   Remaining gap — review assessment:  No hardware demonstration. Double jumping restricted to 2D; running jump uses a guiding trajectory.   Review year/version:  2021   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; PPO with environment and task curricula</p><p><strong>Achievements and evidence:</strong> Simulation running jumps, backflips, barrel rolls, double jumps and wall-backflips.</p><p><strong>Remaining gap — review assessment:</strong> No hardware demonstration. Double jumping restricted to 2D; running jump uses a guiding trajectory.</p><p><strong>Review year/version:</strong> 2021</p><p><a href=\"https://faculty.cc.gatech.edu/~sha9/projects/tang2021learning.pdf\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Zuoxin Tang",
+      "Donghyun Kim",
+      "Sehoon Ha"
+    ]
+  },
+  {
+    "id": "item_25",
+    "title": "Learning Agile Skills via Adversarial Imitation of Rough Partial Demonstrations",
+    "date": "2022-06-23",
+    "url": "https://arxiv.org/abs/2206.11693",
+    "abstract": "Learning agile skills is one of the main challenges in robotics. To this end, reinforcement learning approaches have achieved impressive results. These methods require explicit task information in terms of a reward function or an expert that can be queried in simulation to provide a target control output, which limits their applicability. In this work, we propose a generative adversarial method for inferring reward functions from partial and potentially physically incompatible demonstrations for successful skill acquirement where reference or expert demonstrations are not easily accessible. Moreover, we show that by using a Wasserstein GAN formulation and transitions from demonstrations with rough and partial information as input, we are able to extract policies that are robust and capable of imitating demonstrated behaviors. Finally, the obtained skills such as a backflip are tested on an agile quadruped robot called Solo 8 and present faithful replication of hand-held human demonstrations.",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; adversarial imitation, WASABI   Achievements and evidence:  Solo 8 hardware backflips and agile skills learned from rough partial, hand-held demonstrations.   Remaining gap — review assessment:  Demonstration-driven skill acquisition; arbitrary skill composition and terrain-aware target selection not established.   Review year/version:  2022/2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; adversarial imitation, WASABI</p><p><strong>Achievements and evidence:</strong> Solo 8 hardware backflips and agile skills learned from rough partial, hand-held demonstrations.</p><p><strong>Remaining gap — review assessment:</strong> Demonstration-driven skill acquisition; arbitrary skill composition and terrain-aware target selection not established.</p><p><strong>Review year/version:</strong> 2022/2023</p><p><a href=\"https://arxiv.org/abs/2206.11693\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Chenhao Li",
+      "Marin Vlastelica",
+      "Sebastian Blaes",
+      "Jonas Frey",
+      "Felix Grimminger",
+      "Georg Martius"
+    ]
+  },
+  {
+    "id": "item_26",
+    "title": "OPT-Mimic: Imitation of Optimized Trajectories for Dynamic Quadruped Behaviors",
+    "date": "2022-10-03",
+    "url": "https://arxiv.org/abs/2210.01247",
+    "abstract": "Reinforcement Learning (RL) has seen many recent successes for quadruped robot control. The imitation of reference motions provides a simple and powerful prior for guiding solutions towards desired solutions without the need for meticulous reward design. While much work uses motion capture data or hand-crafted trajectories as the reference motion, relatively little work has explored the use of reference motions coming from model-based trajectory optimization. In this work, we investigate several design considerations that arise with such a framework, as demonstrated through four dynamic behaviours: trot, front hop, 180 backflip, and biped stepping. These are trained in simulation and transferred to a physical Solo 8 quadruped robot without further adaptation. In particular, we explore the space of feed-forward designs afforded by the trajectory optimizer to understand its impact on RL learning efficiency and sim-to-real transfer. These findings contribute to the long standing goal of producing robot controllers that combine the interpretability and precision of model-based optimization with the robustness that model-free RL-based controllers offer.",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; TO and imitation RL   Achievements and evidence:  Solo 8 hardware trot, front hop, 180-degree backflip and biped stepping, transferred without further adaptation.   Remaining gap — review assessment:  Requires optimized references. A 180-degree backflip is not a complete upright-to-upright 360-degree flip.   Review year/version:  2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; TO and imitation RL</p><p><strong>Achievements and evidence:</strong> Solo 8 hardware trot, front hop, 180-degree backflip and biped stepping, transferred without further adaptation.</p><p><strong>Remaining gap — review assessment:</strong> Requires optimized references. A 180-degree backflip is not a complete upright-to-upright 360-degree flip.</p><p><strong>Review year/version:</strong> 2023</p><p><a href=\"https://arxiv.org/abs/2210.01247\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Yuni Fuchioka",
+      "Zhaoming Xie",
+      "Michiel van de Panne"
+    ]
+  },
+  {
+    "id": "item_27",
+    "title": "Two-Stage Learning of Highly Dynamic Motions with Rigid and Articulated Soft Quadrupeds",
+    "date": "2024-05-13",
+    "url": "https://arxiv.org/abs/2309.09682",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "Learning"
+    ],
+    "notes": " Research review   Method and idea:  Learning; evolution strategy then PPO   Achievements and evidence:  Simulation vertical/forward jumping, pronking and backflips without predefined motion references; compares parallel springs.   Remaining gap — review assessment:  Hardware validation explicitly future work. Shared training framework is not one seamlessly compositional policy.   Review year/version:  2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Learning; evolution strategy then PPO</p><p><strong>Achievements and evidence:</strong> Simulation vertical/forward jumping, pronking and backflips without predefined motion references; compares parallel springs.</p><p><strong>Remaining gap — review assessment:</strong> Hardware validation explicitly future work. Shared training framework is not one seamlessly compositional policy.</p><p><strong>Review year/version:</strong> 2024</p><p><a href=\"https://arxiv.org/abs/2309.09682\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Francecso Vezzi",
+      "Jiatao Ding",
+      "Antonin Raffin",
+      "Jens Kober",
+      "Cosimo Della Santina"
+    ]
+  },
+  {
+    "id": "item_28",
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-free Design",
+    "date": "2024-01-29",
+    "url": "https://arxiv.org/abs/2401.16337",
+    "abstract": "Deep reinforcement learning (DRL) has emerged as a promising solution to mastering explosive and versatile quadrupedal jumping skills. However, current DRL-based frameworks usually rely on pre-existing reference trajectories obtained by capturing animal motions or transferring experience from existing controllers. This work aims to prove that learning dynamic jumping is possible without relying on imitating a reference trajectory by leveraging a curriculum design. Starting from a vertical in-place jump, we generalize the learned policy to forward and diagonal jumps and, finally, we learn to jump across obstacles. Conditioned on the desired landing location, orientation, and obstacle dimensions, the proposed approach yields a wide range of omnidirectional jumping motions in real-world experiments. Particularly we achieve a 90cm forward jump, exceeding all previous records for similar robots reported in the existing literature. Additionally, the robot can reliably execute continuous jumping on soft grassy grounds, which is especially remarkable as such conditions were not included in the training stage. A supplementary video can be found on: https://www.youtube.com/watch?v=nRaMCrwU5X8. The code associated with this work can be found on: https://github.com/Vassil17/Curriculum-Quadruped-Jumping-DRL.",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; reference-free curriculum   Achievements and evidence:  Hardware omnidirectional jumping, 90 cm forward jump and continuous jumping on grass not present during training.   Remaining gap — review assessment:  Still requires reward and curriculum design; arbitrary flips plus perceptive navigation not established.   Review year/version:  2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; reference-free curriculum</p><p><strong>Achievements and evidence:</strong> Hardware omnidirectional jumping, 90 cm forward jump and continuous jumping on grass not present during training.</p><p><strong>Remaining gap — review assessment:</strong> Still requires reward and curriculum design; arbitrary flips plus perceptive navigation not established.</p><p><strong>Review year/version:</strong> 2024</p><p><a href=\"https://arxiv.org/abs/2401.16337\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Vassil Atanassov",
+      "Jiatao Ding",
+      "Jens Kober",
+      "Ioannis Havoutis",
+      "Cosimo Della Santina"
+    ]
+  },
+  {
+    "id": "item_29",
+    "title": "Stage-Wise Reward Shaping for Acrobatic Robots: A Constrained Multi-Objective Reinforcement Learning Approach",
+    "date": "2025-05-19",
+    "url": "https://arxiv.org/abs/2409.15755",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; constrained multi-objective stage-wise rewards   Achievements and evidence:  Simulation and hardware acrobatic tasks; separates stage objectives and constraints instead of one large weighted reward.   Remaining gap — review assessment:  Designer supplies stages and objectives; learned constraints do not give blanket guarantees under arbitrary disturbances.   Review year/version:  2024/2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; constrained multi-objective stage-wise rewards</p><p><strong>Achievements and evidence:</strong> Simulation and hardware acrobatic tasks; separates stage objectives and constraints instead of one large weighted reward.</p><p><strong>Remaining gap — review assessment:</strong> Designer supplies stages and objectives; learned constraints do not give blanket guarantees under arbitrary disturbances.</p><p><strong>Review year/version:</strong> 2024/2025</p><p><a href=\"https://arxiv.org/abs/2409.15755\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Dohyeong Kim",
+      "Hyeokjin Kwon",
+      "Junseok Kim",
+      "Gunmin Lee",
+      "Songhwai Oh"
+    ]
+  },
+  {
+    "id": "item_30",
+    "title": "Explosive Jumping with Rigid and Articulated Soft Quadrupeds via Example Guided Reinforcement Learning",
+    "date": "2025-03-20",
+    "url": "https://arxiv.org/abs/2503.16197",
+    "abstract": "Achieving controlled jumping behaviour for a quadruped robot is a challenging task, especially when introducing passive compliance in mechanical design. This study addresses this challenge via imitation-based deep reinforcement learning with a progressive training process. To start, we learn the jumping skill by mimicking a coarse jumping example generated by model-based trajectory optimization. Subsequently, we generalize the learned policy to broader situations, including various distances in both forward and lateral directions, and then pursue robust jumping in unknown ground unevenness. In addition, without tuning the reward much, we learn the jumping policy for a quadruped with parallel elasticity. Results show that using the proposed method, i) the robot learns versatile jumps by learning only from a single demonstration, ii) the robot with parallel compliance reduces the landing error by 11.1%, saves energy cost by 15.2% and reduces the peak torque by 15.8%, compared to the rigid robot without parallel elasticity, iii) the robot can perform jumps of variable distances with robustness against ground unevenness (maximal 4cm height perturbations) using only proprioceptive perception.",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; one TO demonstration and RL curriculum   Achievements and evidence:  Simulation variable jumps and ±4 cm terrain perturbations. Compliance reduces mean landing error 11.1% and energy cost 15.2%.   Remaining gap — review assessment:  Real-robot deployment is future work; percentages are simulation comparisons, not hardware records.   Review year/version:  2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; one TO demonstration and RL curriculum</p><p><strong>Achievements and evidence:</strong> Simulation variable jumps and ±4 cm terrain perturbations. Compliance reduces mean landing error 11.1% and energy cost 15.2%.</p><p><strong>Remaining gap — review assessment:</strong> Real-robot deployment is future work; percentages are simulation comparisons, not hardware records.</p><p><strong>Review year/version:</strong> 2025</p><p><a href=\"https://arxiv.org/abs/2503.16197\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Georgios Apostolides",
+      "Wei Pan",
+      "Jens Kober",
+      "Cosimo Della Santina",
+      "Jiatao Ding"
+    ]
+  },
+  {
+    "id": "item_31",
+    "title": "EFGCL: Learning Dynamic Motion Through Spotting-Inspired External Force Guided Curriculum Learning",
+    "date": "2026-05",
+    "url": "https://keitayoneda.github.io/kleiyn-efgcl/",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; external-force-guided curriculum   Achievements and evidence:  KLEIYN hardware jump, backflip and lateral flip; approximately 2x faster jump learning in the reported comparison.   Remaining gap — review assessment:  Assistive-force curriculum design remains; generalization across tasks, terrain and morphology not established.   Review year/version:  2026   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; external-force-guided curriculum</p><p><strong>Achievements and evidence:</strong> KLEIYN hardware jump, backflip and lateral flip; approximately 2x faster jump learning in the reported comparison.</p><p><strong>Remaining gap — review assessment:</strong> Assistive-force curriculum design remains; generalization across tasks, terrain and morphology not established.</p><p><strong>Review year/version:</strong> 2026</p><p><a href=\"https://keitayoneda.github.io/kleiyn-efgcl/\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Keita Yoneda",
+      "Kento Kawaharazuka",
+      "Kei Okada"
+    ]
+  },
+  {
+    "id": "item_32",
+    "title": "Robust jumping control of quadruped robots under body and leg disturbances using reinforcement learning with H∞ regularization",
+    "date": "2026-04",
+    "url": "https://doi.org/10.1016/j.conengprac.2025.106751",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "RL and imitation-based jumping or flips",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; adversarial disturbances and H-infinity regularization   Achievements and evidence:  Method trains against learned body and leg disturbances rather than body pushes alone.   Remaining gap — review assessment:  Method verified from publisher material only; full experimental record not inspected. Do not infer hardware limits or global robustness guarantees.   Review year/version:  2026   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; adversarial disturbances and H-infinity regularization</p><p><strong>Achievements and evidence:</strong> Method trains against learned body and leg disturbances rather than body pushes alone.</p><p><strong>Remaining gap — review assessment:</strong> Method verified from publisher material only; full experimental record not inspected. Do not infer hardware limits or global robustness guarantees.</p><p><strong>Review year/version:</strong> 2026</p><p><a href=\"https://doi.org/10.1016/j.conengprac.2025.106751\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Shuo Xue",
+      "Liang Yuan",
+      "Kai Lv",
+      "Teng Ran",
+      "Wendong Xiao",
+      "Jianbo Zhang"
+    ]
+  },
+  {
+    "id": "item_33",
+    "title": "Real-time Optimal Landing Control of the MIT Mini Cheetah",
+    "date": "2021-10-06",
+    "url": "https://arxiv.org/abs/2110.02799",
+    "abstract": "Quadrupedal landing is a complex process involving large impacts, elaborate contact transitions, and is a crucial recovery behavior observed in many biological animals. This work presents a real-time, optimal landing controller that is free of pre-specified contact schedules. The controller determines optimal touchdown postures and reaction force profiles and is able to recover from a variety of falling configurations. The quadrupedal platform used, the MIT Mini Cheetah, recovered safely from drops of up to 8 m in simulation, as well as from a range of orientations and planar velocities. The controller is also tested on hardware, successfully recovering from drops of up to 2 m.",
+    "tags": [
+      "quadruped acrobatics",
+      "Landing and aerial reorientation",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; optimal landing   Achievements and evidence:  Hardware recovery from drops up to 2 m; simulation drops up to 8 m. Optimizes posture and reaction forces without a fixed contact schedule.   Remaining gap — review assessment:  Landing recovery is not a complete takeoff-flip-landing-next-jump pipeline. The 8 m result is simulation.   Review year/version:  2021/2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; optimal landing</p><p><strong>Achievements and evidence:</strong> Hardware recovery from drops up to 2 m; simulation drops up to 8 m. Optimizes posture and reaction forces without a fixed contact schedule.</p><p><strong>Remaining gap — review assessment:</strong> Landing recovery is not a complete takeoff-flip-landing-next-jump pipeline. The 8 m result is simulation.</p><p><strong>Review year/version:</strong> 2021/2022</p><p><a href=\"https://arxiv.org/abs/2110.02799\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Se Hwan Jeon",
+      "Sangbae Kim",
+      "Donghyun Kim"
+    ]
+  },
+  {
+    "id": "item_34",
+    "title": "Mini Cheetah, the Falling Cat: A Case Study in Machine Learning and Trajectory Optimization for Robot Acrobatics",
+    "date": "2021-09-09",
+    "url": "https://arxiv.org/abs/2109.04424",
+    "abstract": "Seemingly in defiance of basic physics, cats consistently land on their feet after falling. In this paper, we design a controller that lands the Mini Cheetah quadruped robot on its feet as well. Specifically, we explore how trajectory optimization and machine learning can work together to enable highly dynamic bioinspired behaviors. We find that a reflex approach, in which a neural network learns entire state trajectories, outperforms a policy approach, in which a neural network learns a mapping from states to control inputs. We validate our proposed controller in both simulation and hardware experiments, and are able to land the robot on its feet from falls with initial pitch angles between -90 and 90 degrees.",
+    "tags": [
+      "quadruped acrobatics",
+      "Landing and aerial reorientation",
+      "TO and supervised learning, not RL"
+    ],
+    "notes": " Research review   Method and idea:  TO and supervised learning, not RL   Achievements and evidence:  Hardware and simulation feet-first landings from initial pitch angles between -90 and +90 degrees; predicting a complete corrective trajectory outperforms direct policy mapping in the study.   Remaining gap — review assessment:  Falling reorientation rather than a complete 360-degree jump or unrestricted spatial recovery.   Review year/version:  2021/2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> TO and supervised learning, not RL</p><p><strong>Achievements and evidence:</strong> Hardware and simulation feet-first landings from initial pitch angles between -90 and +90 degrees; predicting a complete corrective trajectory outperforms direct policy mapping in the study.</p><p><strong>Remaining gap — review assessment:</strong> Falling reorientation rather than a complete 360-degree jump or unrestricted spatial recovery.</p><p><strong>Review year/version:</strong> 2021/2022</p><p><a href=\"https://arxiv.org/abs/2109.04424\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Vince Kurtz",
+      "He Li",
+      "Patrick M. Wensing",
+      "Hai Lin"
+    ]
+  },
+  {
+    "id": "item_35",
+    "title": "Robust Quadrupedal Jumping With Impact-Aware Landing: Exploiting Parallel Elasticity",
+    "date": "2024",
+    "url": "https://doi.org/10.1109/TRO.2024.3411988",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Landing and aerial reorientation",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; compliant TO and landing regulation   Achievements and evidence:  Hardware rigid/compliant quadrupeds execute 3D jumps with preimpact leg adjustment and postimpact recovery.   Remaining gap — review assessment:  Offline jump planning remains; arbitrary aerial rotations and perception-driven sequences need additional machinery.   Review year/version:  2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; compliant TO and landing regulation</p><p><strong>Achievements and evidence:</strong> Hardware rigid/compliant quadrupeds execute 3D jumps with preimpact leg adjustment and postimpact recovery.</p><p><strong>Remaining gap — review assessment:</strong> Offline jump planning remains; arbitrary aerial rotations and perception-driven sequences need additional machinery.</p><p><strong>Review year/version:</strong> 2024</p><p><a href=\"https://doi.org/10.1109/TRO.2024.3411988\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Jiatao Ding",
+      "Vassil Atanassov",
+      "Edoardo Panichi",
+      "Jens Kober",
+      "Cosimo Della Santina"
+    ]
+  },
+  {
+    "id": "item_36",
+    "title": "On-the-Fly Jumping With Soft Landing: Leveraging Trajectory Optimization and Behavior Cloning",
+    "date": "2025-08",
+    "url": "https://doi.org/10.1109/TMECH.2025.3572176",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Landing and aerial reorientation",
+      "TO"
+    ],
+    "notes": " Research review   Method and idea:  TO; variable impedance; behavior cloning, not RL   Achievements and evidence:  Hardware explosive jumping and soft landing; simulation behavior reproduction at least 97.4% success; distills expensive control into a neural network.   Remaining gap — review assessment:  Generalization depends on training distribution; simulation success is not a universal hardware reliability figure.   Review year/version:  2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> TO; variable impedance; behavior cloning, not RL</p><p><strong>Achievements and evidence:</strong> Hardware explosive jumping and soft landing; simulation behavior reproduction at least 97.4% success; distills expensive control into a neural network.</p><p><strong>Remaining gap — review assessment:</strong> Generalization depends on training distribution; simulation success is not a universal hardware reliability figure.</p><p><strong>Review year/version:</strong> 2025</p><p><a href=\"https://doi.org/10.1109/TMECH.2025.3572176\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Edoardo Panichi",
+      "Jiatao Ding",
+      "Vassil Atanassov",
+      "Peiyu Yang",
+      "Jens Kober",
+      "Wei Pan",
+      "Cosimo Della Santina"
+    ]
+  },
+  {
+    "id": "item_37",
+    "title": "Integrating Trajectory Optimization and Reinforcement Learning for Quadrupedal Jumping with Terrain-Adaptive Landing",
+    "date": "2025-09-16",
+    "url": "https://arxiv.org/abs/2509.12776",
+    "abstract": "Jumping constitutes an essential component of quadruped robots' locomotion capabilities, which includes dynamic take-off and adaptive landing. Existing quadrupedal jumping studies mainly focused on the stance and flight phase by assuming a flat landing ground, which is impractical in many real world cases. This work proposes a safe landing framework that achieves adaptive landing on rough terrains by combining Trajectory Optimization (TO) and Reinforcement Learning (RL) together. The RL agent learns to track the reference motion generated by TO in the environments with rough terrains. To enable the learning of compliant landing skills on challenging terrains, a reward relaxation strategy is synthesized to encourage exploration during landing recovery period. Extensive experiments validate the accurate tracking and safe landing skills benefiting from our proposed method in various scenarios.",
+    "tags": [
+      "quadruped acrobatics",
+      "Landing and aerial reorientation",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; TO and RL with landing reward relaxation   Achievements and evidence:  Hardware landing on rough/slippery terrain and under unknown disturbances; relaxes nominal tracking to allow adaptive landing.   Remaining gap — review assessment:  Planner assumes synchronized takeoff and restricted body motion; terrain-adaptive landing after arbitrary flips not established.   Review year/version:  2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; TO and RL with landing reward relaxation</p><p><strong>Achievements and evidence:</strong> Hardware landing on rough/slippery terrain and under unknown disturbances; relaxes nominal tracking to allow adaptive landing.</p><p><strong>Remaining gap — review assessment:</strong> Planner assumes synchronized takeoff and restricted body motion; terrain-adaptive landing after arbitrary flips not established.</p><p><strong>Review year/version:</strong> 2025</p><p><a href=\"https://arxiv.org/abs/2509.12776\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Renjie Wang",
+      "Shangke Lyu",
+      "Xin Lang",
+      "Wei Xiao",
+      "Donglin Wang"
+    ]
+  },
+  {
+    "id": "item_38",
+    "title": "Learning to Jump from Pixels",
+    "date": "2021-10-28",
+    "url": "https://arxiv.org/abs/2110.15344",
+    "abstract": "Today's robotic quadruped systems can robustly walk over a diverse range of rough but continuous terrains, where the terrain elevation varies gradually. Locomotion on discontinuous terrains, such as those with gaps or obstacles, presents a complementary set of challenges. In discontinuous settings, it becomes necessary to plan ahead using visual inputs and to execute agile behaviors beyond robust walking, such as jumps. Such dynamic motion results in significant motion of onboard sensors, which introduces a new set of challenges for real-time visual processing. The requirement for agility and terrain awareness in this setting reinforces the need for robust control. We present Depth-based Impulse Control (DIC), a method for synthesizing highly agile visually-guided locomotion behaviors. DIC affords the flexibility of model-free learning but regularizes behavior through explicit model-based optimization of ground reaction forces. We evaluate the proposed method both in simulation and in the real world.",
+    "tags": [
+      "quadruped acrobatics",
+      "Continuous jumping, perception, and parkour",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; visual RL and model-based impulse control   Achievements and evidence:  Mini Cheetah hardware visually guided gap traversal, with explicitly optimized ground reaction forces.   Remaining gap — review assessment:  Gap crossing rather than unrestricted rotations; sensing and deployment constraints matter in comparisons.   Review year/version:  2021   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; visual RL and model-based impulse control</p><p><strong>Achievements and evidence:</strong> Mini Cheetah hardware visually guided gap traversal, with explicitly optimized ground reaction forces.</p><p><strong>Remaining gap — review assessment:</strong> Gap crossing rather than unrestricted rotations; sensing and deployment constraints matter in comparisons.</p><p><strong>Review year/version:</strong> 2021</p><p><a href=\"https://arxiv.org/abs/2110.15344\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Gabriel B. Margolis",
+      "Tao Chen",
+      "Kartik Paigwar",
+      "Xiang Fu",
+      "Donghyun Kim",
+      "Sangbae Kim",
+      "Pulkit Agrawal"
+    ]
+  },
+  {
+    "id": "item_39",
+    "title": "Continuous Jumping for Legged Robots on Stepping Stones via Trajectory Optimization and Model Predictive Control",
+    "date": "2022-04-03",
+    "url": "https://arxiv.org/abs/2204.01147",
+    "abstract": "Performing highly agile dynamic motions, such as jumping or running on uneven stepping stones has remained a challenging problem in legged robot locomotion. This paper presents a framework that combines trajectory optimization and model predictive control to perform robust and consecutive jumping on stepping stones. In our approach, we first utilize trajectory optimization based on full-nonlinear dynamics of the robot to generate periodic jumping trajectories for various jumping distances. A jumping controller based on a model predictive control is then designed for realizing smooth jumping transitions, enabling the robot to achieve continuous jumps on stepping stones. Thanks to the incorporation of MPC as a real-time feedback controller, the proposed framework is also validated to be robust to uneven platforms with unknown height perturbations and model uncertainty on the robot dynamics.",
+    "tags": [
+      "quadruped acrobatics",
+      "Continuous jumping, perception, and parkour",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; TO and MPC   Achievements and evidence:  Simulation consecutive stepping-stone jumps robust to unknown platform-height perturbations and model uncertainty.   Remaining gap — review assessment:  Hardware realization explicitly future work; do not cite as physical stepping-stone demonstration.   Review year/version:  2022   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; TO and MPC</p><p><strong>Achievements and evidence:</strong> Simulation consecutive stepping-stone jumps robust to unknown platform-height perturbations and model uncertainty.</p><p><strong>Remaining gap — review assessment:</strong> Hardware realization explicitly future work; do not cite as physical stepping-stone demonstration.</p><p><strong>Review year/version:</strong> 2022</p><p><a href=\"https://arxiv.org/abs/2204.01147\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Chuong Nguyen",
+      "Lingfan Bao",
+      "Quan Nguyen"
+    ]
+  },
+  {
+    "id": "item_40",
+    "title": "ANYmal Parkour: Learning Agile Navigation for Quadrupedal Robots",
+    "date": "2023-06-26",
+    "url": "https://arxiv.org/abs/2306.14874",
+    "abstract": "Performing agile navigation with four-legged robots is a challenging task due to the highly dynamic motions, contacts with various parts of the robot, and the limited field of view of the perception sensors. In this paper, we propose a fully-learned approach to train such robots and conquer scenarios that are reminiscent of parkour challenges. The method involves training advanced locomotion skills for several types of obstacles, such as walking, jumping, climbing, and crouching, and then using a high-level policy to select and control those skills across the terrain. Thanks to our hierarchical formulation, the navigation policy is aware of the capabilities of each skill, and it will adapt its behavior depending on the scenario at hand. Additionally, a perception module is trained to reconstruct obstacles from highly occluded and noisy sensory data and endows the pipeline with scene understanding. Compared to previous attempts, our method can plan a path for challenging scenarios without expert demonstration, offline computation, a priori knowledge of the environment, or taking contacts explicitly into account. While these modules are trained from simulated data only, our real-world experiments demonstrate successful transfer on hardware, where the robot navigates and crosses consecutive challenging obstacles with speeds of up to two meters per second. The supplementary video can be found on the project website: https://sites.google.com/leggedrobotics.com/agile-navigation",
+    "tags": [
+      "quadruped acrobatics",
+      "Continuous jumping, perception, and parkour",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; hierarchical skills, navigation and perception   Achievements and evidence:  ANYmal hardware crosses consecutive obstacles using walking, jumping, climbing and crouching; reported speeds up to 2 m/s.   Remaining gap — review assessment:  Navigation/parkour rather than precision flips or a unified acrobatic landing controller.   Review year/version:  2023/2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; hierarchical skills, navigation and perception</p><p><strong>Achievements and evidence:</strong> ANYmal hardware crosses consecutive obstacles using walking, jumping, climbing and crouching; reported speeds up to 2 m/s.</p><p><strong>Remaining gap — review assessment:</strong> Navigation/parkour rather than precision flips or a unified acrobatic landing controller.</p><p><strong>Review year/version:</strong> 2023/2024</p><p><a href=\"https://arxiv.org/abs/2306.14874\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "David Hoeller",
+      "Nikita Rudin",
+      "Dhionis Sako",
+      "Marco Hutter"
+    ]
+  },
+  {
+    "id": "item_41",
+    "title": "Robot Parkour Learning",
+    "date": "2023-09-11",
+    "url": "https://arxiv.org/abs/2309.05665",
+    "abstract": "Parkour is a grand challenge for legged locomotion that requires robots to overcome various obstacles rapidly in complex environments. Existing methods can generate either diverse but blind locomotion skills or vision-based but specialized skills by using reference animal data or complex rewards. However, autonomous parkour requires robots to learn generalizable skills that are both vision-based and diverse to perceive and react to various scenarios. In this work, we propose a system for learning a single end-to-end vision-based parkour policy of diverse parkour skills using a simple reward without any reference motion data. We develop a reinforcement learning method inspired by direct collocation to generate parkour skills, including climbing over high obstacles, leaping over large gaps, crawling beneath low barriers, squeezing through thin slits, and running. We distill these skills into a single vision-based parkour policy and transfer it to a quadrupedal robot using its egocentric depth camera. We demonstrate that our system can empower two different low-cost robots to autonomously select and execute appropriate parkour skills to traverse challenging real-world environments.",
+    "tags": [
+      "quadruped acrobatics",
+      "Continuous jumping, perception, and parkour",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; curriculum and skill distillation   Achievements and evidence:  Two low-cost hardware platforms perform gap leaps, climbing, crawling, squeezing and running using a depth-camera policy.   Remaining gap — review assessment:  Evaluated obstacle families; arbitrary aerial rotation and precise rotational landing are distinct tasks.   Review year/version:  2023   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; curriculum and skill distillation</p><p><strong>Achievements and evidence:</strong> Two low-cost hardware platforms perform gap leaps, climbing, crawling, squeezing and running using a depth-camera policy.</p><p><strong>Remaining gap — review assessment:</strong> Evaluated obstacle families; arbitrary aerial rotation and precise rotational landing are distinct tasks.</p><p><strong>Review year/version:</strong> 2023</p><p><a href=\"https://arxiv.org/abs/2309.05665\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Ziwen Zhuang",
+      "Zipeng Fu",
+      "Jianren Wang",
+      "Christopher Atkeson",
+      "Soeren Schwertfeger",
+      "Chelsea Finn",
+      "Hang Zhao"
+    ]
+  },
+  {
+    "id": "item_42",
+    "title": "Extreme Parkour with Legged Robots",
+    "date": "2023-09-25",
+    "url": "https://arxiv.org/abs/2309.14341",
+    "abstract": "Humans can perform parkour by traversing obstacles in a highly dynamic fashion requiring precise eye-muscle coordination and movement. Getting robots to do the same task requires overcoming similar challenges. Classically, this is done by independently engineering perception, actuation, and control systems to very low tolerances. This restricts them to tightly controlled settings such as a predetermined obstacle course in labs. In contrast, humans are able to learn parkour through practice without significantly changing their underlying biology. In this paper, we take a similar approach to developing robot parkour on a small low-cost robot with imprecise actuation and a single front-facing depth camera for perception which is low-frequency, jittery, and prone to artifacts. We show how a single neural net policy operating directly from a camera image, trained in simulation with large-scale RL, can overcome imprecise sensing and actuation to output highly precise control behavior end-to-end. We show our robot can perform a high jump on obstacles 2x its height, long jump across gaps 2x its length, do a handstand and run across tilted ramps, and generalize to novel obstacle courses with different physical properties. Parkour videos at https://extreme-parkour.github.io/",
+    "tags": [
+      "quadruped acrobatics",
+      "Continuous jumping, perception, and parkour",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; end-to-end visual policy   Achievements and evidence:  Hardware obstacle heights approximately twice robot height, gaps twice body length, tilted ramps and handstands.   Remaining gap — review assessment:  Obstacle-traversal metrics are not free-flight jump height or full-body rotational accuracy.   Review year/version:  2023/2024   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; end-to-end visual policy</p><p><strong>Achievements and evidence:</strong> Hardware obstacle heights approximately twice robot height, gaps twice body length, tilted ramps and handstands.</p><p><strong>Remaining gap — review assessment:</strong> Obstacle-traversal metrics are not free-flight jump height or full-body rotational accuracy.</p><p><strong>Review year/version:</strong> 2023/2024</p><p><a href=\"https://arxiv.org/abs/2309.14341\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Xuxin Cheng",
+      "Kexin Shi",
+      "Ananye Agarwal",
+      "Deepak Pathak"
+    ]
+  },
+  {
+    "id": "item_43",
+    "title": "Agile Continuous Jumping in Discontinuous Terrains",
+    "date": "2024-09-17",
+    "url": "https://arxiv.org/abs/2409.10923",
+    "abstract": "We focus on agile, continuous, and terrain-adaptive jumping of quadrupedal robots in discontinuous terrains such as stairs and stepping stones. Unlike single-step jumping, continuous jumping requires accurately executing highly dynamic motions over long horizons, which is challenging for existing approaches. To accomplish this task, we design a hierarchical learning and control framework, which consists of a learned heightmap predictor for robust terrain perception, a reinforcement-learning-based centroidal-level motion policy for versatile and terrain-adaptive planning, and a low-level model-based leg controller for accurate motion tracking. In addition, we minimize the sim-to-real gap by accurately modeling the hardware characteristics. Our framework enables a Unitree Go1 robot to perform agile and continuous jumps on human-sized stairs and sparse stepping stones, for the first time to the best of our knowledge. In particular, the robot can cross two stair steps in each jump and completes a 3.5m long, 2.8m high, 14-step staircase in 4.5 seconds. Moreover, the same policy outperforms baselines in various other parkour tasks, such as jumping over single horizontal or vertical discontinuities. Experiment videos can be found at https://yxyang.github.io/jumping_cod/",
+    "tags": [
+      "quadruped acrobatics",
+      "Continuous jumping, perception, and parkour",
+      "Hybrid"
+    ],
+    "notes": " Research review   Method and idea:  Hybrid; learned heightmap/motion policy and model-based leg control   Achievements and evidence:  Go1 hardware jumps stairs and sparse stepping stones; 14-step staircase, 3.5 m horizontal extent and 2.8 m rise, in 4.5 s.   Remaining gap — review assessment:  Does not establish one controller combining continuous terrain jumping with unrestricted flips and precise continuation.   Review year/version:  2024/2025   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Hybrid; learned heightmap/motion policy and model-based leg control</p><p><strong>Achievements and evidence:</strong> Go1 hardware jumps stairs and sparse stepping stones; 14-step staircase, 3.5 m horizontal extent and 2.8 m rise, in 4.5 s.</p><p><strong>Remaining gap — review assessment:</strong> Does not establish one controller combining continuous terrain jumping with unrestricted flips and precise continuation.</p><p><strong>Review year/version:</strong> 2024/2025</p><p><a href=\"https://arxiv.org/abs/2409.10923\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Yuxiang Yang",
+      "Guanya Shi",
+      "Changyi Lin",
+      "Xiangyun Meng",
+      "Rosario Scalise",
+      "Mateo Guaman Castro",
+      "Wenhao Yu",
+      "Tingnan Zhang",
+      "Ding Zhao",
+      "Jie Tan",
+      "Byron Boots"
+    ]
+  },
+  {
+    "id": "item_44",
+    "title": "Towards Jumping Locomotion for Quadruped Robots on the Moon",
+    "date": "2019-11",
+    "url": "https://www.research-collection.ethz.ch/handle/20.500.11850/438204",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Low-gravity jumping",
+      "Model-based"
+    ],
+    "notes": " Research review   Method and idea:  Model-based; elastic legs and reaction wheel   Achievements and evidence:  SpaceBok under simulated lunar-gravity conditions: repeated vertical jumps over 0.9 m and single leaps up to 1.3 m.   Remaining gap — review assessment:  Low-gravity results not directly comparable to Earth-gravity jumping; reaction wheel changes control authority.   Review year/version:  2019   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> Model-based; elastic legs and reaction wheel</p><p><strong>Achievements and evidence:</strong> SpaceBok under simulated lunar-gravity conditions: repeated vertical jumps over 0.9 m and single leaps up to 1.3 m.</p><p><strong>Remaining gap — review assessment:</strong> Low-gravity results not directly comparable to Earth-gravity jumping; reaction wheel changes control authority.</p><p><strong>Review year/version:</strong> 2019</p><p><a href=\"https://www.research-collection.ethz.ch/handle/20.500.11850/438204\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Hendrik Kolvenbach",
+      "Elias Hampp",
+      "Patrick Barton",
+      "Radek Zenkl",
+      "Marco Hutter"
+    ]
+  },
+  {
+    "id": "item_45",
+    "title": "Cat-Like Jumping and Landing of Legged Robots in Low Gravity Using Deep Reinforcement Learning",
+    "date": "2022-02",
+    "url": "https://arxiv.org/abs/2106.09357",
+    "abstract": "",
+    "tags": [
+      "quadruped acrobatics",
+      "Low-gravity jumping",
+      "RL"
+    ],
+    "notes": " Research review   Method and idea:  RL; limb-based aerial attitude control   Achievements and evidence:  3D simulation and SpaceBok hardware on a 2D microgravity testbed demonstrate repeated jumping and reorientation.   Remaining gap — review assessment:  Hardware testbed constrains motion; full 3D Earth-gravity recovery has a shorter control window.   Review year/version:  2021   Primary source   Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled. ",
+    "noteHtml": "<h2>Research review</h2><p><strong>Method and idea:</strong> RL; limb-based aerial attitude control</p><p><strong>Achievements and evidence:</strong> 3D simulation and SpaceBok hardware on a 2D microgravity testbed demonstrate repeated jumping and reorientation.</p><p><strong>Remaining gap — review assessment:</strong> Hardware testbed constrains motion; full 3D Earth-gravity recovery has a shorter control window.</p><p><strong>Review year/version:</strong> 2021</p><p><a href=\"https://arxiv.org/abs/2106.09357\">Primary source</a></p><p>Prepared from the research discussion on 28 September 2026. Gap statements are reviewer assessments of demonstrated scope, not necessarily author-reported failures. Check the original paper before quoting results. No full-text PDFs are bundled.</p>",
+    "authors": [
+      "Nikita Rudin",
+      "Hendrik Kolvenbach",
+      "Vassilios Tsounis",
+      "Marco Hutter"
+    ]
+  }
+]

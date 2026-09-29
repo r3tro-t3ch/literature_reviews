@@ -1,0 +1,344 @@
+[
+  {
+    "id": "dial-mpc",
+    "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
+    "year": "2024",
+    "group": "Generative control & expert policies",
+    "method": "Model-based · full-order MPC",
+    "url": "https://arxiv.org/abs/2409.15610",
+    "overview": "DIAL-MPC refines sampled actions online using diffusion-inspired annealing. It does not train a diffusion policy.",
+    "achievement": "Go2 hardware performs sequential jumping with a 7 kg payload. Appendix setup uses 50 Hz planning and 200 Hz low-level commands.",
+    "gap": "Fast parallel simulation and a short planning horizon constrain the approach. Desktop computation and motion capture limit claims about autonomous field deployment.",
+    "evidence": "Hardware · lab",
+    "setting": "Go2; offboard RTX 4090 desktop, Ethernet and motion capture.",
+    "order": "Full-order articulated dynamics.",
+    "architecture": "Sampling-based receding-horizon control; direct torque output.",
+    "video": "https://github.com/LeCAR-Lab/dial-mpc/blob/main/README.md",
+    "videoLabel": "Author project & videos",
+    "verification": "Full text: Fig. 7, conclusion and Appendix A checked; preprint 2024 / ICRA 2025.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2409.15610v1",
+        "label": "Full text and setup"
+      }
+    ]
+  },
+  {
+    "id": "diffuseloco",
+    "title": "DiffuseLoco: Real-Time Legged Locomotion Control with Diffusion from Offline Datasets",
+    "year": "2024",
+    "group": "Generative control & expert policies",
+    "method": "Diffusion · offline imitation",
+    "url": "https://arxiv.org/abs/2404.19264",
+    "overview": "Learns a multi-skill locomotion policy from offline data, using a receding action horizon.",
+    "achievement": "Reports real quadruped deployment, transitions between locomotion skills, and edge-device execution.",
+    "gap": "This demonstrates locomotion-policy synthesis; it does not establish arbitrary precision flips or terrain-aware pronking sequences. Dataset coverage and action-generation latency remain relevant.",
+    "evidence": "Hardware",
+    "setting": "Quadruped physical locomotion demonstrations; controlled evaluations.",
+    "order": "No explicit online dynamics optimizer; data-driven action policy.",
+    "architecture": "Offline diffusion policy with receding-horizon execution.",
+    "video": "https://diffuselo.co/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and abstract checked; CoRL 2024.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2404.19264",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "contact-diffusion",
+    "title": "Diffusion-based learning of contact plans for agile locomotion",
+    "year": "2024",
+    "group": "Generative control & expert policies",
+    "method": "Diffusion · MCTS · NMPC",
+    "url": "https://arxiv.org/abs/2403.03639",
+    "overview": "Search generates feasible contact plans; diffusion learns their multiple possible solutions and supplies a whole-body controller.",
+    "achievement": "Simulated Solo12 selects contact sequences for jumping on sparse stepping stones.",
+    "gap": "Hardware implementation remains future work in v5. Known terrain, restricted gait search and low success on a difficult changing-stone task limit generalization claims.",
+    "evidence": "Simulation only",
+    "setting": "Solo12 simulation; not a physical stepping-stone demonstration.",
+    "order": "Whole-body nonlinear MPC.",
+    "architecture": "High-level diffusion contact planner + low-level NMPC.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "v5 full text, including conclusion, checked (23 June 2025). First preprint 2024 used a different title.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2403.03639v5",
+        "label": "v5 full text"
+      }
+    ]
+  },
+  {
+    "id": "dynaflow",
+    "title": "DynaFlow: Dynamics-embedded Flow Matching for Physically Consistent Motion Generation from State-only Demonstrations",
+    "year": "2025",
+    "group": "Generative control & expert policies",
+    "method": "Flow matching · differentiable simulation",
+    "url": "https://arxiv.org/abs/2509.19804",
+    "overview": "Maps generated actions through a differentiable simulator so learning can use state-only demonstrations.",
+    "achievement": "Physical Go1 reproduces varied gaits and stylistic motions; the project reports long-horizon open-loop execution.",
+    "gap": "Consistency is with the embedded model. It does not guarantee disturbance recovery in the real world or establish a closed-loop acrobatic pronking system.",
+    "evidence": "Hardware",
+    "setting": "Go1 physical motion demonstrations.",
+    "order": "Dynamics embedded through differentiable simulation.",
+    "architecture": "Flow-matching action generation trained through a simulator.",
+    "video": "https://sowoolee.github.io/dynaflow/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project checked; 2025 preprint / ICRA 2026.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://sowoolee.github.io/dynaflow/",
+        "label": "Author method and experiments"
+      }
+    ]
+  },
+  {
+    "id": "dmloco",
+    "title": "Integrating Diffusion-based Multi-task Learning with Online Reinforcement Learning for Robust Quadruped Robot Control",
+    "year": "2025",
+    "group": "Generative control & expert policies",
+    "method": "Diffusion · PPO fine-tuning",
+    "url": "https://arxiv.org/abs/2507.05674",
+    "overview": "DMLoco combines offline multi-task diffusion training with reinforcement-learning refinement.",
+    "achievement": "The abstract reports language-conditioned skills, more stable task transitions and onboard inference at 50 Hz.",
+    "gap": "This is adjacent multi-skill locomotion evidence. The abstract alone does not establish acrobatic landing accuracy or unseen-terrain pronking reliability.",
+    "evidence": "Hardware reported",
+    "setting": "Real-world deployment reported in abstract; detailed test setting not audited.",
+    "order": "No explicit online physics planner described.",
+    "architecture": "Diffusion pretraining + PPO in simulation + onboard policy.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "arXiv v2 abstract checked (September 2025); experimental tables not audited.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2507.05674",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "moe-parkour",
+    "title": "Quadruped Parkour Learning: Sparsely Gated Mixture of Experts with Visual Input",
+    "year": "2026",
+    "group": "Generative control & expert policies",
+    "method": "RL · sparse mixture of experts",
+    "url": "https://arxiv.org/abs/2604.19344",
+    "overview": "A sparse expert network allocates computation conditionally inside a vision-based parkour policy.",
+    "achievement": "On a 32 cm box, MoE succeeds in 10/10 trials versus 5/10 for an MLP with matched active parameters. Outdoor obstacle demonstrations are included.",
+    "gap": "Small trial counts do not establish field reliability. Expert selection adds tuning. The reported speed comparison uses batch size 6000, not simply onboard latency.",
+    "evidence": "Hardware · lab + outdoor",
+    "setting": "Go2 + D435f camera; policy runs offboard on RTX 2060.",
+    "order": "Simulation-trained policy, no explicit online dynamics optimization.",
+    "architecture": "Depth-conditioned RL with sparse MoE actor.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "Full text: Table III, hardware setup, outdoor tests and conclusion checked.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2604.19344v1",
+        "label": "Experiments and limitations"
+      }
+    ]
+  },
+  {
+    "id": "abot",
+    "title": "Behavior Foundations for Quadruped Robots: ABot-C0 Technical Report",
+    "year": "2026",
+    "group": "Generative control & expert policies",
+    "method": "Flow matching · multi-policy system",
+    "url": "https://arxiv.org/abs/2607.07370",
+    "overview": "Transfers the large-data motion-tracking recipe prominent in humanoids to quadruped behavior learning.",
+    "achievement": "Reports 16,074 feasible motion clips, a flow-matching motion-tracking policy, and real-world navigation / interaction experiments.",
+    "gap": "Generalist tracking and urban navigation are not quantitative proof of arbitrary flips, precise repeated landings, or low-gravity performance. Independent replication is not assessed.",
+    "evidence": "Hardware reported",
+    "setting": "Urban-terrain navigation and interaction; detailed experiment audit pending.",
+    "order": "Data-driven tracking; underlying simulator order not audited.",
+    "architecture": "Flow tracking + privileged-to-perceptive locomotion + multi-policy coordination.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "July 2026 arXiv v2 technical-report abstract checked; author claims, not independent replication.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2607.07370",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "spacebok-design",
+    "title": "SpaceBok: A Dynamic Legged Robot for Space Exploration",
+    "year": "2019",
+    "group": "Low-gravity jumping",
+    "method": "Model-based · elastic hardware",
+    "url": "https://doi.org/10.1109/ICRA.2019.8794136",
+    "overview": "A purpose-built quadruped uses leg geometry and parallel elasticity for powerful hopping.",
+    "achievement": "The primary paper reports physical walking, trotting and pronking, with single jumps up to 1.05 m. Lunar-pronking predictions are simulated.",
+    "gap": "Earth jumping does not establish operation in lunar dust, vacuum or thermal extremes. ETH describes the platform as not space-graded.",
+    "evidence": "Hardware + low-gravity simulation",
+    "setting": "Earth-based physical robot; simulated lunar locomotion.",
+    "order": "Elastic mechanism and model-based control; order not audited.",
+    "architecture": "Hardware/control co-design.",
+    "video": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jumping_space_robot_flies_like_a_spacecraft",
+    "videoLabel": "Author project & videos",
+    "verification": "ETH-hosted paper and ETH platform description checked.",
+    "environment": "Extraterrestrial motivation; hardware tests on Earth.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/384203/ICRA19_0651_FI.pdf?isAllowed=y&sequence=1",
+        "label": "ETH paper"
+      },
+      {
+        "url": "https://rsl.ethz.ch/robots-media/spacebok.html/",
+        "label": "ETH platform"
+      }
+    ]
+  },
+  {
+    "id": "spacehopper",
+    "title": "SpaceHopper: A Small-Scale Legged Robot for Exploring Low-Gravity Celestial Bodies",
+    "year": "2024",
+    "group": "Low-gravity jumping",
+    "method": "RL · limb-based attitude control",
+    "url": "https://arxiv.org/abs/2403.02831",
+    "overview": "A three-legged robot explores how moving limbs can orient the body during long low-gravity flights. This is related work, not a quadruped.",
+    "achievement": "Physical tests use a rotational gimbal and counterweight setup. Six-metre commanded jumps are reported in simulated Ceres gravity (0.029 g).",
+    "gap": "The simulated distance is not a hardware jump record. Gimbal and counterweight tests do not establish autonomous flight and landing on an asteroid.",
+    "evidence": "Hardware testbed + simulation",
+    "setting": "5.2 kg three-legged robot; Earth gimbal / counterweight rigs.",
+    "order": "Articulated robot simulation for RL.",
+    "architecture": "Learned leg-based aerial reorientation.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "Primary abstract checked 29 Sep 2026.",
+    "environment": "Asteroid / moon target; simulation and Earth-based tests.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2403.02831",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "deepmimic",
+    "title": "DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills",
+    "year": "2018",
+    "group": "Bipedal connections & foundations",
+    "method": "RL · motion imitation",
+    "url": "https://doi.org/10.1145/3197517.3201311",
+    "overview": "A shared imitation-plus-task formulation learns diverse motions in simulated characters.",
+    "achievement": "Demonstrates acrobatics, locomotion and recovery across simulated human, Atlas, dinosaur and dragon characters.",
+    "gap": "A simulated Atlas character is not a physical Atlas experiment. This provides methodological ancestry, not evidence of quadruped-to-biped hardware policy transfer.",
+    "evidence": "Simulation only",
+    "setting": "Physics-based character animation; no physical hardware demonstration.",
+    "order": "Full articulated character simulation.",
+    "architecture": "Reference-motion tracking through RL.",
+    "video": "https://xbpeng.github.io/projects/DeepMimic/index.html",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and primary paper checked.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://xbpeng.github.io/projects/DeepMimic/index.html",
+        "label": "Author project"
+      }
+    ]
+  },
+  {
+    "id": "animal-imitation",
+    "title": "Learning Agile Robotic Locomotion Skills by Imitating Animals",
+    "year": "2020",
+    "group": "Bipedal connections & foundations",
+    "method": "RL · imitation · sim-to-real",
+    "url": "https://arxiv.org/abs/2004.00784",
+    "overview": "Retargets animal motion references to learn robot skills, extending motion-imitation ideas to physical quadrupeds.",
+    "achievement": "Reports physical quadruped locomotion, dynamic hops and turns from reference-guided learning.",
+    "gap": "Reference availability, retargeting and simulator mismatch matter. It does not show that a humanoid controller can be copied unchanged onto a quadruped.",
+    "evidence": "Hardware",
+    "setting": "Physical quadruped demonstrations after simulation training.",
+    "order": "Articulated simulation; learned policy at deployment.",
+    "architecture": "Motion retargeting + imitation RL + sim-to-real.",
+    "video": "https://xbpeng.github.io/projects/Robotic_Imitation/index.html",
+    "videoLabel": "Author project & videos",
+    "verification": "Primary abstract and author project checked.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2004.00784",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "asap",
+    "title": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+    "year": "2025",
+    "group": "Bipedal connections & foundations",
+    "method": "RL · imitation · residual sim alignment",
+    "url": "https://arxiv.org/abs/2502.01143",
+    "overview": "Uses real robot rollouts to learn an action correction inside the simulator, then fine-tunes the motion policy.",
+    "achievement": "Unitree G1 hardware demonstrates agile human-like skills; author examples include forward and sideways jumps and a jump with rotation.",
+    "gap": "Requires real-world data collection. This is a humanoid method with related ingredients, not demonstrated quadruped-to-humanoid acrobatic transfer.",
+    "evidence": "Hardware",
+    "setting": "Unitree G1 physical demonstrations and simulator-transfer experiments.",
+    "order": "Articulated simulation corrected by learned delta actions.",
+    "architecture": "Two-stage motion imitation and sim-to-real fine-tuning.",
+    "video": "https://agile.human2humanoid.com/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and primary abstract checked; RSS 2025.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2502.01143",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "beyondmimic",
+    "title": "BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion",
+    "year": "2025",
+    "group": "Bipedal connections & foundations",
+    "method": "RL tracking · guided diffusion",
+    "url": "https://arxiv.org/abs/2508.08241",
+    "overview": "First learn dynamic motion tracking, then distill selected motion policies into a guided diffusion policy.",
+    "achievement": "The tracking pipeline demonstrates jumping spins and cartwheels; diffusion demonstrations include waypoint following, teleoperation and obstacle avoidance.",
+    "gap": "Do not attribute every acrobatic tracker result to the unified diffusion controller. The project uses motion capture for some navigation / state-estimation demonstrations.",
+    "evidence": "Hardware",
+    "setting": "Humanoid physical demonstrations; motion-capture-assisted downstream tests.",
+    "order": "Articulated training simulation; distilled generative policy.",
+    "architecture": "RL motion tracking + diffusion distillation + test-time guidance.",
+    "video": "https://beyondmimic.github.io/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and 2025 preprint abstract checked; results separated by pipeline stage.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2508.08241",
+        "label": "Primary paper"
+      }
+    ]
+  }
+]
