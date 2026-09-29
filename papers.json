@@ -1,0 +1,1718 @@
+[
+  {
+    "authors": [
+      "Nicholas Cherouvim",
+      "Evangelos Papadopoulos"
+    ],
+    "id": "item_1",
+    "title": "Speed and height control for a special class of running quadruped robots",
+    "year": "2008",
+    "url": "https://nereus.mech.ntua.gr/pdf_ps/icra08_1.pdf",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based",
+    "achievement": "Simulation: controls pronking speed and apex height while accounting for motor limits, collisions and slipping.",
+    "gap": "Special morphology and dimensionless inertia assumptions; general 3D hardware pronking not established.",
+    "overview": "Uses a simplified running-quadruped model to regulate apex height and forward speed.",
+    "evidence": "Simulation only",
+    "setting": "Simulation; physical validation not established by this paper.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Planar analytical model; special dimensionless inertia assumptions.",
+    "architecture": "Model-based",
+    "origin": "Supplied RDF",
+    "verification": "Primary full-text simulation / future-work evidence checked.",
+    "sources": [
+      {
+        "url": "https://nereus.mech.ntua.gr/pdf_ps/icra08_1.pdf",
+        "label": "Primary paper"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Servet Soyguder",
+      "Hasan Alli"
+    ],
+    "id": "item_2",
+    "title": "Computer simulation and dynamic modeling of a quadrupedal pronking gait robot with SLIP model",
+    "year": "2012",
+    "url": "https://doi.org/10.1016/j.compeleceng.2011.11.007",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; SLIP and PD",
+    "achievement": "Simulation and experiments with four active legs; virtual-leg stance and flight control simplifies pronking.",
+    "gap": "Simplified dynamics and limited experimental setting; precise spatial jumps and flips not established.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; SLIP and PD",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Christian Gehring",
+      "Mark Hoepflinger",
+      "Roland Siegwart",
+      "Stelian Coros",
+      "Marco Hutter",
+      "Carmine Dario Bellicoso",
+      "Huub Heijnen",
+      "Remo Diethelm",
+      "Michael Bloesch",
+      "Peter Fankhauser",
+      "Jemin Hwangbo"
+    ],
+    "id": "item_3",
+    "title": "Practice Makes Perfect: An Optimization-Based Approach to Controlling Agile Motions for a Quadruped Robot",
+    "year": "2016",
+    "url": "https://doi.org/10.1109/MRA.2015.2505910",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; controller parameter optimization",
+    "achievement": "StarlETH hardware performs squat jumps, running trot, pronking and bounding after simulated practice.",
+    "gap": "Requires a structured controller and an accurate compliant-actuator simulator; not arbitrary skill discovery.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; controller parameter optimization",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Vasileios Vasilopoulos",
+      "Konstantinos Machairas",
+      "Evangelos Papadopoulos"
+    ],
+    "id": "item_4",
+    "title": "Quadruped pronking on compliant terrains using a reaction wheel",
+    "year": "2016",
+    "url": "https://people.csail.mit.edu/vvasilo/pdf/icra-2016.pdf",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; reaction wheel",
+    "achievement": "Simulation tracks apex height and speed on compliant terrains using a reaction wheel for pitch control.",
+    "gap": "Planar simulation; extra reaction-wheel hardware; no physical validation in this paper.",
+    "overview": "A reaction wheel supplies pitch authority while the controller regulates hopping over compliant terrain.",
+    "evidence": "Simulation only",
+    "setting": "Simulation; physical validation not established by this paper.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Planar quadruped plus reaction wheel and compliant ground.",
+    "architecture": "Model-based; reaction wheel",
+    "origin": "Supplied RDF",
+    "verification": "Primary full-text simulation / future-work evidence checked.",
+    "sources": [
+      {
+        "url": "https://people.csail.mit.edu/vvasilo/pdf/icra-2016.pdf",
+        "label": "Primary paper"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Miroslav Bogdanovic",
+      "Majid Khadiv",
+      "Ludovic Righetti"
+    ],
+    "id": "item_5",
+    "title": "Model-free reinforcement learning for robust locomotion using demonstrations from trajectory optimization",
+    "year": "2022",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9484268/",
+    "group": "Pronking and repeated hopping",
+    "method": "Hybrid; trajectory optimization and RL",
+    "achievement": "Hardware hopping and bounding with recovery from varied drop heights and uneven terrain approximately 1–5 cm high.",
+    "gap": "Periodic behaviors, rather than goal-directed flips or visual navigation. Base height is not jump clearance.",
+    "overview": "A single optimized demonstration helps exploration before task-driven reinforcement learning improves robustness.",
+    "evidence": "Hardware + simulation",
+    "setting": "Physical quadruped hopping and bounding; controlled terrain / drop experiments.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Trajectory optimizer supplies a reference; RL executes a learned policy.",
+    "architecture": "Two-stage imitation-to-task RL; optimized teacher.",
+    "origin": "Supplied RDF",
+    "verification": "Full text checked, including hardware uneven-terrain experiment in Section 3.2.",
+    "sources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9484268/",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Antonin Raffin",
+      "Daniel Seidel",
+      "Jens Kober",
+      "Alin Albu-Schäffer",
+      "João Silvério",
+      "Freek Stulp"
+    ],
+    "id": "item_6",
+    "title": "Learning to Exploit Elastic Actuators for Quadruped Locomotion",
+    "year": "2022",
+    "url": "https://arxiv.org/abs/2209.07171",
+    "group": "Pronking and repeated hopping",
+    "method": "CPG optimization; residual RL",
+    "achievement": "DLR bert learns trotting and pronking directly on hardware, exploiting elasticity; reported learning process at most 1.5 hours.",
+    "gap": "Structured gait learning; precise obstacle landing and large-rotation acrobatics are outside the demonstrated scope.",
+    "overview": "Optimize a central pattern generator, then learn feedback corrections directly on the elastic robot.",
+    "evidence": "Hardware",
+    "setting": "DLR bert; direct learning on the physical elastic quadruped.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Model-free hardware learning; no explicit planning dynamics.",
+    "architecture": "CPG gait generator + residual RL.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2209.07171",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": "https://araffin.github.io/publication/exploit-bert/",
+    "videoLabel": "Author page & video"
+  },
+  {
+    "authors": [
+      "Davide Calzolari",
+      "Cosimo Della Santina",
+      "Alessandro M. Giordano",
+      "Annika Schmidt",
+      "Alin Albu-Schäffer"
+    ],
+    "id": "item_7",
+    "title": "Embodying Quasi-Passive Modal Trotting and Pronking in a Sagittal Elastic Quadruped",
+    "year": "2023",
+    "url": "https://elib.dlr.de/197472/",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; nonlinear modal control",
+    "achievement": "Simulation excites efficient natural trotting and pronking oscillations using elastic design and pitch decoupling.",
+    "gap": "Sagittal simulation; spatial contacts and hardware generalization remain open.",
+    "overview": "Elastic design and nonlinear modes exploit natural oscillations to obtain trotting and pronking.",
+    "evidence": "Simulation",
+    "setting": "Sagittal elastic quadruped simulation.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Sagittal nonlinear elastic model.",
+    "architecture": "Mechanical design + nonlinear modal control.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://elib.dlr.de/197472/",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Yuxiang Yang",
+      "Xiangyun Meng",
+      "Wenhao Yu",
+      "Tingnan Zhang",
+      "Jie Tan",
+      "Byron Boots"
+    ],
+    "id": "item_8",
+    "title": "Continuous Versatile Jumping Using Learned Action Residuals",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2304.08663",
+    "group": "Pronking and repeated hopping",
+    "method": "Hybrid; residual RL and whole-body control",
+    "achievement": "Hardware continuous omnidirectional jumps, reported up to 50 cm high, 60 cm forward and 90-degree jump-turns.",
+    "gap": "Pronking-specific formulation; perception and other gait transitions were future directions.",
+    "overview": "A learned residual corrects a hand-designed acceleration controller; whole-body control converts the result into motor commands.",
+    "evidence": "Hardware",
+    "setting": "Real-robot continuous omnidirectional jumping; controlled demonstrations.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Body-level acceleration command + whole-body controller.",
+    "architecture": "Hierarchical hybrid: residual RL + optimal control.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2304.08663",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": "https://sites.google.com/view/learning-to-jump",
+    "videoLabel": "Project & demonstration videos"
+  },
+  {
+    "authors": [
+      "Jiatao Ding",
+      "Mees A. van Löben Sels",
+      "Franco Angelini",
+      "Jens Kober",
+      "Cosimo Della Santina"
+    ],
+    "id": "item_9",
+    "title": "Robust Jumping With an Articulated Soft Quadruped Via Trajectory Optimization and Iterative Learning",
+    "year": "2024",
+    "url": "https://elib.dlr.de/202328/",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; TO and ILC, not RL",
+    "achievement": "Repository abstract reports continuous jumping learned within minutes and robustness across tested terrain types. E-Go robot identification is retained from the supplied review.",
+    "gap": "Periodic, largely sagittal pronking; arbitrary nonperiodic spatial acrobatics and one-shot adaptation not established.",
+    "overview": "Iterative learning updates feedforward commands over repeated hops, without resetting after each repetition.",
+    "evidence": "Hardware + simulation",
+    "setting": "Physical parallel-elastic quadruped; continuous jumping experiments.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Reduced-order soft anchor model.",
+    "architecture": "Trajectory optimization + iterative learning control (ILC), not RL.",
+    "origin": "Supplied RDF",
+    "verification": "DLR abstract checked; full text unavailable in repository. RDF year 2024 reflects journal issue; online publication was 2023.",
+    "sources": [
+      {
+        "url": "https://elib.dlr.de/202328/",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Jiatao Ding",
+      "Peiyu Yang",
+      "Fabio Boekel",
+      "Jens Kober",
+      "Wei Pan",
+      "Matteo Saveriano",
+      "Cosimo Della Santina"
+    ],
+    "id": "item_10",
+    "title": "Versatile, Robust, and Explosive Locomotion with Rigid and Articulated Compliant Quadrupeds",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2504.12854",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; compliant template and TO",
+    "achievement": "Hardware pronking, froggy jumping and hop-turns. Tested compliance improves maximal pronking distance at least 25%, yaw 15%, and froggy distance 25%.",
+    "gap": "Robot-, spring- and task-specific comparisons; not universal evidence for compliance or arbitrary flip sequences.",
+    "overview": "A compliant template separates active motor forces from spring forces to plan several explosive motions.",
+    "evidence": "Hardware + simulation",
+    "setting": "Rigid and parallel-elastic quadrupeds; matched laboratory comparisons.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Reduced-order dual-legged actuated SLIP with trunk rotation.",
+    "architecture": "Two-layer trajectory optimization + singularity-free feedback.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2504.12854",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Pietro Gori",
+      "Vincenzo Degiacomo",
+      "Michele Pierallini",
+      "Franco Angelini",
+      "Manolo Garabini"
+    ],
+    "id": "item_11",
+    "title": "Contact-Implicit Optimal Planning and Iterative Learning Control for Quadrupedal Robots",
+    "year": "2026",
+    "url": "https://arpi.unipi.it/handle/11568/1347627",
+    "group": "Pronking and repeated hopping",
+    "method": "Model-based; contact-implicit TO and ILC",
+    "achievement": "Solo-12 hardware: adaptive gait generation under terrain changes and perturbations; optimizes body motion and contact sequence together.",
+    "gap": "Simplified 2D model and repetition-based adaptation; unrestricted 3D acrobatics not established.",
+    "overview": "Optimizes longitudinal body motion and the contact sequence together, then improves execution through repetition.",
+    "evidence": "Hardware",
+    "setting": "Solo-12 physical experiments with terrain changes and perturbations.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Reduced-order 2D single rigid body.",
+    "architecture": "Contact-implicit optimal planning + ILC.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arpi.unipi.it/handle/11568/1347627",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Quan Nguyen",
+      "Matthew J. Powell",
+      "Benjamin Katz",
+      "Jared Di Carlo",
+      "Sangbae Kim"
+    ],
+    "id": "item_12",
+    "title": "Optimized Jumping on the MIT Cheetah 3 Robot",
+    "year": "2019",
+    "url": "https://bpb-us-w1.wpmucdn.com/sites.usc.edu/dist/9/447/files/2020/09/ICRA19_1685_Final_Submission.pdf",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; TO, tracking and landing control",
+    "achievement": "Cheetah 3 hardware repeatedly jumps onto and down from a 0.76 m desk using a planar articulated model.",
+    "gap": "Sagittal planning and manually selected timing structure; arbitrary spatial flips and continuous perceptive jumping not addressed.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; TO, tracking and landing control",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Hae-Won Park",
+      "Patrick M. Wensing",
+      "Sangbae Kim"
+    ],
+    "id": "item_13",
+    "title": "Jumping over obstacles with MIT Cheetah 2",
+    "year": "2021",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0921889020305431",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; perceptive running-jump planning",
+    "achievement": "Hardware autonomous running obstacle clearance; associated MIT project reports 40 cm obstacles at 2.5 m/s.",
+    "gap": "Running clearance rather than arbitrary aerial orientation or precise small-foothold landings.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; perceptive running-jump planning",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Matthew Chignoli",
+      "Sangbae Kim"
+    ],
+    "id": "item_14",
+    "title": "Online Trajectory Optimization for Dynamic Aerial Motions of a Quadruped Robot",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2110.06330",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; centroidal TO and variational feedback",
+    "achievement": "Mini Cheetah hardware jumps, spins, flips and barrel rolls; typical planning 0.05–0.15 s and feedback at 500 Hz.",
+    "gap": "Supplied contact schedule and launch velocity; nonlinear motion is planned before execution rather than continuously replanned.",
+    "overview": "Plans an aerial motion once before launch, then tracks it with fast feedback.",
+    "evidence": "Hardware",
+    "setting": "MIT Mini Cheetah physical platforms, flips and running-jump demonstrations.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Centroidal momentum model.",
+    "architecture": "Nonlinear trajectory optimization + variational optimal feedback.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2110.06330",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Yanran Ding",
+      "Abhishek Pandala",
+      "Chuanzheng Li",
+      "Young-Ha Shin",
+      "Hae-Won Park"
+    ],
+    "id": "item_15",
+    "title": "Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2012.10002",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; rotation-matrix MPC",
+    "achievement": "Hardware dynamic gaits and a controlled backflip; 250 Hz MPC avoids orientation-coordinate singularities.",
+    "gap": "Feedback around reference motions; does not automatically discover all skills and contact schedules.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; rotation-matrix MPC",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Chuong Nguyen",
+      "Quan Nguyen"
+    ],
+    "id": "item_16",
+    "title": "Contact-timing and Trajectory Optimization for 3D Jumping on Quadruped Robots",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2110.06764",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; timing and full-body TO",
+    "achievement": "Hardware diagonal jumps, barrel roll from a 0.4 m box and double barrel roll from a 0.9 m box. Simulation double backflips from 2 m elevation.",
+    "gap": "Elevated takeoff differs from level-ground takeoff. General online adaptation and autonomous maneuver selection remain separate.",
+    "overview": "A reduced dynamics stage chooses timing; full nonlinear optimization refines the body and limb trajectory.",
+    "evidence": "Hardware + simulation",
+    "setting": "Physical box-launch diagonal jumps / barrel rolls; separate simulated double-backflip.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Reduced rigid-body timing stage + full-body trajectory optimization.",
+    "architecture": "Sequential two-level model-based optimization.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2110.06764",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Matthew Chignoli",
+      "Savva Morozov",
+      "Sangbae Kim"
+    ],
+    "id": "item_17",
+    "title": "Rapid and Reliable Quadruped Motion Planning with Omnidirectional Jumping",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2111.13648",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; learned feasibility classifier, not RL",
+    "achievement": "Mini Cheetah Vision hardware plans forward, lateral and rotational jumps onto elevated surfaces using an optimized-jump feasibility classifier.",
+    "gap": "Depends on feasibility approximation and environmental modeling; moving or poorly observed landing surfaces require more work.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; learned feasibility classifier, not RL",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Zhitao Song",
+      "Linzhu Yue",
+      "Guangli Sun",
+      "Yihu Ling",
+      "Hongshuo Wei",
+      "Linhai Gui",
+      "Yun-Hui Liu"
+    ],
+    "id": "item_18",
+    "title": "An Optimal Motion Planning Framework for Quadruped Jumping",
+    "year": "2022",
+    "url": "https://arxiv.org/abs/2207.12002",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; evolutionary optimization, not RL",
+    "achievement": "Hardware flips/spins, a 30 cm window-shaped obstacle jump and a side flip over a 27 cm obstacle; optimized motions stored in a library.",
+    "gap": "Offline optimization and finite motion library; compound body rotations restricted by the formulation.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; evolutionary optimization, not RL",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Linzhu Yue",
+      "Zhitao Song",
+      "Hongbo Zhang",
+      "Xuanqi Zeng",
+      "Lingwei Zhang",
+      "Yun-Hui Liu"
+    ],
+    "id": "item_19",
+    "title": "Evolutionary-Based Online Motion Planning Framework for Quadruped Robot Jumping",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2309.07633",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; accelerated differential evolution",
+    "achievement": "Hardware online generation of jumps, flips and spins via search-space restriction, improved sampling and warm starts.",
+    "gap": "Faster solving does not guarantee a feasible solution in every contact window or robustness to unexpected contacts.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; accelerated differential evolution",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Linzhu Yue",
+      "Zhitao Song",
+      "Jinhu Dong",
+      "Zhongyu Li",
+      "Hongbo Zhang",
+      "Lingwei Zhang",
+      "Xuanqi Zeng",
+      "Koushil Sreenath",
+      "Yun-hui Liu"
+    ],
+    "id": "item_20",
+    "title": "Online Omnidirectional Jumping Trajectory Planning for Quadrupedal Robots on Uneven Terrains",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2411.04494",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; coupled kinodynamic TO and perception",
+    "achievement": "Hardware on two quadrupeds: uneven-terrain omnidirectional jumps; approximately 0.1 s planning with a warm start; post-landing relocalization.",
+    "gap": "Timing is conditional on warm starts; arbitrary compound rotations and unmodeled conditions remain beyond the demonstrated claim.",
+    "overview": "Couples body dynamics, foot kinematics and perception to plan directional jumps over uneven terrain.",
+    "evidence": "Hardware + simulation",
+    "setting": "Uneven-terrain tests on two quadrupeds, according to the primary abstract.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Coupled kinodynamic planning; detailed state reduction not audited.",
+    "architecture": "Warm-started trajectory optimization + perception.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked, including warm-start timing and relocalization.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2411.04494",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Scott Beck",
+      "Chuong Nguyen",
+      "Thai Duong",
+      "Nikolay Atanasov",
+      "Quan Nguyen"
+    ],
+    "id": "item_21",
+    "title": "High Accuracy Aerial Maneuvers on Legged Robots using Variational Integrator Discretized Trajectory Optimization",
+    "year": "2025",
+    "url": "https://existentialrobotics.org/ref/BeckNguyen_VITO_ICRA25.pdf",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; full-body TO and variational integration",
+    "achievement": "Simulation A1 triple backflips with 2–10x lower prediction/execution error and landing-angle errors of a few degrees in tested cases.",
+    "gap": "Triple-flip hardware validation absent; numerical integration does not remove model mismatch or state-estimation errors.",
+    "overview": "",
+    "evidence": "Simulation · RDF report",
+    "setting": "Simulation only, according to supplied review.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; full-body TO and variational integration",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Shuomo Zhang",
+      "Wei Zou",
+      "Hu Su",
+      "Chi Zhang",
+      "Hongxuan Ma"
+    ],
+    "id": "item_22",
+    "title": "Trajectory tracking and jumping control of quadruped via phase-aware iLQR controller",
+    "year": "2026",
+    "url": "https://doi.org/10.1016/j.birob.2026.100284",
+    "group": "Model-based jumping and acrobatics",
+    "method": "Model-based; TO and phase-aware iLQR",
+    "achievement": "Lite3 hardware and simulation: phase-specific full-state feedback improves tracking and disturbance rejection over evaluated baselines.",
+    "gap": "Planar full-body dynamics and predefined phases; not a general spatial acrobatics/navigation solution.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; TO and phase-aware iLQR",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Guillaume Bellegarda",
+      "Chuong Nguyen",
+      "Quan Nguyen"
+    ],
+    "id": "item_23",
+    "title": "Robust quadruped jumping via deep reinforcement learning",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2011.07089",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "Hybrid; TO and RL",
+    "achievement": "Hardware jumps under uncertainty, including foot-height disturbances up to 6 cm and distances around twice body length; models torque-speed and power limits.",
+    "gap": "Depends on optimized reference behavior; unrestricted acrobatic discovery and visual long-horizon navigation not established.",
+    "overview": "Reinforcement learning extends optimized jump references to uncertain terrain and dynamics, while accounting for actuator limits.",
+    "evidence": "Hardware",
+    "setting": "Quadruped real-world jumps with perturbed foot heights.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "TO reference + articulated robot training model; deployed policy has no explicit optimizer.",
+    "architecture": "Hybrid trajectory-optimization-guided RL.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked. RDF year 2024 is the later publication label; linked preprint first appeared in 2020.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2011.07089",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Zuoxin Tang",
+      "Donghyun Kim",
+      "Sehoon Ha"
+    ],
+    "id": "item_24",
+    "title": "Learning Agile Motor Skills on Quadrupedal Robots using Curriculum Learning",
+    "year": "2021",
+    "url": "https://faculty.cc.gatech.edu/~sha9/projects/tang2021learning.pdf",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "RL; PPO with environment and task curricula",
+    "achievement": "Simulation running jumps, backflips, barrel rolls, double jumps and wall-backflips.",
+    "gap": "No hardware demonstration. Double jumping restricted to 2D; running jump uses a guiding trajectory.",
+    "overview": "",
+    "evidence": "Simulation · RDF report",
+    "setting": "Simulation only, according to supplied review.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "RL; PPO with environment and task curricula",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Chenhao Li",
+      "Marin Vlastelica",
+      "Sebastian Blaes",
+      "Jonas Frey",
+      "Felix Grimminger",
+      "Georg Martius"
+    ],
+    "id": "item_25",
+    "title": "Learning Agile Skills via Adversarial Imitation of Rough Partial Demonstrations",
+    "year": "2022",
+    "url": "https://arxiv.org/abs/2206.11693",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "RL; adversarial imitation, WASABI",
+    "achievement": "Solo 8 hardware backflips and agile skills learned from rough partial, hand-held demonstrations.",
+    "gap": "Demonstration-driven skill acquisition; arbitrary skill composition and terrain-aware target selection not established.",
+    "overview": "WASABI learns an adversarial imitation reward from rough, partial demonstrations, including manually guided motions.",
+    "evidence": "Hardware + simulation",
+    "setting": "Solo 8 physical skill demonstrations; MPI author page confirms hardware backflip.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Articulated robot simulation for training; no online planning model.",
+    "architecture": "Wasserstein adversarial imitation + RL.",
+    "origin": "Supplied RDF",
+    "verification": "Paper abstract and MPI author project checked.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2206.11693",
+        "label": "Paper"
+      },
+      {
+        "url": "https://is.mpg.de/dlg/en/projects/learning-agile-skills-via-adversarial-imitation-of-rough-partial-demonstrations",
+        "label": "MPI project"
+      }
+    ],
+    "video": "https://is.mpg.de/dlg/en/projects/learning-agile-skills-via-adversarial-imitation-of-rough-partial-demonstrations",
+    "videoLabel": "Author page & demonstrations"
+  },
+  {
+    "authors": [
+      "Yuni Fuchioka",
+      "Zhaoming Xie",
+      "Michiel van de Panne"
+    ],
+    "id": "item_26",
+    "title": "OPT-Mimic: Imitation of Optimized Trajectories for Dynamic Quadruped Behaviors",
+    "year": "2022",
+    "url": "https://arxiv.org/abs/2210.01247",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "Hybrid; TO and imitation RL",
+    "achievement": "Trot, front hop, 180° backflip and biped stepping transfer to physical Solo 8 without further adaptation.",
+    "gap": "Requires optimized references. A 180-degree backflip is not a complete upright-to-upright 360-degree flip.",
+    "overview": "Tracks optimized references through learned policies and studies how feedforward design affects transfer.",
+    "evidence": "Hardware",
+    "setting": "Physical Solo 8 after simulation training; controlled demonstrations.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "TO-derived references; exact model order not audited.",
+    "architecture": "Trajectory optimization + imitation RL.",
+    "origin": "Supplied RDF",
+    "verification": "arXiv v3 abstract checked; 2022 is the first-preprint year.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2210.01247",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Francecso Vezzi",
+      "Jiatao Ding",
+      "Antonin Raffin",
+      "Jens Kober",
+      "Cosimo Della Santina"
+    ],
+    "id": "item_27",
+    "title": "Two-Stage Learning of Highly Dynamic Motions with Rigid and Articulated Soft Quadrupeds",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2309.09682",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "Learning; evolution strategy then PPO",
+    "achievement": "Simulation vertical/forward jumping, pronking and backflips without predefined motion references; compares parallel springs.",
+    "gap": "Hardware validation explicitly future work. Shared training framework is not one seamlessly compositional policy.",
+    "overview": "Searches for a compact motion policy with evolution strategies, then refines it with PPO.",
+    "evidence": "Simulation only",
+    "setting": "Simulation; physical validation not established by this paper.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Articulated rigid and parallel-elastic robot simulations.",
+    "architecture": "Learning; evolution strategy then PPO",
+    "origin": "Supplied RDF",
+    "verification": "Primary full-text simulation / future-work evidence checked.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2309.09682",
+        "label": "Primary paper"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Vassil Atanassov",
+      "Jiatao Ding",
+      "Jens Kober",
+      "Ioannis Havoutis",
+      "Cosimo Della Santina"
+    ],
+    "id": "item_28",
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-free Design",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2401.16337",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "RL; reference-free curriculum",
+    "achievement": "Hardware omnidirectional jumping, 90 cm forward jump and continuous jumping on grass not present during training.",
+    "gap": "Still requires reward and curriculum design; arbitrary flips plus perceptive navigation not established.",
+    "overview": "A reference-free curriculum progresses from vertical jumps to directional and obstacle-crossing tasks.",
+    "evidence": "Hardware · includes outdoors",
+    "setting": "Physical omnidirectional jumps and repeated jumping on soft grass.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Articulated simulation training; no explicit online planner.",
+    "architecture": "Goal-conditioned RL with staged curriculum.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2401.16337",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Dohyeong Kim",
+      "Hyeokjin Kwon",
+      "Junseok Kim",
+      "Gunmin Lee",
+      "Songhwai Oh"
+    ],
+    "id": "item_29",
+    "title": "Stage-Wise Reward Shaping for Acrobatic Robots: A Constrained Multi-Objective Reinforcement Learning Approach",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2409.15755",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "RL; constrained multi-objective stage-wise rewards",
+    "achievement": "Simulation and hardware acrobatic tasks; separates stage objectives and constraints instead of one large weighted reward.",
+    "gap": "Designer supplies stages and objectives; learned constraints do not give blanket guarantees under arbitrary disturbances.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "RL; constrained multi-objective stage-wise rewards",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Georgios Apostolides",
+      "Wei Pan",
+      "Jens Kober",
+      "Cosimo Della Santina",
+      "Jiatao Ding"
+    ],
+    "id": "item_30",
+    "title": "Explosive Jumping with Rigid and Articulated Soft Quadrupeds via Example Guided Reinforcement Learning",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2503.16197",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "Hybrid; one TO demonstration and RL curriculum",
+    "achievement": "Simulation variable jumps and ±4 cm terrain perturbations. Compliance reduces mean landing error 11.1% and energy cost 15.2%.",
+    "gap": "Real-robot deployment is future work; percentages are simulation comparisons, not hardware records.",
+    "overview": "Imitate one coarse optimized jump, then train for varied targets and uneven ground.",
+    "evidence": "Simulation only",
+    "setting": "Rigid and parallel-elastic robot simulations; hardware is explicitly future work.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Reduced-order TO demonstration + articulated simulation.",
+    "architecture": "Example-guided RL and curriculum.",
+    "origin": "Supplied RDF",
+    "verification": "Full-text conclusion checked; hardware is future work.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2503.16197",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Keita Yoneda",
+      "Kento Kawaharazuka",
+      "Kei Okada"
+    ],
+    "id": "item_31",
+    "title": "EFGCL: Learning Dynamic Motion Through Spotting-Inspired External Force Guided Curriculum Learning",
+    "year": "2026",
+    "url": "https://keitayoneda.github.io/kleiyn-efgcl/",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "RL; external-force-guided curriculum",
+    "achievement": "KLEIYN hardware jump, backflip and lateral flip; approximately 2x faster jump learning in the reported comparison.",
+    "gap": "Assistive-force curriculum design remains; generalization across tasks, terrain and morphology not established.",
+    "overview": "Like a gymnastics spotter, simulated assistive forces make successful exploration easier and fade during training.",
+    "evidence": "Hardware + simulation",
+    "setting": "KLEIYN quadruped physical jump, backflip and lateral-flip demonstrations.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "RL in articulated simulation; no explicit online planning model.",
+    "architecture": "External-force curriculum; assistance decays to zero.",
+    "origin": "Supplied RDF",
+    "verification": "Author project checked; physical skill demonstrations described separately from training.",
+    "sources": [
+      {
+        "url": "https://keitayoneda.github.io/kleiyn-efgcl/",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": "https://keitayoneda.github.io/kleiyn-efgcl/",
+    "videoLabel": "Author project & videos"
+  },
+  {
+    "authors": [
+      "Shuo Xue",
+      "Liang Yuan",
+      "Kai Lv",
+      "Teng Ran",
+      "Wendong Xiao",
+      "Jianbo Zhang"
+    ],
+    "id": "item_32",
+    "title": "Robust jumping control of quadruped robots under body and leg disturbances using reinforcement learning with H∞ regularization",
+    "year": "2026",
+    "url": "https://doi.org/10.1016/j.conengprac.2025.106751",
+    "group": "RL and imitation-based jumping or flips",
+    "method": "RL; adversarial disturbances and H-infinity regularization",
+    "achievement": "Publisher reports robust real-robot jumping under body and leg disturbances in indoor and outdoor tests.",
+    "gap": "Full trial distributions and operating limits were not audited. H∞ regularization should not be treated as a universal hardware safety guarantee.",
+    "overview": "Train with disturbances applied to both legs and body, using a learned disturbance generator and adaptation module.",
+    "evidence": "Hardware · indoor + outdoor",
+    "setting": "Publisher reports real-robot indoor and outdoor complex-terrain tests.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "No explicit deployed model-based optimizer described in abstract.",
+    "architecture": "Adversarial RL + H∞ regularization + adaptation.",
+    "origin": "Supplied RDF",
+    "verification": "Publisher abstract and method summary checked; full experiments not audited.",
+    "sources": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S096706612500512X",
+        "label": "Publisher evidence"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Se Hwan Jeon",
+      "Sangbae Kim",
+      "Donghyun Kim"
+    ],
+    "id": "item_33",
+    "title": "Real-time Optimal Landing Control of the MIT Mini Cheetah",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2110.02799",
+    "group": "Landing and aerial reorientation",
+    "method": "Model-based; optimal landing",
+    "achievement": "Hardware recovery from drops up to 2 m; simulation drops up to 8 m. Optimizes posture and reaction forces without a fixed contact schedule.",
+    "gap": "Landing recovery is not a complete takeoff-flip-landing-next-jump pipeline. The 8 m result is simulation.",
+    "overview": "Jointly selects touchdown posture and reaction-force profiles without requiring a preset contact schedule.",
+    "evidence": "Hardware + simulation",
+    "setting": "Mini Cheetah: physical drops up to 2 m; 8 m drops only in simulation.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Optimal landing model; detailed model order not independently audited.",
+    "architecture": "Real-time model-based landing optimization.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2110.02799",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Vince Kurtz",
+      "He Li",
+      "Patrick M. Wensing",
+      "Hai Lin"
+    ],
+    "id": "item_34",
+    "title": "Mini Cheetah, the Falling Cat: A Case Study in Machine Learning and Trajectory Optimization for Robot Acrobatics",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2109.04424",
+    "group": "Landing and aerial reorientation",
+    "method": "TO and supervised learning, not RL",
+    "achievement": "Hardware and simulation feet-first landings from initial pitch angles between -90 and +90 degrees; predicting a complete corrective trajectory outperforms direct policy mapping in the study.",
+    "gap": "Falling reorientation rather than a complete 360-degree jump or unrestricted spatial recovery.",
+    "overview": "Compares ways to learn the output of a trajectory optimizer for feet-first reorientation.",
+    "evidence": "Hardware + simulation",
+    "setting": "Mini Cheetah reorientation experiments; controlled falling conditions.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "TO teacher and learned trajectory outputs.",
+    "architecture": "Supervised learning + trajectory optimization; not automatically RL.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked, including hardware evidence and initial pitch range.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2109.04424",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Jiatao Ding",
+      "Vassil Atanassov",
+      "Edoardo Panichi",
+      "Jens Kober",
+      "Cosimo Della Santina"
+    ],
+    "id": "item_35",
+    "title": "Robust Quadrupedal Jumping With Impact-Aware Landing: Exploiting Parallel Elasticity",
+    "year": "2024",
+    "url": "https://doi.org/10.1109/TRO.2024.3411988",
+    "group": "Landing and aerial reorientation",
+    "method": "Model-based; compliant TO and landing regulation",
+    "achievement": "Hardware rigid/compliant quadrupeds execute 3D jumps with preimpact leg adjustment and postimpact recovery.",
+    "gap": "Offline jump planning remains; arbitrary aerial rotations and perception-driven sequences need additional machinery.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Model-based; compliant TO and landing regulation",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Edoardo Panichi",
+      "Jiatao Ding",
+      "Vassil Atanassov",
+      "Peiyu Yang",
+      "Jens Kober",
+      "Wei Pan",
+      "Cosimo Della Santina"
+    ],
+    "id": "item_36",
+    "title": "On-the-Fly Jumping With Soft Landing: Leveraging Trajectory Optimization and Behavior Cloning",
+    "year": "2025",
+    "url": "https://doi.org/10.1109/TMECH.2025.3572176",
+    "group": "Landing and aerial reorientation",
+    "method": "TO; variable impedance; behavior cloning, not RL",
+    "achievement": "Hardware explosive jumping and soft landing; simulation behavior reproduction at least 97.4% success; distills expensive control into a neural network.",
+    "gap": "Generalization depends on training distribution; simulation success is not a universal hardware reliability figure.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "TO; variable impedance; behavior cloning, not RL",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Renjie Wang",
+      "Shangke Lyu",
+      "Xin Lang",
+      "Wei Xiao",
+      "Donglin Wang"
+    ],
+    "id": "item_37",
+    "title": "Integrating Trajectory Optimization and Reinforcement Learning for Quadrupedal Jumping with Terrain-Adaptive Landing",
+    "year": "2025",
+    "url": "https://arxiv.org/abs/2509.12776",
+    "group": "Landing and aerial reorientation",
+    "method": "Hybrid; TO and RL with landing reward relaxation",
+    "achievement": "Hardware landing on rough/slippery terrain and under unknown disturbances; relaxes nominal tracking to allow adaptive landing.",
+    "gap": "Planner assumes synchronized takeoff and restricted body motion; terrain-adaptive landing after arbitrary flips not established.",
+    "overview": "Relaxes reference tracking near touchdown so a learned policy can adapt the landing to the terrain.",
+    "evidence": "Hardware",
+    "setting": "Physical rough / slippery landing tests; offboard RTX 3060 laptop, 50 Hz policy and 1 kHz PD control.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Reduced centroidal dynamics with joint kinematic constraints.",
+    "architecture": "Trajectory optimization + RL; terrain-adaptive landing reward.",
+    "origin": "Supplied RDF",
+    "verification": "Full-text method and hardware experiment sections inspected.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2509.12776v1",
+        "label": "Method and hardware experiments"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Gabriel B. Margolis",
+      "Tao Chen",
+      "Kartik Paigwar",
+      "Xiang Fu",
+      "Donghyun Kim",
+      "Sangbae Kim",
+      "Pulkit Agrawal"
+    ],
+    "id": "item_38",
+    "title": "Learning to Jump from Pixels",
+    "year": "2021",
+    "url": "https://arxiv.org/abs/2110.15344",
+    "group": "Continuous jumping, perception, and parkour",
+    "method": "Hybrid; visual RL and model-based impulse control",
+    "achievement": "Mini Cheetah hardware visually guided gap traversal, with explicitly optimized ground reaction forces.",
+    "gap": "Gap crossing rather than unrestricted rotations; sensing and deployment constraints matter in comparisons.",
+    "overview": "",
+    "evidence": "Hardware · RDF report",
+    "setting": "Physical experiments reported in supplied review; lab/outdoor conditions not independently checked.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Not specified in imported review; model order is not inferred from the use of RL.",
+    "architecture": "Hybrid; visual RL and model-based impulse control",
+    "origin": "Supplied RDF",
+    "verification": "Imported review notes; primary source not independently checked in this pass.",
+    "sources": [],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Chuong Nguyen",
+      "Lingfan Bao",
+      "Quan Nguyen"
+    ],
+    "id": "item_39",
+    "title": "Continuous Jumping for Legged Robots on Stepping Stones via Trajectory Optimization and Model Predictive Control",
+    "year": "2022",
+    "url": "https://arxiv.org/abs/2204.01147",
+    "group": "Continuous jumping, perception, and parkour",
+    "method": "Model-based; TO and MPC",
+    "achievement": "Full text reports simulated consecutive stepping-stone jumps and hardware experiments supporting single-jump robustness.",
+    "gap": "Continuous jumping on stepping stones remains explicit future hardware work. A physical single jump is not physical validation of the complete sequence.",
+    "overview": "Precomputes periodic jump references and uses receding-horizon feedback to connect them over stepping stones.",
+    "evidence": "Simulation + single-jump hardware",
+    "setting": "Continuous stepping-stone traversal in simulation; physical tests cover a single jump.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Full nonlinear TO references + online MPC.",
+    "architecture": "Model-based; TO and MPC",
+    "origin": "Supplied RDF",
+    "verification": "v2 full-text conclusion checked; corrected the RDF’s simulation-only characterization.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2204.01147v2",
+        "label": "Conclusion: hardware versus future work"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "David Hoeller",
+      "Nikita Rudin",
+      "Dhionis Sako",
+      "Marco Hutter"
+    ],
+    "id": "item_40",
+    "title": "ANYmal Parkour: Learning Agile Navigation for Quadrupedal Robots",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2306.14874",
+    "group": "Continuous jumping, perception, and parkour",
+    "method": "RL; hierarchical skills, navigation and perception",
+    "achievement": "ANYmal hardware crosses consecutive obstacles using walking, jumping, climbing and crouching; reported speeds up to 2 m/s.",
+    "gap": "Navigation/parkour rather than precision flips or a unified acrobatic landing controller.",
+    "overview": "A navigation policy chooses and commands locomotion skills, supported by learned obstacle reconstruction.",
+    "evidence": "Hardware",
+    "setting": "ANYmal physical obstacle-course navigation; curated parkour environment.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Articulated training simulation; no explicit deployed dynamics optimizer.",
+    "architecture": "Hierarchical RL: perception, navigation and specialized skills.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked; hardware speed retained as RDF-reported.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2306.14874",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Ziwen Zhuang",
+      "Zipeng Fu",
+      "Jianren Wang",
+      "Christopher Atkeson",
+      "Soeren Schwertfeger",
+      "Chelsea Finn",
+      "Hang Zhao"
+    ],
+    "id": "item_41",
+    "title": "Robot Parkour Learning",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2309.05665",
+    "group": "Continuous jumping, perception, and parkour",
+    "method": "RL; curriculum and skill distillation",
+    "achievement": "Two low-cost hardware platforms perform gap leaps, climbing, crawling, squeezing and running using a depth-camera policy.",
+    "gap": "Evaluated obstacle families; arbitrary aerial rotation and precise rotational landing are distinct tasks.",
+    "overview": "Uses a learning curriculum and distilled visual control to connect several obstacle-traversal behaviors.",
+    "evidence": "Hardware",
+    "setting": "Two physical low-cost quadruped platforms; obstacle-course tests.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Simulation-trained control; no explicit deployed planner.",
+    "architecture": "RL curriculum + skill distillation + depth vision.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked; detailed skill list retained from supplied RDF.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2309.05665",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Xuxin Cheng",
+      "Kexin Shi",
+      "Ananye Agarwal",
+      "Deepak Pathak"
+    ],
+    "id": "item_42",
+    "title": "Extreme Parkour with Legged Robots",
+    "year": "2023",
+    "url": "https://arxiv.org/abs/2309.14341",
+    "group": "Continuous jumping, perception, and parkour",
+    "method": "RL; end-to-end visual policy",
+    "achievement": "Hardware obstacle heights approximately twice robot height, gaps twice body length, tilted ramps and handstands.",
+    "gap": "Obstacle-traversal metrics are not free-flight jump height or full-body rotational accuracy.",
+    "overview": "A single camera-conditioned policy learns precise traversal despite imperfect sensing and actuation.",
+    "evidence": "Hardware",
+    "setting": "Depth-camera quadruped tests on obstacle courses with varied properties.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Articulated training simulation; model-free deployed policy.",
+    "architecture": "End-to-end visual RL at policy level.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked. Obstacle height is not airborne body clearance.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2309.14341",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "authors": [
+      "Yuxiang Yang",
+      "Guanya Shi",
+      "Changyi Lin",
+      "Xiangyun Meng",
+      "Rosario Scalise",
+      "Mateo Guaman Castro",
+      "Wenhao Yu",
+      "Tingnan Zhang",
+      "Ding Zhao",
+      "Jie Tan",
+      "Byron Boots"
+    ],
+    "id": "item_43",
+    "title": "Agile Continuous Jumping in Discontinuous Terrains",
+    "year": "2024",
+    "url": "https://arxiv.org/abs/2409.10923",
+    "group": "Continuous jumping, perception, and parkour",
+    "method": "Hybrid; learned heightmap/motion policy and model-based leg control",
+    "achievement": "Go1 hardware jumps stairs and sparse stepping stones; 14-step staircase, 3.5 m horizontal extent and 2.8 m rise, in 4.5 s.",
+    "gap": "Authors explicitly limit motion to the sagittal plane: no sideways/turning motions and no strategic path planning. Offboard inference is part of the tested setup.",
+    "overview": "Combines learned terrain height prediction, a body-motion policy and model-based leg control.",
+    "evidence": "Hardware · controlled course",
+    "setting": "Go1 with D435i depth camera; offboard Mac Mini inference.",
+    "environment": "Earth gravity / terrestrial research (RDF context).",
+    "order": "Centroidal-level policy + leg controller.",
+    "architecture": "Hierarchical hybrid; perception + RL + model-based tracking.",
+    "origin": "Supplied RDF",
+    "verification": "Full-text experimental setup and limitations checked.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2409.10923v1",
+        "label": "Paper: setup and conclusion"
+      }
+    ],
+    "video": "https://yxyang.github.io/jumping_cod/",
+    "videoLabel": "Project & experiment videos"
+  },
+  {
+    "authors": [
+      "Hendrik Kolvenbach",
+      "Elias Hampp",
+      "Patrick Barton",
+      "Radek Zenkl",
+      "Marco Hutter"
+    ],
+    "id": "item_44",
+    "title": "Towards Jumping Locomotion for Quadruped Robots on the Moon",
+    "year": "2019",
+    "url": "https://www.research-collection.ethz.ch/handle/20.500.11850/438204",
+    "group": "Low-gravity jumping",
+    "method": "Model-based; elastic legs and reaction wheel",
+    "achievement": "ESA reports repetitive jumps up to 1.3 m in simulated lunar conditions. This is Earth-based gravity emulation, not a lunar field result.",
+    "gap": "Constrained rigs do not validate unrestricted 3D hopping on regolith. SpaceBok is a research platform and is not space-qualified.",
+    "overview": "Elastic legs and a reaction wheel support repeated hopping when low gravity lengthens flight.",
+    "evidence": "Earth-based gravity testbed",
+    "setting": "SpaceBok Earth-based reduced-gravity rigs, including constrained motion.",
+    "environment": "Moon-oriented research; not tested on the Moon.",
+    "order": "Model-based planning with elastic legs; source-specific model order not audited.",
+    "architecture": "Leg control + reaction-wheel attitude stabilization.",
+    "origin": "Supplied RDF",
+    "verification": "ESA test report and ETH platform page checked; paper-specific jump metrics not independently audited.",
+    "sources": [
+      {
+        "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jumping_space_robot_flies_like_a_spacecraft",
+        "label": "ESA test report"
+      },
+      {
+        "url": "https://rsl.ethz.ch/robots-media/spacebok.html/",
+        "label": "ETH platform status"
+      }
+    ],
+    "video": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jumping_space_robot_flies_like_a_spacecraft",
+    "videoLabel": "ESA tests & video"
+  },
+  {
+    "authors": [
+      "Nikita Rudin",
+      "Hendrik Kolvenbach",
+      "Vassilios Tsounis",
+      "Marco Hutter"
+    ],
+    "id": "item_45",
+    "title": "Cat-Like Jumping and Landing of Legged Robots in Low Gravity Using Deep Reinforcement Learning",
+    "year": "2022",
+    "url": "https://arxiv.org/abs/2106.09357",
+    "group": "Low-gravity jumping",
+    "method": "RL; limb-based aerial attitude control",
+    "achievement": "Learns 3D reorientation and low-gravity locomotion in simulation; transfers policies to SpaceBok on a 2D microgravity-emulation testbed.",
+    "gap": "The physical test restricts motion to 2D. This does not establish free 3D control on the Moon, Mars, or under shorter Earth-gravity flight times.",
+    "overview": "Moves the legs to change aerial attitude, rather than relying on a reaction wheel.",
+    "evidence": "Simulation + 2D hardware testbed",
+    "setting": "SpaceBok physical 2D microgravity testbed; 3D behaviors in simulation.",
+    "environment": "Low-gravity celestial-body target; experiments on Earth.",
+    "order": "Articulated simulation training; learned policy at deployment.",
+    "architecture": "Deep RL for limb-driven flight and landing.",
+    "origin": "Supplied RDF",
+    "verification": "Primary abstract checked 29 Sep 2026; remaining scope assessed from the cited evidence.",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2106.09357",
+        "label": "Primary paper / repository"
+      }
+    ],
+    "video": ""
+  },
+  {
+    "id": "dial-mpc",
+    "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
+    "year": "2024",
+    "group": "Generative control & expert policies",
+    "method": "Model-based · full-order MPC",
+    "url": "https://arxiv.org/abs/2409.15610",
+    "overview": "DIAL-MPC refines sampled actions online using diffusion-inspired annealing. It does not train a diffusion policy.",
+    "achievement": "Go2 hardware performs sequential jumping with a 7 kg payload. Appendix setup uses 50 Hz planning and 200 Hz low-level commands.",
+    "gap": "Fast parallel simulation and a short planning horizon constrain the approach. Desktop computation and motion capture limit claims about autonomous field deployment.",
+    "evidence": "Hardware · lab",
+    "setting": "Go2; offboard RTX 4090 desktop, Ethernet and motion capture.",
+    "order": "Full-order articulated dynamics.",
+    "architecture": "Sampling-based receding-horizon control; direct torque output.",
+    "video": "https://github.com/LeCAR-Lab/dial-mpc/blob/main/README.md",
+    "videoLabel": "Author project & videos",
+    "verification": "Full text: Fig. 7, conclusion and Appendix A checked; preprint 2024 / ICRA 2025.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2409.15610v1",
+        "label": "Full text and setup"
+      }
+    ]
+  },
+  {
+    "id": "diffuseloco",
+    "title": "DiffuseLoco: Real-Time Legged Locomotion Control with Diffusion from Offline Datasets",
+    "year": "2024",
+    "group": "Generative control & expert policies",
+    "method": "Diffusion · offline imitation",
+    "url": "https://arxiv.org/abs/2404.19264",
+    "overview": "Learns a multi-skill locomotion policy from offline data, using a receding action horizon.",
+    "achievement": "Reports real quadruped deployment, transitions between locomotion skills, and edge-device execution.",
+    "gap": "This demonstrates locomotion-policy synthesis; it does not establish arbitrary precision flips or terrain-aware pronking sequences. Dataset coverage and action-generation latency remain relevant.",
+    "evidence": "Hardware",
+    "setting": "Quadruped physical locomotion demonstrations; controlled evaluations.",
+    "order": "No explicit online dynamics optimizer; data-driven action policy.",
+    "architecture": "Offline diffusion policy with receding-horizon execution.",
+    "video": "https://diffuselo.co/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and abstract checked; CoRL 2024.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2404.19264",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "contact-diffusion",
+    "title": "Diffusion-based learning of contact plans for agile locomotion",
+    "year": "2024",
+    "group": "Generative control & expert policies",
+    "method": "Diffusion · MCTS · NMPC",
+    "url": "https://arxiv.org/abs/2403.03639",
+    "overview": "Search generates feasible contact plans; diffusion learns their multiple possible solutions and supplies a whole-body controller.",
+    "achievement": "Simulated Solo12 selects contact sequences for jumping on sparse stepping stones.",
+    "gap": "Hardware implementation remains future work in v5. Known terrain, restricted gait search and low success on a difficult changing-stone task limit generalization claims.",
+    "evidence": "Simulation only",
+    "setting": "Solo12 simulation; not a physical stepping-stone demonstration.",
+    "order": "Whole-body nonlinear MPC.",
+    "architecture": "High-level diffusion contact planner + low-level NMPC.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "v5 full text, including conclusion, checked (23 June 2025). First preprint 2024 used a different title.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2403.03639v5",
+        "label": "v5 full text"
+      }
+    ]
+  },
+  {
+    "id": "dynaflow",
+    "title": "DynaFlow: Dynamics-embedded Flow Matching for Physically Consistent Motion Generation from State-only Demonstrations",
+    "year": "2025",
+    "group": "Generative control & expert policies",
+    "method": "Flow matching · differentiable simulation",
+    "url": "https://arxiv.org/abs/2509.19804",
+    "overview": "Maps generated actions through a differentiable simulator so learning can use state-only demonstrations.",
+    "achievement": "Physical Go1 reproduces varied gaits and stylistic motions; the project reports long-horizon open-loop execution.",
+    "gap": "Consistency is with the embedded model. It does not guarantee disturbance recovery in the real world or establish a closed-loop acrobatic pronking system.",
+    "evidence": "Hardware",
+    "setting": "Go1 physical motion demonstrations.",
+    "order": "Dynamics embedded through differentiable simulation.",
+    "architecture": "Flow-matching action generation trained through a simulator.",
+    "video": "https://sowoolee.github.io/dynaflow/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project checked; 2025 preprint / ICRA 2026.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://sowoolee.github.io/dynaflow/",
+        "label": "Author method and experiments"
+      }
+    ]
+  },
+  {
+    "id": "dmloco",
+    "title": "Integrating Diffusion-based Multi-task Learning with Online Reinforcement Learning for Robust Quadruped Robot Control",
+    "year": "2025",
+    "group": "Generative control & expert policies",
+    "method": "Diffusion · PPO fine-tuning",
+    "url": "https://arxiv.org/abs/2507.05674",
+    "overview": "DMLoco combines offline multi-task diffusion training with reinforcement-learning refinement.",
+    "achievement": "The abstract reports language-conditioned skills, more stable task transitions and onboard inference at 50 Hz.",
+    "gap": "This is adjacent multi-skill locomotion evidence. The abstract alone does not establish acrobatic landing accuracy or unseen-terrain pronking reliability.",
+    "evidence": "Hardware reported",
+    "setting": "Real-world deployment reported in abstract; detailed test setting not audited.",
+    "order": "No explicit online physics planner described.",
+    "architecture": "Diffusion pretraining + PPO in simulation + onboard policy.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "arXiv v2 abstract checked (September 2025); experimental tables not audited.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2507.05674",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "moe-parkour",
+    "title": "Quadruped Parkour Learning: Sparsely Gated Mixture of Experts with Visual Input",
+    "year": "2026",
+    "group": "Generative control & expert policies",
+    "method": "RL · sparse mixture of experts",
+    "url": "https://arxiv.org/abs/2604.19344",
+    "overview": "A sparse expert network allocates computation conditionally inside a vision-based parkour policy.",
+    "achievement": "On a 32 cm box, MoE succeeds in 10/10 trials versus 5/10 for an MLP with matched active parameters. Outdoor obstacle demonstrations are included.",
+    "gap": "Small trial counts do not establish field reliability. Expert selection adds tuning. The reported speed comparison uses batch size 6000, not simply onboard latency.",
+    "evidence": "Hardware · lab + outdoor",
+    "setting": "Go2 + D435f camera; policy runs offboard on RTX 2060.",
+    "order": "Simulation-trained policy, no explicit online dynamics optimization.",
+    "architecture": "Depth-conditioned RL with sparse MoE actor.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "Full text: Table III, hardware setup, outdoor tests and conclusion checked.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2604.19344v1",
+        "label": "Experiments and limitations"
+      }
+    ]
+  },
+  {
+    "id": "abot",
+    "title": "Behavior Foundations for Quadruped Robots: ABot-C0 Technical Report",
+    "year": "2026",
+    "group": "Generative control & expert policies",
+    "method": "Flow matching · multi-policy system",
+    "url": "https://arxiv.org/abs/2607.07370",
+    "overview": "Transfers the large-data motion-tracking recipe prominent in humanoids to quadruped behavior learning.",
+    "achievement": "Reports 16,074 feasible motion clips, a flow-matching motion-tracking policy, and real-world navigation / interaction experiments.",
+    "gap": "Generalist tracking and urban navigation are not quantitative proof of arbitrary flips, precise repeated landings, or low-gravity performance. Independent replication is not assessed.",
+    "evidence": "Hardware reported",
+    "setting": "Urban-terrain navigation and interaction; detailed experiment audit pending.",
+    "order": "Data-driven tracking; underlying simulator order not audited.",
+    "architecture": "Flow tracking + privileged-to-perceptive locomotion + multi-policy coordination.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "July 2026 arXiv v2 technical-report abstract checked; author claims, not independent replication.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2607.07370",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "spacebok-design",
+    "title": "SpaceBok: A Dynamic Legged Robot for Space Exploration",
+    "year": "2019",
+    "group": "Low-gravity jumping",
+    "method": "Model-based · elastic hardware",
+    "url": "https://doi.org/10.1109/ICRA.2019.8794136",
+    "overview": "A purpose-built quadruped uses leg geometry and parallel elasticity for powerful hopping.",
+    "achievement": "The primary paper reports physical walking, trotting and pronking, with single jumps up to 1.05 m. Lunar-pronking predictions are simulated.",
+    "gap": "Earth jumping does not establish operation in lunar dust, vacuum or thermal extremes. ETH describes the platform as not space-graded.",
+    "evidence": "Hardware + low-gravity simulation",
+    "setting": "Earth-based physical robot; simulated lunar locomotion.",
+    "order": "Elastic mechanism and model-based control; order not audited.",
+    "architecture": "Hardware/control co-design.",
+    "video": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jumping_space_robot_flies_like_a_spacecraft",
+    "videoLabel": "Author project & videos",
+    "verification": "ETH-hosted paper and ETH platform description checked.",
+    "environment": "Extraterrestrial motivation; hardware tests on Earth.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/384203/ICRA19_0651_FI.pdf?isAllowed=y&sequence=1",
+        "label": "ETH paper"
+      },
+      {
+        "url": "https://rsl.ethz.ch/robots-media/spacebok.html/",
+        "label": "ETH platform"
+      }
+    ]
+  },
+  {
+    "id": "spacehopper",
+    "title": "SpaceHopper: A Small-Scale Legged Robot for Exploring Low-Gravity Celestial Bodies",
+    "year": "2024",
+    "group": "Low-gravity jumping",
+    "method": "RL · limb-based attitude control",
+    "url": "https://arxiv.org/abs/2403.02831",
+    "overview": "A three-legged robot explores how moving limbs can orient the body during long low-gravity flights. This is related work, not a quadruped.",
+    "achievement": "Physical tests use a rotational gimbal and counterweight setup. Six-metre commanded jumps are reported in simulated Ceres gravity (0.029 g).",
+    "gap": "The simulated distance is not a hardware jump record. Gimbal and counterweight tests do not establish autonomous flight and landing on an asteroid.",
+    "evidence": "Hardware testbed + simulation",
+    "setting": "5.2 kg three-legged robot; Earth gimbal / counterweight rigs.",
+    "order": "Articulated robot simulation for RL.",
+    "architecture": "Learned leg-based aerial reorientation.",
+    "video": "",
+    "videoLabel": "Author project & videos",
+    "verification": "Primary abstract checked 29 Sep 2026.",
+    "environment": "Asteroid / moon target; simulation and Earth-based tests.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2403.02831",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "deepmimic",
+    "title": "DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills",
+    "year": "2018",
+    "group": "Bipedal connections & foundations",
+    "method": "RL · motion imitation",
+    "url": "https://doi.org/10.1145/3197517.3201311",
+    "overview": "A shared imitation-plus-task formulation learns diverse motions in simulated characters.",
+    "achievement": "Demonstrates acrobatics, locomotion and recovery across simulated human, Atlas, dinosaur and dragon characters.",
+    "gap": "A simulated Atlas character is not a physical Atlas experiment. This provides methodological ancestry, not evidence of quadruped-to-biped hardware policy transfer.",
+    "evidence": "Simulation only",
+    "setting": "Physics-based character animation; no physical hardware demonstration.",
+    "order": "Full articulated character simulation.",
+    "architecture": "Reference-motion tracking through RL.",
+    "video": "https://xbpeng.github.io/projects/DeepMimic/index.html",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and primary paper checked.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://xbpeng.github.io/projects/DeepMimic/index.html",
+        "label": "Author project"
+      }
+    ]
+  },
+  {
+    "id": "animal-imitation",
+    "title": "Learning Agile Robotic Locomotion Skills by Imitating Animals",
+    "year": "2020",
+    "group": "Bipedal connections & foundations",
+    "method": "RL · imitation · sim-to-real",
+    "url": "https://arxiv.org/abs/2004.00784",
+    "overview": "Retargets animal motion references to learn robot skills, extending motion-imitation ideas to physical quadrupeds.",
+    "achievement": "Reports physical quadruped locomotion, dynamic hops and turns from reference-guided learning.",
+    "gap": "Reference availability, retargeting and simulator mismatch matter. It does not show that a humanoid controller can be copied unchanged onto a quadruped.",
+    "evidence": "Hardware",
+    "setting": "Physical quadruped demonstrations after simulation training.",
+    "order": "Articulated simulation; learned policy at deployment.",
+    "architecture": "Motion retargeting + imitation RL + sim-to-real.",
+    "video": "https://xbpeng.github.io/projects/Robotic_Imitation/index.html",
+    "videoLabel": "Author project & videos",
+    "verification": "Primary abstract and author project checked.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2004.00784",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "asap",
+    "title": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+    "year": "2025",
+    "group": "Bipedal connections & foundations",
+    "method": "RL · imitation · residual sim alignment",
+    "url": "https://arxiv.org/abs/2502.01143",
+    "overview": "Uses real robot rollouts to learn an action correction inside the simulator, then fine-tunes the motion policy.",
+    "achievement": "Unitree G1 hardware demonstrates agile human-like skills; author examples include forward and sideways jumps and a jump with rotation.",
+    "gap": "Requires real-world data collection. This is a humanoid method with related ingredients, not demonstrated quadruped-to-humanoid acrobatic transfer.",
+    "evidence": "Hardware",
+    "setting": "Unitree G1 physical demonstrations and simulator-transfer experiments.",
+    "order": "Articulated simulation corrected by learned delta actions.",
+    "architecture": "Two-stage motion imitation and sim-to-real fine-tuning.",
+    "video": "https://agile.human2humanoid.com/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and primary abstract checked; RSS 2025.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2502.01143",
+        "label": "Primary paper"
+      }
+    ]
+  },
+  {
+    "id": "beyondmimic",
+    "title": "BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion",
+    "year": "2025",
+    "group": "Bipedal connections & foundations",
+    "method": "RL tracking · guided diffusion",
+    "url": "https://arxiv.org/abs/2508.08241",
+    "overview": "First learn dynamic motion tracking, then distill selected motion policies into a guided diffusion policy.",
+    "achievement": "The tracking pipeline demonstrates jumping spins and cartwheels; diffusion demonstrations include waypoint following, teleoperation and obstacle avoidance.",
+    "gap": "Do not attribute every acrobatic tracker result to the unified diffusion controller. The project uses motion capture for some navigation / state-estimation demonstrations.",
+    "evidence": "Hardware",
+    "setting": "Humanoid physical demonstrations; motion-capture-assisted downstream tests.",
+    "order": "Articulated training simulation; distilled generative policy.",
+    "architecture": "RL motion tracking + diffusion distillation + test-time guidance.",
+    "video": "https://beyondmimic.github.io/",
+    "videoLabel": "Author project & videos",
+    "verification": "Author project and 2025 preprint abstract checked; results separated by pipeline stage.",
+    "environment": "Earth gravity / terrestrial robotics.",
+    "origin": "Added in this survey",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2508.08241",
+        "label": "Primary paper"
+      }
+    ]
+  }
+]

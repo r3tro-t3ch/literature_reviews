@@ -1,5 +1,10 @@
 import json,re,html
+import argparse
+import shutil
 from pathlib import Path
+parser = argparse.ArgumentParser(description='Build the static literature notebook.')
+parser.add_argument('--publish-root', action='store_true', help='Also copy the static site into the parent repository root for GitHub Pages.')
+args = parser.parse_args()
 ROOT=Path(__file__).parent
 E=lambda s:html.escape(str(s),quote=True)
 raw=json.loads((ROOT/'data/rdf-records.json').read_text())
@@ -30,3 +35,11 @@ body=''.join(f'<section class="paper-group" id="{slugs[g]}"><div class="section-
 synthesis=(ROOT/'data/synthesis.html').read_text() if (ROOT/'data/synthesis.html').exists() else ''
 review=head.format(prefix='../',title='Quadruped acrobatics & pronking')+f'''<header class="top review-top"><a class="brand" href="../">VJ<span> / LITERATURE NOTEBOOK</span></a><a href="../">All projects</a></header><div class="review-layout"><aside><p class="eyebrow">Project 01</p><h2>Quadruped<br>acrobatics</h2><nav aria-label="Review sections"><a class="nav-major" href="#papers">Paper library<span>{len(papers)}</span></a>{nav}<div class="nav-divider"></div><a href="#gaps">Hardware & research gaps</a><a href="#methods">Methods explained</a><a href="#transfer">Bipedal connections</a><a href="#scope">Scope & sources</a></nav><p class="sidebar-note">A research starting point.<br>Claims stay close to their evidence.</p></aside><main id="main"><div class="review-heading"><p class="eyebrow">Robotics / Literature review</p><h1>Quadruped acrobatics<br><em>& pronking.</em></h1><p>Read the result. Check the hardware. Find the next question.</p><div class="review-meta"><span>{len(papers)} papers</span><span>45 RDF records + {len(papers)-45} additions</span><span>29 Sep 2026</span></div></div><div class="brief"><strong>The research question</strong><p>How can a quadruped repeatedly take off, control its flight, and land ready for the next movement—on terrain it does not know?</p><a href="#gaps">Read the evidence & gap assessment</a></div><section id="papers"><div class="library-head"><h2>Paper library</h2><p>Expand a paper for its method, evidence, achievements and limits.</p></div>{body}</section>{synthesis}<section class="essay" id="scope"><p class="eyebrow">Review protocol</p><h2>Scope & sources</h2><p>This is a focused narrative survey, not an exhaustive systematic review. The supplied Zotero RDF contributes 45 records. Additional searches cover pronking, jumping, landing, parkour, generative control, bipedal skills and low-gravity locomotion. Primary papers, author project pages, university repositories and ESA materials support the checked records.</p><p>Every card separates the imported record from independently checked evidence. “Abstract checked” supports only abstract-level claims; it does not mean the full experimental record was audited. “Not independently checked” is intentional. Missing evidence is not proof that a capability does not exist. Gap statements are review inferences, not universal novelty claims.</p><p>Dates on imported records follow the RDF and may refer to a journal version rather than the first preprint. Newly added records identify the version in their evidence notes. A lab experiment is real hardware, but does not establish field reliability. Testbeds on Earth do not establish deployment on the Moon or Mars. A linked video is supplementary evidence, not a quantified reliability study.</p><p>The site is a static snapshot, last researched 29 September 2026. Its sources and review data can be updated for future projects.</p></section>{footer}</main></div><script src="../app.js"></script></body></html>'''
 (ROOT/'dist/quadruped/index.html').write_text(review)
+
+if args.publish_root:
+    for source in (ROOT/'dist').rglob('*'):
+        if source.is_file():
+            target = ROOT.parent / source.relative_to(ROOT/'dist')
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
+    (ROOT.parent/'.nojekyll').touch()
