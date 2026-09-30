@@ -1,0 +1,1801 @@
+[
+  {
+    "id": "gam",
+    "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
+    "year": 2026,
+    "authors": "Zhang, Huang, Shailesh, Peng, Duan and Krishna",
+    "group": "Vision-to-action policies",
+    "method": "3D grounding · action chunks",
+    "evidence": "Hardware + simulation",
+    "inputs": "Object geometry, spatial or language prompts and state history",
+    "action": "Multi-stream transformer conditioned on grounded objects",
+    "overview": "Makes metric object grounding an interface between high-level requests and actions.",
+    "achievement": "Reports bimanual YAM and Franka experiments alongside simulation benchmarks.",
+    "gap": "Reported step completion should not be confused with complete long-horizon task success.",
+    "relevance": "Relevant to grounding a tool or joint in a measured workpiece frame.",
+    "url": "https://arxiv.org/abs/2609.23863v2",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "20 Sep 2026 preprint · version 2, 25 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.23863v2"
+      }
+    ]
+  },
+  {
+    "id": "fast",
+    "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+    "year": 2025,
+    "authors": "Pertsch et al.",
+    "group": "Vision-to-action policies",
+    "method": "Action tokenization · autoregressive",
+    "evidence": "Hardware · dexterous tasks",
+    "inputs": "Robot action sequences for tokenizer training; visual policy observations",
+    "action": "Frequency-based compression into action tokens",
+    "overview": "Compresses temporally correlated action sequences for autoregressive policies.",
+    "achievement": "Supports high-frequency manipulation more effectively than simple per-step discretization in the reported tests.",
+    "gap": "A tokenizer is not a force controller or a standalone perception system.",
+    "relevance": "Separate action representation choices from sensing and feedback design.",
+    "url": "https://arxiv.org/abs/2501.09747",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2501.09747"
+      }
+    ]
+  },
+  {
+    "id": "oft",
+    "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+    "year": 2025,
+    "authors": "Kim, Finn and Liang",
+    "group": "Vision-to-action policies",
+    "method": "OpenVLA-OFT · action chunking",
+    "evidence": "Hardware + simulation",
+    "inputs": "Vision, instructions and robot state",
+    "action": "Parallel continuous action chunks with regression-based fine-tuning",
+    "overview": "Studies practical fine-tuning and decoding choices for OpenVLA.",
+    "achievement": "Evaluates improved throughput and task performance on LIBERO and physical ALOHA tasks.",
+    "gap": "Benchmark gains do not establish transfer to machining loads or unseen material mechanics.",
+    "relevance": "A practical vision-action baseline to compare against force-aware policies.",
+    "url": "https://arxiv.org/abs/2502.19645",
+    "video": "https://openvla-oft.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2502.19645"
+      }
+    ]
+  },
+  {
+    "id": "gemini-robotics",
+    "title": "Gemini Robotics: Bringing AI into the Physical World",
+    "year": 2025,
+    "authors": "Google DeepMind team",
+    "group": "Vision-to-action policies",
+    "method": "VLA · embodied reasoning",
+    "evidence": "Hardware · multiple embodiments",
+    "inputs": "Images, instructions and robot observations",
+    "action": "Direct action policy plus an embodied reasoning model",
+    "overview": "Studies generalization, dexterity and interaction in foundation models for robotics.",
+    "achievement": "Physical manipulation and adaptation to different embodiments are reported.",
+    "gap": "Embodiment adaptation and laboratory demonstrations do not establish universal zero-shot deployment.",
+    "relevance": "Broad reference for generalist manipulation beyond woodworking.",
+    "url": "https://arxiv.org/abs/2503.20020",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2503.20020"
+      }
+    ]
+  },
+  {
+    "id": "groot",
+    "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+    "year": 2025,
+    "authors": "Bjorck et al.",
+    "group": "Vision-to-action policies",
+    "method": "Dual-system VLA · diffusion",
+    "evidence": "Hardware + simulation",
+    "inputs": "Vision, language and robot state",
+    "action": "Vision-language reasoning coupled to a diffusion action transformer",
+    "overview": "Combines real robot data, human video and synthetic training data.",
+    "achievement": "Reports bimanual physical manipulation on a humanoid and simulation evaluation.",
+    "gap": "Cross-platform success still depends on embodiment data and task coverage.",
+    "relevance": "Compare reasoning/action separation with a single action policy.",
+    "url": "https://arxiv.org/abs/2503.14734",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2503.14734"
+      }
+    ]
+  },
+  {
+    "id": "smolvla",
+    "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+    "year": 2025,
+    "authors": "Shukor et al.",
+    "group": "Vision-to-action policies",
+    "method": "Compact VLA · asynchronous execution",
+    "evidence": "Hardware + simulation",
+    "inputs": "Camera observations, language and robot state",
+    "action": "Compact action model with asynchronous inference/execution",
+    "overview": "Examines how smaller policies can reduce deployment cost.",
+    "achievement": "Reports real-robot and simulated manipulation with efficient inference.",
+    "gap": "Small size does not by itself establish contact accuracy, recovery or guaranteed control latency.",
+    "relevance": "Useful baseline when compute and demonstration collection are limited.",
+    "url": "https://arxiv.org/abs/2506.01844",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2506.01844"
+      }
+    ]
+  },
+  {
+    "id": "pi05",
+    "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+    "year": 2025,
+    "authors": "Physical Intelligence et al.",
+    "group": "Vision-to-action policies",
+    "method": "VLA · hierarchical learning",
+    "evidence": "Hardware · household environments",
+    "inputs": "Vision, language and robot state",
+    "action": "Semantic subtasks and continuous robot actions",
+    "overview": "Combines heterogeneous robot, web and semantic supervision to broaden generalization.",
+    "achievement": "Demonstrates extended household activities in environments beyond the training settings.",
+    "gap": "Does not establish precision contact regulation or reliability across arbitrary environments.",
+    "relevance": "Read for semantic generalization and sequencing; validate fabrication accuracy separately.",
+    "url": "https://arxiv.org/abs/2504.16054",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2504.16054"
+      }
+    ]
+  },
+  {
+    "id": "dp3",
+    "title": "3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations",
+    "year": 2024,
+    "authors": "Yanjie Ze et al.",
+    "group": "Vision-to-action policies",
+    "method": "Point clouds · diffusion",
+    "evidence": "Hardware + simulation",
+    "inputs": "Sparse point cloud and robot state",
+    "action": "Conditioned diffusion action sequences",
+    "overview": "Adds a compact 3D representation to a diffusion policy.",
+    "achievement": "Real tasks include a drill-use demonstration as well as pouring and deformable manipulation.",
+    "gap": "The drill demo is not evidence of wood-hole tolerance, thrust control, chip evacuation or tear-out quality.",
+    "relevance": "Relevant tool-use baseline; verify the material and quality criteria before citing it as woodworking.",
+    "url": "https://arxiv.org/abs/2403.03954",
+    "video": "https://3d-diffusion-policy.github.io/",
+    "verification": "Author methods, task descriptions and results checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2403.03954"
+      },
+      {
+        "label": "Author task descriptions",
+        "url": "https://3d-diffusion-policy.github.io/"
+      }
+    ]
+  },
+  {
+    "id": "octo",
+    "title": "Octo: An Open-Source Generalist Robot Policy",
+    "year": 2024,
+    "authors": "Octo Model Team et al.",
+    "group": "Vision-to-action policies",
+    "method": "Generalist · transformer + diffusion",
+    "evidence": "Hardware · multiple robots",
+    "inputs": "Observation tokens, language/goal image; adaptable sensor interfaces",
+    "action": "Diffusion action head; fine-tunable action/observation spaces",
+    "overview": "Pretrains a general policy and adapts it to new robot setups.",
+    "achievement": "Reports transfer and adaptation across multiple physical robot platforms.",
+    "gap": "Support for new inputs is not evidence that a ready-made force-aware woodworking policy exists.",
+    "relevance": "Candidate for pretrained visual features or policy adaptation once task data are available.",
+    "url": "https://arxiv.org/abs/2405.12213",
+    "video": "https://octo-models.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2405.12213"
+      }
+    ]
+  },
+  {
+    "id": "openvla",
+    "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+    "year": 2024,
+    "authors": "Moo Jin Kim et al.",
+    "group": "Vision-to-action policies",
+    "method": "VLA · autoregressive tokens",
+    "evidence": "Hardware · lab",
+    "inputs": "Camera image and language instruction",
+    "action": "Tokenized continuous robot actions; task fine-tuning",
+    "overview": "Opens a large pretrained vision-language-action model for robot adaptation.",
+    "achievement": "Evaluates multiple robots and language-conditioned manipulation tasks.",
+    "gap": "Original model is not a wrist-force policy; strong language grounding need not win on every precise single task.",
+    "relevance": "Useful generalist comparator; compare against task-specific ACT and diffusion rather than assuming larger is better.",
+    "url": "https://arxiv.org/abs/2406.09246",
+    "video": "https://openvla.github.io/",
+    "verification": "Primary abstract and author comparison/limitations checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2406.09246"
+      }
+    ]
+  },
+  {
+    "id": "rvt2",
+    "title": "RVT-2: Learning Precise Manipulation from Few Demonstrations",
+    "year": 2024,
+    "authors": "Ankit Goyal et al.",
+    "group": "Vision-to-action policies",
+    "method": "3D transformer · precision",
+    "evidence": "Hardware + simulation",
+    "inputs": "Visual 3D observations and language",
+    "action": "Refined spatial action prediction with execution stack",
+    "overview": "Improves the speed and precision of the RVT family.",
+    "achievement": "Physical demonstrations include plug insertion learned from small demonstration sets.",
+    "gap": "Plug success does not establish wood interference-fit forces or drilling quality.",
+    "relevance": "A stronger visual alignment comparator alongside contact-aware approaches.",
+    "url": "https://arxiv.org/abs/2406.08545",
+    "video": "https://robotic-view-transformer-2.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2406.08545"
+      }
+    ]
+  },
+  {
+    "id": "pi0",
+    "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+    "year": 2024,
+    "authors": "Kevin Black et al.",
+    "group": "Vision-to-action policies",
+    "method": "VLA · flow matching",
+    "evidence": "Hardware · multiple embodiments",
+    "inputs": "Images, language and robot state",
+    "action": "Continuous action chunks through a flow-matching action expert",
+    "overview": "Combines pretrained semantic representations with continuous action generation.",
+    "achievement": "2024 results cover tasks such as laundry folding, table cleaning and box assembly.",
+    "gap": "No demonstrated slab probing or wood-drilling force control; later π0 variants are outside this review window.",
+    "relevance": "Represents flow matching; its action expert is not automatically a sparse mixture-of-experts controller.",
+    "url": "https://arxiv.org/abs/2410.24164v1",
+    "video": "",
+    "verification": "2024 v1 abstract checked",
+    "version": "31 October 2024 preprint; later revisions excluded",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2410.24164v1"
+      }
+    ]
+  },
+  {
+    "id": "diffusion",
+    "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+    "year": 2023,
+    "authors": "Cheng Chi et al.",
+    "group": "Vision-to-action policies",
+    "method": "Imitation · diffusion",
+    "evidence": "Hardware + simulation",
+    "inputs": "Images and task-dependent robot state",
+    "action": "Denoises action sequences; receding-horizon execution",
+    "overview": "Models multiple valid action trajectories instead of averaging incompatible behaviors.",
+    "achievement": "Evaluates simulation suites and real pushing, flipping and food-tool tasks.",
+    "gap": "Original visual policy does not explicitly regulate wrist force; long action chunks can delay reactions.",
+    "relevance": "Core baseline to extend with force input or force/position output for your task.",
+    "url": "https://arxiv.org/abs/2303.04137v4",
+    "video": "https://diffusion-policy.cs.columbia.edu/",
+    "verification": "Primary abstract / author project checked",
+    "version": "RSS 2023; expanded IJRR version in 2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2303.04137v4"
+      }
+    ]
+  },
+  {
+    "id": "act",
+    "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware (ACT / ALOHA)",
+    "year": 2023,
+    "authors": "Tony Z. Zhao, Vikash Kumar, Sergey Levine, Chelsea Finn",
+    "group": "Vision-to-action policies",
+    "method": "Imitation · CVAE transformer",
+    "evidence": "Hardware · bimanual lab",
+    "inputs": "Camera images and joint positions",
+    "action": "Chunks of joint-position targets; temporal aggregation",
+    "overview": "Learns coordinated fine manipulation from teleoperated demonstrations.",
+    "achievement": "Physical tasks include battery insertion and opening small containers.",
+    "gap": "Original policy has no explicit wrist-force input; two-arm dexterity does not establish high-load cutting.",
+    "relevance": "A practical single-task imitation baseline for part handling and joint approach.",
+    "url": "https://arxiv.org/abs/2304.13705",
+    "video": "https://tonyzhaozh.github.io/aloha/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2304.13705"
+      }
+    ]
+  },
+  {
+    "id": "rt2",
+    "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "year": 2023,
+    "authors": "Anthony Brohan et al.",
+    "group": "Vision-to-action policies",
+    "method": "VLA · tokenized action",
+    "evidence": "Hardware · lab",
+    "inputs": "RGB and language; pretrained vision-language representation",
+    "action": "Robot actions represented as tokens and executed by robot controller",
+    "overview": "Transfers semantic knowledge from web-trained models into robot action prediction.",
+    "achievement": "Shows improved semantic generalization on physical manipulation tasks.",
+    "gap": "No demonstrated woodworking force loop or dimensional inspection; reasoning ability and contact reliability are different metrics.",
+    "relevance": "Background for language-driven task selection, not a stand-alone drilling solution.",
+    "url": "https://arxiv.org/abs/2307.15818",
+    "video": "",
+    "verification": "Primary abstract checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2307.15818"
+      }
+    ]
+  },
+  {
+    "id": "rvt",
+    "title": "RVT: Robotic View Transformer for 3D Object Manipulation",
+    "year": 2023,
+    "authors": "Ankit Goyal, Jie Xu, Yijie Guo, Valts Blukis, Yu-Wei Chao, Dieter Fox",
+    "group": "Vision-to-action policies",
+    "method": "3D transformer · imitation",
+    "evidence": "Hardware + simulation",
+    "inputs": "RGB-D-derived virtual views and language",
+    "action": "Spatial end-effector action prediction",
+    "overview": "Uses rendered views of a point cloud to make 3D action learning more efficient.",
+    "achievement": "Evaluates RLBench and physical manipulation with few demonstrations.",
+    "gap": "Visual target selection is not contact-force regulation or calibrated dimensional measurement.",
+    "relevance": "A spatial baseline for locating a hole or aligning a slab before contact.",
+    "url": "https://proceedings.mlr.press/v229/goyal23a.html",
+    "video": "https://robotic-view-transformer.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://proceedings.mlr.press/v229/goyal23a.html"
+      }
+    ]
+  },
+  {
+    "id": "peract",
+    "title": "Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation",
+    "year": 2022,
+    "authors": "Mohit Shridhar, Lucas Manuelli, Dieter Fox",
+    "group": "Vision-to-action policies",
+    "method": "Behavior cloning · 3D transformer",
+    "evidence": "Hardware + simulation",
+    "inputs": "RGB-D voxel grid and language goal",
+    "action": "Discretized end-effector pose/gripper targets; motion planner executes",
+    "overview": "Learns spatial action targets directly from visual observations and language.",
+    "achievement": "One model handles multiple simulated tasks and a smaller real-robot task set.",
+    "gap": "Voxel actions and a downstream planner do not provide continuous force regulation or metrology guarantees.",
+    "relevance": "A visual alignment baseline; explicitly hierarchical at execution despite end-to-end policy training.",
+    "url": "https://arxiv.org/abs/2209.05451",
+    "video": "https://peract.github.io/",
+    "verification": "Author method and results page checked",
+    "version": "2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2209.05451"
+      },
+      {
+        "label": "Author methods and results",
+        "url": "https://peract.github.io/"
+      }
+    ]
+  },
+  {
+    "id": "rt1",
+    "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+    "year": 2022,
+    "authors": "Anthony Brohan et al.",
+    "group": "Vision-to-action policies",
+    "method": "Transformer · action tokens",
+    "evidence": "Hardware · kitchen settings",
+    "inputs": "RGB history and language instruction",
+    "action": "Tokenized arm/base/gripper commands; low-level robot control",
+    "overview": "Scales task-conditioned imitation across a large collection of real robot episodes.",
+    "achievement": "Demonstrates multi-task generalization on physical robots.",
+    "gap": "Semantic and scene generalization does not imply force-sensitive precision or timber processing.",
+    "relevance": "Historical baseline for direct vision/language-to-action learning.",
+    "url": "https://arxiv.org/abs/2212.06817",
+    "video": "https://robotics-transformer1.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "December 2022 preprint; RSS 2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2212.06817"
+      }
+    ]
+  },
+  {
+    "id": "forcerft",
+    "title": "ForceRFT: Refining VLA Actions through Force-Guided Residual Reinforcement Learning",
+    "year": 2026,
+    "authors": "Wang, Zhang, Su, Ma, Zhu and Li",
+    "group": "Vision, force & action",
+    "method": "Residual RL · force-conditioned VLA",
+    "evidence": "Hardware · insertion and wiping",
+    "inputs": "Wrist wrench, wrench change and base policy motion",
+    "action": "Residual actor corrects a frozen force-conditioned SmolVLA policy",
+    "overview": "Refines action chunks using contact feedback and human-assisted learning.",
+    "achievement": "Physical tests cover plug insertion, ring-on-peg and wiping.",
+    "gap": "New preprint; material transfer and fabrication tolerances remain unestablished.",
+    "relevance": "Compare residual correction against retraining the whole policy.",
+    "url": "https://arxiv.org/abs/2609.22840v1",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "19 Sep 2026 · new preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.22840v1"
+      }
+    ]
+  },
+  {
+    "id": "tao-force",
+    "title": "TAO-Force: Unifying Force-Aware Perception and Fast-Slow Control for Contact-Rich Manipulation",
+    "year": 2026,
+    "authors": "Gan et al.",
+    "group": "Vision, force & action",
+    "method": "Force-conditioned perception · hierarchical control",
+    "evidence": "Hardware · four contact tasks",
+    "inputs": "Vision/language features and force feedback",
+    "action": "Slow position branch plus fast contact admittance branch",
+    "overview": "Couples force-aware perception to control operating at different time scales.",
+    "achievement": "Reports physical evaluation across four contact-rich tasks.",
+    "gap": "Very recent preprint; breadth and long-run reliability require further scrutiny.",
+    "relevance": "Useful architecture for visual approach followed by rapid contact correction.",
+    "url": "https://arxiv.org/abs/2609.18497v1",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "16 Sep 2026 · new preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.18497v1"
+      }
+    ]
+  },
+  {
+    "id": "factr",
+    "title": "FACTR: Force-Attending Curriculum Training for Contact-Rich Policy Learning",
+    "year": 2025,
+    "authors": "Liu, Li, Shaw, Tao, Salakhutdinov and Pathak",
+    "group": "Vision, force & action",
+    "method": "Imitation · force-attending curriculum",
+    "evidence": "Hardware · contact-rich tasks",
+    "inputs": "Vision and force feedback; bilateral force-feedback demonstrations",
+    "action": "Transformer policy trained with a visual corruption curriculum",
+    "overview": "Encourages policies to use contact signals rather than relying excessively on appearance.",
+    "achievement": "Physical tests include manipulation with variable contact, including dough rolling.",
+    "gap": "Task-specific demonstrations remain necessary; timber precision and damage are untested here.",
+    "relevance": "Compare a force-aware training curriculum against simple sensor concatenation.",
+    "url": "https://arxiv.org/abs/2502.17432",
+    "video": "https://jasonjzliu.com/factr/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2502.17432"
+      }
+    ]
+  },
+  {
+    "id": "forcevla",
+    "title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+    "year": 2025,
+    "authors": "Yu et al.",
+    "group": "Vision, force & action",
+    "method": "Force-aware mixture of experts · flow matching",
+    "evidence": "Hardware · contact-rich tasks",
+    "inputs": "Vision, language, proprioception and six-axis force",
+    "action": "Force/vision/language MoE integrated with a π0-based policy",
+    "overview": "Adds explicit force conditioning to a generalist action model.",
+    "achievement": "Reports physical contact-task improvements with synchronized multimodal data.",
+    "gap": "Does not establish machining quality or transfer across timber species and fixtures.",
+    "relevance": "A concrete MoE example; compare with FoAR and classical admittance under the same sensing setup.",
+    "url": "https://arxiv.org/abs/2505.22159v3",
+    "video": "https://sites.google.com/view/forcevla2025",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · NeurIPS 2025; cited preprint revision 18 Sep 2025",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2505.22159v3"
+      }
+    ]
+  },
+  {
+    "id": "foar",
+    "title": "FoAR: Force-Aware Reactive Policy for Contact-Rich Robotic Manipulation",
+    "year": 2024,
+    "authors": "Zihao He, Hongjie Fang, Jingjing Chen, Hao-Shu Fang, Cewu Lu",
+    "group": "Vision, force & action",
+    "method": "Diffusion · visual/F/T fusion",
+    "evidence": "Hardware · lab",
+    "inputs": "Point-cloud vision and high-frequency force/torque",
+    "action": "Diffusion action head, future-contact prediction, reactive position correction",
+    "overview": "Selectively combines force and visual information across contact and free-motion phases.",
+    "achievement": "Tests wiping, peeling and chopping, including dynamic disturbances.",
+    "gap": "No wood-drilling or slab-measurement evidence; position commands still need validated contact behavior.",
+    "relevance": "Strong sensor-compatible candidate for comparing vision-only versus vision-plus-force policies.",
+    "url": "https://arxiv.org/abs/2411.15753v1",
+    "video": "https://tonyfang.net/FoAR/",
+    "verification": "Primary abstract / author project checked",
+    "version": "November 2024 preprint; use v1 for the requested window",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2411.15753v1"
+      },
+      {
+        "label": "Author methods and experiments",
+        "url": "https://tonyfang.net/FoAR/"
+      }
+    ]
+  },
+  {
+    "id": "forcemimic",
+    "title": "Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation (ForceMimic)",
+    "year": 2024,
+    "authors": "Wenhai Liu, Junbo Wang, Yiming Wang, Weiming Wang, Cewu Lu",
+    "group": "Vision, force & action",
+    "method": "Diffusion · hybrid force/position",
+    "evidence": "Hardware · peeling",
+    "inputs": "Policy: point cloud + pose history. F/T: demonstration targets and execution feedback",
+    "action": "Predicts pose AND wrench; hybrid force/position primitive executes them",
+    "overview": "Collects tool-force demonstrations with a handheld device and learns force-motion trajectories.",
+    "achievement": "Demonstrates force-aware vegetable peeling using a physical robot.",
+    "gap": "Not a policy conditioned on measured force in the same way as FoAR; wood cutting remains untested.",
+    "relevance": "Useful for force-labeled demonstrations and hybrid action outputs; distinguish those from force inputs.",
+    "url": "https://arxiv.org/abs/2410.07554v1",
+    "video": "https://forcemimic.github.io/",
+    "verification": "2024 preprint method and input/output definitions checked",
+    "version": "October 2024 preprint; later ICRA 2025 version renamed",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2410.07554v1"
+      },
+      {
+        "label": "2024 method: policy inputs and outputs",
+        "url": "https://arxiv.org/html/2410.07554v1"
+      }
+    ]
+  },
+  {
+    "id": "moma-force",
+    "title": "MOMA-Force: Visual-Force Imitation for Real-World Mobile Manipulation",
+    "year": 2023,
+    "authors": "Taozheng Yang et al.",
+    "group": "Vision, force & action",
+    "method": "Imitation · admittance control",
+    "evidence": "Hardware · household setting",
+    "inputs": "Visual representations, demonstrated motion/force, execution force feedback",
+    "action": "Learned/retrieved behavior with admittance whole-body control",
+    "overview": "Combines learned perception and motion imitation with a classical force-responsive controller.",
+    "achievement": "Reports household contact tasks with smaller interaction forces than baselines without force imitation.",
+    "gap": "Mobile household manipulation is not machining; deployment and sensor synchronization differ from a fixed arm.",
+    "relevance": "A useful hybrid architecture between end-to-end learning and an explicit contact-control layer.",
+    "url": "https://arxiv.org/abs/2308.03624",
+    "video": "https://visual-force-imitation.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2308.03624"
+      }
+    ]
+  },
+  {
+    "id": "copre",
+    "title": "CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms",
+    "year": 2026,
+    "authors": "Zhu et al.",
+    "group": "Proprioception & contact sensing",
+    "method": "Learned torque residual · contact detection",
+    "evidence": "Hardware · ARX and G1",
+    "inputs": "Joint history, commands and torque signals; no extra F/T or tactile sensor",
+    "action": "Predict contact-free torque, then interpret residuals",
+    "overview": "Learns a reference for contact detection without an analytical dynamics model or contact labels.",
+    "achievement": "Reports physical insertion and obstacle-related manipulation.",
+    "gap": "Contact detection alone does not recover accurate workpiece dimensions or contact position.",
+    "relevance": "Compare detection sensitivity with the wrist F/T signal available in your setup.",
+    "url": "https://arxiv.org/abs/2609.27381v1",
+    "video": "https://copre-arm.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "23 Sep 2026 · new preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.27381v1"
+      }
+    ]
+  },
+  {
+    "id": "branches",
+    "title": "Gentle Manipulation of Tree Branches: A Contact-Aware Policy Learning Approach",
+    "year": 2025,
+    "authors": "Jacob, Cai, Borges, Bandyopadhyay and Ramos",
+    "group": "Proprioception & contact sensing",
+    "method": "Proprioceptive RL · sim-to-real",
+    "evidence": "Hardware + simulation · flexible branches",
+    "inputs": "Proprioception; no external vision, tactile or torque sensing required by the policy",
+    "action": "Contact-aware policy with simulated compliant branch interactions",
+    "overview": "Learns to interact gently with flexible obstacles.",
+    "achievement": "Transfers to physical branches through randomized simulated training.",
+    "gap": "Live branch compliance is different from cut-timber geometry and joint friction.",
+    "relevance": "Useful non-woodworking example of contact inference and compliant interaction.",
+    "url": "https://proceedings.mlr.press/v270/jacob25a.html",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "CoRL 2024 · proceedings published 2025",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://proceedings.mlr.press/v270/jacob25a.html"
+      }
+    ]
+  },
+  {
+    "id": "unitac",
+    "title": "UniTac: Whole-Robot Touch Sensing Without Tactile Sensors",
+    "year": 2025,
+    "authors": "Fu, Li, He, Tellex and Sridhar",
+    "group": "Proprioception & contact sensing",
+    "method": "Learned proprioceptive contact localization",
+    "evidence": "Hardware · Franka and Spot",
+    "inputs": "Joint positions and torques; no tactile skin",
+    "action": "MLP maps proprioception to contact estimates",
+    "overview": "Uses existing robot signals to infer contact over the body.",
+    "achievement": "Demonstrates whole-robot contact sensing on an arm and a quadruped.",
+    "gap": "Reported arm localization is on the order of centimetres, not precision slab metrology.",
+    "relevance": "Compatible sensing direction, but a known calibrated probe is preferable for dimensional measurement.",
+    "url": "https://arxiv.org/abs/2507.07980",
+    "video": "https://ivl.cs.brown.edu/research/unitac",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 preprint · subsequent CVPR 2026 workshop presentation",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2507.07980"
+      }
+    ]
+  },
+  {
+    "id": "multi-contact",
+    "title": "Proprioceptive Sensor-Based Simultaneous Multi-Contact Point Localization and Force Identification for Robotic Arms",
+    "year": 2023,
+    "authors": "Seo Wook Han, Min Jun Kim",
+    "group": "Proprioception & contact sensing",
+    "method": "Particle filter · contact estimation",
+    "evidence": "Simulation only",
+    "inputs": "Joint torque sensors AND a base-mounted F/T sensor",
+    "action": "Mesh preprocessing and multi-contact force/location inference",
+    "overview": "Extends contact estimation to multiple simultaneous contacts on robot links.",
+    "achievement": "Reports single-, dual- and triple-contact simulation results for a seven-joint arm.",
+    "gap": "A wrist F/T sensor is not the required base F/T sensor; physical accuracy is not established here.",
+    "relevance": "Useful for observability limits; avoid confusing robot-surface contact localization with slab reconstruction.",
+    "url": "https://arxiv.org/abs/2303.03903",
+    "video": "",
+    "verification": "Primary abstract / author project checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2303.03903"
+      }
+    ]
+  },
+  {
+    "id": "clasp",
+    "title": "CLASP: Constrained Latent Shape Projection for Refining Object Shape from Robot Contact",
+    "year": 2022,
+    "authors": "Brad Saund, Dmitry Berenson",
+    "group": "Proprioception & contact sensing",
+    "method": "Vision + contact · shape prior",
+    "evidence": "Hardware + simulation",
+    "inputs": "RGB-D, robot geometry/configuration, binary contact from external joint torque",
+    "action": "Learned shape completion followed by latent constraint projection",
+    "overview": "Corrects visually predicted shapes using contact and observed free space without sensorized skin.",
+    "achievement": "Tests include a physical KUKA arm; contacts refine the estimated object shape.",
+    "gap": "Assumes static objects and learned shape priors; inferred hidden shape is not a measured surface.",
+    "relevance": "Useful camera-plus-proprioception fusion baseline; compare against simple plane/edge fitting.",
+    "url": "https://proceedings.mlr.press/v164/saund22a/saund22a.pdf",
+    "video": "",
+    "verification": "Primary methods and live-robot experiments checked",
+    "version": "CoRL 2021; proceedings published 2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://proceedings.mlr.press/v164/saund22a/saund22a.pdf"
+      }
+    ]
+  },
+  {
+    "id": "force-map",
+    "title": "Force-Based Simultaneous Mapping and Object Reconstruction for Robotic Manipulation",
+    "year": 2022,
+    "authors": "Joao Bimbo, Andrew S. Morgan, Aaron M. Dollar",
+    "group": "Proprioception & contact sensing",
+    "method": "Probabilistic mapping · F/T",
+    "evidence": "Hardware + simulation",
+    "inputs": "End-effector pose and wrist F/T; no camera required by mapping method",
+    "action": "Two coupled occupancy maps: environment and grasped object",
+    "overview": "Uses interaction wrenches to constrain possible contact locations and reconstruct geometry.",
+    "achievement": "Demonstrated on a UR5e; maps objects and surroundings while interacting.",
+    "gap": "Single-contact and rigid-grasp assumptions matter; voxel reconstruction is not certified dimensional metrology.",
+    "relevance": "A close conceptual match for contact measurement, but a calibrated known probe simplifies your slab problem.",
+    "url": "https://www.eng.yale.edu/grablab/pubs/Bimbo_RAL2022.pdf",
+    "video": "",
+    "verification": "Primary paper methods and hardware setup checked",
+    "version": "2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://www.eng.yale.edu/grablab/pubs/Bimbo_RAL2022.pdf"
+      }
+    ]
+  },
+  {
+    "id": "stucco",
+    "title": "Soft Tracking Using Contacts for Cluttered Objects to Perform Blind Object Retrieval",
+    "year": 2022,
+    "authors": "Sheng Zhong, Nima Fazeli, Dmitry Berenson",
+    "group": "Proprioception & contact sensing",
+    "method": "Particle filtering · contact tracking",
+    "evidence": "Hardware + simulation",
+    "inputs": "Joint-torque dynamics observer; real setup also uses Soft-Bubble tactile sensors",
+    "action": "Tracks contact points and uncertain object associations",
+    "overview": "Maintains object-contact beliefs even when interactions move objects in clutter.",
+    "achievement": "Physical blind retrieval and simulation tests support contact-based tracking.",
+    "gap": "Physical results use tactile augmentation; they are not evidence for identical performance with your sensors alone.",
+    "relevance": "Adjacent reference for slip/motion and contact association, not the first choice for a clamped slab.",
+    "url": "https://arm.robotics.umich.edu/download.php?p=104",
+    "video": "",
+    "verification": "Primary methods and sensor details checked",
+    "version": "2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arm.robotics.umich.edu/download.php?p=104"
+      }
+    ]
+  },
+  {
+    "id": "cpf",
+    "title": "Localizing External Contact Using Proprioceptive Sensors: The Contact Particle Filter",
+    "year": 2016,
+    "authors": "Lucas Manuelli, Russ Tedrake",
+    "group": "Proprioception & contact sensing",
+    "method": "Model-based observer · particles",
+    "evidence": "Simulation · Atlas",
+    "inputs": "Robot state, joint torques, dynamics and robot surface model",
+    "action": "Momentum residual plus contact-particle inference",
+    "overview": "Estimates where external forces act on the robot without distributed tactile skin.",
+    "achievement": "Establishes a probabilistic framework for localizing one or more external contacts.",
+    "gap": "Original evaluation is simulated; force and location can be ambiguous and model errors affect residuals.",
+    "relevance": "Foundational for torque-based contact detection, but known-tip probing is a simpler initial measurement strategy.",
+    "url": "https://groups.csail.mit.edu/robotics-center/public_papers/Manuelli16.pdf",
+    "video": "",
+    "verification": "Primary abstract / author project checked",
+    "version": "2016 · foundational proprioception paper",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://groups.csail.mit.edu/robotics-center/public_papers/Manuelli16.pdf"
+      }
+    ]
+  },
+  {
+    "id": "rotate-garment",
+    "title": "RotateIt! Fast and Reliable Single-Arm Garment Unfolding via Online-Adaptive Dynamic Rotation",
+    "year": 2026,
+    "authors": "Zhang et al.",
+    "group": "Dexterous & deformable manipulation",
+    "method": "Dynamic manipulation · online adaptation",
+    "evidence": "Hardware + simulation · garments",
+    "inputs": "Garment observations and online interaction feedback",
+    "action": "Grasp ranking and adaptive rotational motion",
+    "overview": "Uses garment inertia during single-arm rotation to unfold fabric.",
+    "achievement": "Reports physical experiments on unseen garments alongside simulation.",
+    "gap": "New preprint; unfolding is one stage rather than complete laundry autonomy.",
+    "relevance": "Different from the 2023 RotateIt in-hand rotation work.",
+    "url": "https://arxiv.org/abs/2609.19817",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "17 Sep 2026 · new preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.19817"
+      }
+    ]
+  },
+  {
+    "id": "dexmachina",
+    "title": "DexMachina: Functional Retargeting for Bimanual Dexterous Manipulation",
+    "year": 2025,
+    "authors": "Mandi, Hou, Fox, Narang, Mandlekar and Song",
+    "group": "Dexterous & deformable manipulation",
+    "method": "RL · functional retargeting",
+    "evidence": "Simulation · bimanual dexterity",
+    "inputs": "Human demonstrations and simulated object/robot states",
+    "action": "Curriculum gradually removes virtual assistance",
+    "overview": "Retargets human manipulation through object function rather than literal motion copying.",
+    "achievement": "Demonstrates a range of dexterous skills in simulation.",
+    "gap": "Physical robot transfer is not established by the checked evidence.",
+    "relevance": "Useful for dexterous hands whose kinematics differ from human hands.",
+    "url": "https://arxiv.org/abs/2505.24853",
+    "video": "https://project-dexmachina.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2505.24853"
+      }
+    ]
+  },
+  {
+    "id": "humanoid-dex",
+    "title": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids",
+    "year": 2025,
+    "authors": "Lin, Sachdev, Fan, Malik and Zhu",
+    "group": "Dexterous & deformable manipulation",
+    "method": "Vision RL · policy distillation",
+    "evidence": "Hardware + simulation · humanoid",
+    "inputs": "Visual object information and robot state",
+    "action": "Simulation training, calibration and divide-and-conquer distillation",
+    "overview": "Studies physical dexterous manipulation without human demonstrations.",
+    "achievement": "Transfers policies for three humanoid manipulation tasks.",
+    "gap": "Task coverage and real-to-sim tuning limit claims of general dexterity.",
+    "relevance": "Compare demonstration-based learning with calibrated simulation training.",
+    "url": "https://arxiv.org/abs/2502.20396",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2502.20396"
+      }
+    ]
+  },
+  {
+    "id": "dexdeform",
+    "title": "DexDeform: Dexterous Deformable Object Manipulation with Human Demonstrations and Differentiable Physics",
+    "year": 2023,
+    "authors": "Li, Huang, Chen, Du, Su, Tenenbaum and Gan",
+    "group": "Dexterous & deformable manipulation",
+    "method": "Latent skills · differentiable physics",
+    "evidence": "Simulation · deformable objects",
+    "inputs": "Demonstrations and simulated deformable object states",
+    "action": "Skill learning with differentiable-physics refinement",
+    "overview": "Combines demonstration priors and physical optimization for deformable manipulation.",
+    "achievement": "Evaluates multiple simulated dexterous shaping tasks.",
+    "gap": "Physical transfer and real material identification are not established by this evidence.",
+    "relevance": "Compare explicit deformable dynamics with end-to-end imitation.",
+    "url": "https://arxiv.org/abs/2304.03223",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2023 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2304.03223"
+      }
+    ]
+  },
+  {
+    "id": "rotateit",
+    "title": "General In-Hand Object Rotation with Vision and Touch",
+    "year": 2023,
+    "authors": "Qi, Yi, Suresh, Lambeta, Ma, Calandra and Malik",
+    "group": "Dexterous & deformable manipulation",
+    "method": "Sim-to-real RL · visuotactile",
+    "evidence": "Hardware + simulation · dexterous hand",
+    "inputs": "Vision, proprioception and tactile sensors",
+    "action": "Privileged simulated teacher distilled into a sensor-based policy",
+    "overview": "Studies multi-axis object reorientation inside a robotic hand.",
+    "achievement": "Demonstrates physical rotation with multimodal feedback.",
+    "gap": "Requires tactile hardware outside your planned setup; does not solve grasp acquisition and all subsequent tasks.",
+    "relevance": "Broad manipulation reading on in-hand control and sensor fusion.",
+    "url": "https://arxiv.org/abs/2309.09979",
+    "video": "https://haozhi.io/rotateit/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2023 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2309.09979"
+      }
+    ]
+  },
+  {
+    "id": "clothfunnels",
+    "title": "Cloth Funnels: Canonicalized-Alignment for Multi-Purpose Garment Manipulation",
+    "year": 2022,
+    "authors": "Canberk et al.",
+    "group": "Dexterous & deformable manipulation",
+    "method": "Learned dynamic and quasi-static primitives",
+    "evidence": "Hardware · garments",
+    "inputs": "Visual garment observations",
+    "action": "Flings and pick-and-place actions produce a canonical arrangement",
+    "overview": "Uses canonical alignment to simplify downstream garment operations.",
+    "achievement": "Physical alignment supports subsequent folding and ironing routines.",
+    "gap": "Downstream routines are structured; this is not one universal end-to-end garment policy.",
+    "relevance": "Shows why a useful intermediate representation can simplify manipulation.",
+    "url": "https://arxiv.org/abs/2210.09347",
+    "video": "https://clothfunnels.cs.columbia.edu/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "Oct 2022 first preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2210.09347"
+      }
+    ]
+  },
+  {
+    "id": "speedfolding",
+    "title": "SpeedFolding: Learning Efficient Bimanual Folding of Garments",
+    "year": 2022,
+    "authors": "Avigal, Berscheid, Asfour, Kröger and Goldberg",
+    "group": "Dexterous & deformable manipulation",
+    "method": "Learned primitives · bimanual folding",
+    "evidence": "Hardware · garments",
+    "inputs": "Visual garment observations and target folding lines",
+    "action": "Predicts coordinated grasp poses for manipulation primitives",
+    "overview": "Combines smoothing with structured garment folding.",
+    "achievement": "Physical tests include garments beyond the training examples.",
+    "gap": "Garment variation and folding instructions bound the demonstrated generality.",
+    "relevance": "Non-rigid manipulation example with geometric task structure.",
+    "url": "https://arxiv.org/abs/2208.10552",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2022 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2208.10552"
+      }
+    ]
+  },
+  {
+    "id": "aloha-unleashed",
+    "title": "ALOHA Unleashed: A Simple Recipe for Robot Dexterity",
+    "year": 2024,
+    "authors": "Zhao et al.",
+    "group": "Bimanual & mobile manipulation",
+    "method": "Diffusion · scaled bimanual imitation",
+    "evidence": "Hardware + simulation",
+    "inputs": "Visual observations and robot state; ALOHA 2 demonstrations",
+    "action": "Diffusion policy trained on expanded demonstration data",
+    "overview": "Explores how platform and data improvements support more demanding bimanual skills.",
+    "achievement": "Reports physical dexterous and deformable-object manipulation.",
+    "gap": "Performance remains task and data dependent; no woodworking process qualification.",
+    "relevance": "Useful comparison for coordinated tool/workpiece handling.",
+    "url": "https://arxiv.org/abs/2410.13126",
+    "video": "https://aloha-unleashed.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2024 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2410.13126"
+      }
+    ]
+  },
+  {
+    "id": "dexmimicgen",
+    "title": "DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning",
+    "year": 2024,
+    "authors": "Jiang et al.",
+    "group": "Bimanual & mobile manipulation",
+    "method": "Synthetic demonstrations · imitation",
+    "evidence": "Simulation + limited physical transfer",
+    "inputs": "Seed demonstrations and robot/object observations",
+    "action": "Transforms a small demonstration set into simulated training trajectories",
+    "overview": "Scales data for coordinated hands and arms.",
+    "achievement": "Broad simulated evaluation plus physical humanoid can-sorting transfer.",
+    "gap": "The breadth of simulation tasks should not be counted as equivalent hardware validation.",
+    "relevance": "Read for demonstration reuse across object arrangements.",
+    "url": "https://arxiv.org/abs/2410.24185",
+    "video": "https://dexmimicgen.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2024 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2410.24185"
+      }
+    ]
+  },
+  {
+    "id": "mobile-aloha",
+    "title": "Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation",
+    "year": 2024,
+    "authors": "Fu, Zhao and Finn",
+    "group": "Bimanual & mobile manipulation",
+    "method": "Whole-body imitation · action chunking",
+    "evidence": "Hardware · mobile bimanual robot",
+    "inputs": "Cameras and arm/base state; whole-body teleoperation",
+    "action": "Co-trained action policy for two arms and a mobile base",
+    "overview": "Extends imitation to tasks requiring both locomotion and coordinated manipulation.",
+    "achievement": "Physical demonstrations include kitchen activities and elevator interaction.",
+    "gap": "Task-specific data and resets remain; broad workshop autonomy is unestablished.",
+    "relevance": "Relevant to carrying stock and repositioning around a large workpiece.",
+    "url": "https://arxiv.org/abs/2401.02117",
+    "video": "https://mobile-aloha.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2024 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2401.02117"
+      }
+    ]
+  },
+  {
+    "id": "realtime-expo",
+    "title": "Reinforcement Learning for Real-Time Vision-Language-Action Policies",
+    "year": 2026,
+    "authors": "Dong, Hung, Sadigh and Finn",
+    "group": "Assembly & sim-to-real",
+    "method": "Fast residual RL · slow VLA",
+    "evidence": "Hardware + simulation",
+    "inputs": "Recent observations and slow policy action chunks",
+    "action": "Fast learned edits to actions from a slower model",
+    "overview": "Addresses the lag between expensive policy inference and changing physical conditions.",
+    "achievement": "Physical dynamic tasks include passing, balancing, kicking and picking.",
+    "gap": "Dynamic task gains do not establish precision force control during machining.",
+    "relevance": "Read when action-chunk latency limits recovery or moving-object interaction.",
+    "url": "https://arxiv.org/abs/2609.18207v1",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "16 Sep 2026 · new preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.18207v1"
+      }
+    ]
+  },
+  {
+    "id": "hil-serl",
+    "title": "Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning",
+    "year": 2024,
+    "authors": "Luo, Xu, Wu and Levine",
+    "group": "Assembly & sim-to-real",
+    "method": "Vision RL · human corrections",
+    "evidence": "Hardware · assembly and dynamic tasks",
+    "inputs": "Visual observations, robot state and human interventions",
+    "action": "Demonstrations plus online reinforcement learning",
+    "overview": "Uses human corrections to make learning difficult physical skills more practical.",
+    "achievement": "Reports dexterous, dynamic and dual-arm manipulation on real robots.",
+    "gap": "Intervention effort, reset cost and transfer to different materials remain evaluation requirements.",
+    "relevance": "Read for improving a contact skill after demonstration-based initialization.",
+    "url": "https://arxiv.org/abs/2410.21845",
+    "video": "https://hil-serl.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "Oct 2024 preprint · March 2025 revision",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2410.21845"
+      }
+    ]
+  },
+  {
+    "id": "furniturebench",
+    "title": "FurnitureBench: Reproducible Real-World Benchmark for Long-Horizon Complex Manipulation",
+    "year": 2023,
+    "authors": "Minho Heo, Youngwoon Lee, Doohyun Lee, Joseph J. Lim",
+    "group": "Assembly & sim-to-real",
+    "method": "Benchmark · IL / offline RL",
+    "evidence": "Hardware · miniature furniture",
+    "inputs": "Visual and robot-state observations; demonstrations",
+    "action": "Long sequences including grasp, align, insert and screw",
+    "overview": "Provides reproducible furniture assembly tasks, data and a paired simulator.",
+    "achievement": "Exposes failures of existing imitation and offline-RL baselines on long assembly sequences.",
+    "gap": "3D-printable miniature furniture is not real timber fabrication; drilling and material quality are outside scope.",
+    "relevance": "Adopt staged evaluation and recovery metrics rather than treating completion as one opaque score.",
+    "url": "https://arxiv.org/abs/2305.12821",
+    "video": "https://clvrai.github.io/furniture-bench/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2305.12821"
+      }
+    ]
+  },
+  {
+    "id": "industreal",
+    "title": "IndustReal: Transferring Contact-Rich Assembly Tasks from Simulation to Reality",
+    "year": 2023,
+    "authors": "Bingjie Tang et al.",
+    "group": "Assembly & sim-to-real",
+    "method": "RL · sim-to-real",
+    "evidence": "Hardware + simulation",
+    "inputs": "Pose/state feedback and real-system perception; not a general vision–F/T foundation model",
+    "action": "RL with simulation-aware updates, SDF rewards, curricula and action integration",
+    "overview": "Addresses transfer errors in precise contact-rich assembly.",
+    "achievement": "Transfers learned pick, place and insertion behaviors to a physical assembly system.",
+    "gap": "Insertion transfer does not establish wood-specific interference fits or material-removal control.",
+    "relevance": "Useful comparison for learned insertion versus admittance and demonstration-based skills.",
+    "url": "https://arxiv.org/abs/2305.17110",
+    "video": "https://sites.google.com/nvidia.com/industreal",
+    "verification": "Primary abstract / author project checked",
+    "version": "2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2305.17110"
+      }
+    ]
+  },
+  {
+    "id": "factory",
+    "title": "Factory: Fast Contact for Robotic Assembly",
+    "year": 2022,
+    "authors": "Yashraj Narang et al.",
+    "group": "Assembly & sim-to-real",
+    "method": "Physics simulation · RL",
+    "evidence": "Simulation only",
+    "inputs": "Simulated state and contact; controller-dependent observations",
+    "action": "Fast contact simulation, assembly assets, controllers and RL",
+    "overview": "Makes large batches of contact-rich assembly simulations practical.",
+    "achievement": "Provides nut-and-bolt assembly examples and reusable simulation components.",
+    "gap": "Does not establish hardware transfer; rigid-part contact does not model wood crushing, splintering or chip removal.",
+    "relevance": "Use for assembly experiments, while separately modeling wood compliance and machining.",
+    "url": "https://arxiv.org/abs/2205.03532",
+    "video": "https://sites.google.com/nvidia.com/factory",
+    "verification": "Primary abstract / author project checked",
+    "version": "2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2205.03532"
+      }
+    ]
+  },
+  {
+    "id": "roboirg",
+    "title": "RoboIRGBench: Benchmarking Implicit Referential Grounding in Vision-Language-Action Models",
+    "year": 2026,
+    "authors": "Akelijiang, Li, Chen, Chen and Zhu",
+    "group": "Planning, evaluation & benchmarks",
+    "method": "Language grounding · VLA evaluation",
+    "evidence": "Benchmark + Franka Research 3 hardware",
+    "inputs": "Explicit versus implicit language references and scene context",
+    "action": "Tests how action models resolve contextual targets",
+    "overview": "Studies instructions where the intended object or relation is not directly named.",
+    "achievement": "Finds grounding and execution failures that persist in physical experiments.",
+    "gap": "New preprint; benchmark scope does not establish all forms of language understanding.",
+    "relevance": "Important for ambiguous instructions such as attaching the matching piece.",
+    "url": "https://arxiv.org/abs/2609.34384",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "28 Sep 2026 · new preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2609.34384"
+      }
+    ]
+  },
+  {
+    "id": "benchmark-audit",
+    "title": "What Are We Actually Benchmarking in Robot Manipulation?",
+    "year": 2026,
+    "authors": "Jiang, Tan, Wheeler, Sun, Ayalew and Walter",
+    "group": "Planning, evaluation & benchmarks",
+    "method": "Benchmark audit · evaluation methodology",
+    "evidence": "Simulation benchmark analysis",
+    "inputs": "Existing manipulation suites and policy evaluations",
+    "action": "Audits shortcuts, statistical reliability and evaluation design",
+    "overview": "Examines what common benchmark scores actually measure.",
+    "achievement": "Identifies ways apparent policy progress can reflect dataset or evaluation artifacts.",
+    "gap": "An audit does not supply a replacement physical manipulation system.",
+    "relevance": "Use held-out tasks/materials and repeated physical trials rather than relying on one score.",
+    "url": "https://arxiv.org/abs/2606.04233v1",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "June 2026 · preprint",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2606.04233v1"
+      }
+    ]
+  },
+  {
+    "id": "robotwin2",
+    "title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+    "year": 2025,
+    "authors": "Chen et al.",
+    "group": "Planning, evaluation & benchmarks",
+    "method": "Synthetic data · domain randomization",
+    "evidence": "Simulation benchmark + physical transfer tests",
+    "inputs": "Simulated cameras, states and randomized scenes",
+    "action": "Generated task programs and demonstration trajectories",
+    "overview": "Scales bimanual training through automated data generation and varied scenes.",
+    "achievement": "Includes multiple embodiments and physical transfer experiments.",
+    "gap": "Benchmark breadth exceeds the set of hardware demonstrations; fabrication loads remain a separate problem.",
+    "relevance": "Compare synthetic scene diversity with real demonstration collection.",
+    "url": "https://arxiv.org/abs/2506.18088",
+    "video": "https://robotwin-platform.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2025 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2506.18088"
+      }
+    ]
+  },
+  {
+    "id": "maniskill3",
+    "title": "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI",
+    "year": 2024,
+    "authors": "Tao et al.",
+    "group": "Planning, evaluation & benchmarks",
+    "method": "Simulation infrastructure · RL / imitation",
+    "evidence": "Simulation platform",
+    "inputs": "Simulated visual, state and task observations",
+    "action": "Parallel physics and rendering for policy training",
+    "overview": "Provides scalable environments across multiple manipulation domains.",
+    "achievement": "Enables broad, faster simulated training and evaluation.",
+    "gap": "A simulator benchmark result is not evidence of successful real contact dynamics.",
+    "relevance": "Useful for prototyping tasks before physical evaluation.",
+    "url": "https://arxiv.org/abs/2410.00425",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "Oct 2024 first preprint · later revisions included in linked record",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2410.00425"
+      }
+    ]
+  },
+  {
+    "id": "voxposer",
+    "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+    "year": 2023,
+    "authors": "Huang et al.",
+    "group": "Planning, evaluation & benchmarks",
+    "method": "Language + 3D planning · model-based",
+    "evidence": "Hardware + simulation",
+    "inputs": "Vision and natural-language instructions",
+    "action": "Composes spatial value maps for trajectory optimization",
+    "overview": "Connects language reasoning to geometric planning without a monolithic action network.",
+    "achievement": "Reports physical manipulation and adaptation using online dynamics information.",
+    "gap": "Geometric planning alone does not guarantee contact-force or material-quality constraints.",
+    "relevance": "Useful alternative to end-to-end action decoding for tool positioning.",
+    "url": "https://arxiv.org/abs/2307.05973",
+    "video": "https://voxposer.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2023 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2307.05973"
+      }
+    ]
+  },
+  {
+    "id": "saycan",
+    "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+    "year": 2022,
+    "authors": "Ahn et al.",
+    "group": "Planning, evaluation & benchmarks",
+    "method": "Language planning · learned skill values",
+    "evidence": "Hardware · mobile household robot",
+    "inputs": "Language request and observations for skill feasibility",
+    "action": "Selects among a library of learned robot skills",
+    "overview": "Grounds language-generated plans in estimated executable actions.",
+    "achievement": "Physical household sequences demonstrate language-conditioned skill composition.",
+    "gap": "A bounded skill library limits what can be requested and recovered from.",
+    "relevance": "A hierarchy for sequencing measure, align and attach skills.",
+    "url": "https://arxiv.org/abs/2204.01691",
+    "video": "https://say-can.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2022 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2204.01691"
+      }
+    ]
+  },
+  {
+    "id": "droid",
+    "title": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset",
+    "year": 2024,
+    "authors": "Alexander Khazatsky et al.",
+    "group": "Data & teaching",
+    "method": "Dataset · generalization",
+    "evidence": "Hardware data · many scenes",
+    "inputs": "Multi-view visual observations and robot trajectories",
+    "action": "Demonstration dataset and policy-learning experiments",
+    "overview": "Diversifies the environments available for robot policy training.",
+    "achievement": "Provides a large real-world dataset and studies generalization from broader data.",
+    "gap": "General manipulation data do not supply verified woodworking force labels or manufacturing-quality targets.",
+    "relevance": "A source of pretraining and collection practice, not a replacement for slab/joint/drilling data.",
+    "url": "https://arxiv.org/abs/2403.12945v1",
+    "video": "https://droid-dataset.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "March 2024 preprint; later revision excluded",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2403.12945v1"
+      }
+    ]
+  },
+  {
+    "id": "umi",
+    "title": "Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+    "year": 2024,
+    "authors": "Cheng Chi et al.",
+    "group": "Data & teaching",
+    "method": "Demonstration capture · diffusion",
+    "evidence": "Hardware · varied environments",
+    "inputs": "Handheld gripper video and tracked trajectories; no original force capture",
+    "action": "Relative trajectory representation with latency-aware policy deployment",
+    "overview": "Collects robot-transferable demonstrations without moving a robot into each scene.",
+    "achievement": "Shows physical deployment of dynamic, bimanual and long-horizon skills.",
+    "gap": "Pose demonstrations omit the force histories needed for interference fits and cutting.",
+    "relevance": "Good data-collection reference; pair with force-aware capture ideas rather than assuming motion alone suffices.",
+    "url": "https://arxiv.org/abs/2402.10329",
+    "video": "https://umi-gripper.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2402.10329"
+      }
+    ]
+  },
+  {
+    "id": "oxe",
+    "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "year": 2023,
+    "authors": "Open X-Embodiment Collaboration",
+    "group": "Data & teaching",
+    "method": "Multi-robot data · transfer",
+    "evidence": "Hardware datasets + policy tests",
+    "inputs": "Heterogeneous robot observations and actions",
+    "action": "Cross-embodiment data standardization and RT-X policies",
+    "overview": "Studies whether experience across robot platforms can improve learned control.",
+    "achievement": "Shows benefits of pooling robot datasets rather than training each platform in isolation.",
+    "gap": "Sensor/action conventions differ; force calibration and machining-specific data remain separate requirements.",
+    "relevance": "Useful for pretraining scope and data schemas when collecting your own multimodal dataset.",
+    "url": "https://arxiv.org/abs/2310.08864",
+    "video": "",
+    "verification": "Primary abstract / author project checked",
+    "version": "October 2023 preprint; ICRA 2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2310.08864"
+      }
+    ]
+  },
+  {
+    "id": "timber-microfactory",
+    "title": "Constraint to capability: a multi-robot screw-press gluing micro-factory for scalable and efficient multi-story timber slab assembly",
+    "year": 2026,
+    "authors": "Huang, Stark, Skoury et al.",
+    "group": "Timber joints & construction",
+    "method": "Motion planning · scheduling · torque control",
+    "evidence": "Hardware · full-scale timber prototype",
+    "inputs": "Geometric production data, spindle torque/angle and process signals",
+    "action": "Two robots coordinate gluing, placement and screw pressing",
+    "overview": "Integrates fabrication tools and scheduling under adhesive timing constraints.",
+    "achievement": "A full-scale prototype demonstrates coordinated timber slab fabrication with process logging.",
+    "gap": "Does not demonstrate learned probing of unknown slabs or arbitrary joint selection.",
+    "relevance": "Direct evidence for screws and gluing; integrated timber production already exists.",
+    "url": "https://link.springer.com/article/10.1007/s41693-026-00190-4",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2 July 2026 · journal article",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://link.springer.com/article/10.1007/s41693-026-00190-4"
+      }
+    ]
+  },
+  {
+    "id": "timber-ar",
+    "title": "Timber system with robotic milling and AR-guided assembly for reconfiguration",
+    "year": 2026,
+    "authors": "Xu, Teixeira and Shafiei",
+    "group": "Timber joints & construction",
+    "method": "Rule-based design · robotic milling · AR",
+    "evidence": "Hardware · timber fabrication and human assembly",
+    "inputs": "Digital design and augmented-reality assembly guidance",
+    "action": "Robotic machining followed by guided human assembly",
+    "overview": "Links reconfigurable timber joinery with digital fabrication.",
+    "achievement": "Demonstrates a fabrication/assembly workflow for reconfigurable timber systems.",
+    "gap": "AR-guided human assembly is not autonomous robot insertion.",
+    "relevance": "Read for joint geometry and division of work between machining and assembly.",
+    "url": "https://link.springer.com/article/10.1007/s41693-026-00210-3",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "29 June 2026 · journal article",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://link.springer.com/article/10.1007/s41693-026-00210-3"
+      }
+    ]
+  },
+  {
+    "id": "truss-trash",
+    "title": "Truss from trash: a human–robot framework for adaptive timber assembly on the construction floor",
+    "year": 2025,
+    "authors": "Skevaki, Duong, Yang and Parascho",
+    "group": "Timber joints & construction",
+    "method": "Human–robot collaboration · adaptive fabrication",
+    "evidence": "Hardware · full-scale reclaimed timber",
+    "inputs": "Irregular timber information and projection-based human interface",
+    "action": "Robot pick, cut and place with human design intervention",
+    "overview": "Adapts fabrication to variable reclaimed offcuts.",
+    "achievement": "Reports full-scale fabrication experiments using discarded timber.",
+    "gap": "Human involvement remains central; unattended metrology-to-assembly is not established.",
+    "relevance": "A directly relevant example of material variability beyond ideal standardized stock.",
+    "url": "https://link.springer.com/article/10.1007/s41693-025-00175-9",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "10 Dec 2025 online · 2026 journal volume",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://link.springer.com/article/10.1007/s41693-025-00175-9"
+      }
+    ]
+  },
+  {
+    "id": "wood-pins",
+    "title": "Assembly of low-stiffness parts through admittance control with adaptive stiffness",
+    "year": 2024,
+    "authors": "Inhwan Yoon, Minwoo Na, Jae-Bok Song",
+    "group": "Timber joints & construction",
+    "method": "Admittance · neural adaptation",
+    "evidence": "Hardware · wooden pins",
+    "inputs": "Contact-force feedback on a position-controlled robot",
+    "action": "Variable/adaptive stiffness; feedforward neural network adjusts stiffness",
+    "overview": "Addresses interference-fit assembly where compliant parts deform during insertion.",
+    "achievement": "Reports wooden-pin and plastic-bracket assembly with reduced force overshoot and more stable contact.",
+    "gap": "Does not learn visual alignment or measure the slab; generality across wood species and moisture is unestablished.",
+    "relevance": "Especially relevant to dowels: deformation and force limits matter beyond rigid peg-in-hole models.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0736584523001539",
+    "video": "",
+    "verification": "Publisher abstract and experimental description in introduction checked",
+    "version": "2024 journal issue; DOI assigned in 2023",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0736584523001539"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-timber",
+    "title": "Feedback-driven adaptive multi-robot timber construction",
+    "year": 2024,
+    "authors": "Arash Adel, Daniel Ruan, Wesley McGee, Salma Mozaffari",
+    "group": "Timber joints & construction",
+    "method": "Feedback · adaptive fabrication",
+    "evidence": "Hardware · building-scale prototypes",
+    "inputs": "As-built geometric feedback and planned construction model",
+    "action": "Pose-based and topology-based corrections; iterative learning control",
+    "overview": "Updates the fabrication process to account for accumulated geometric deviations.",
+    "achievement": "Evaluates nail-laminated timber panels and a timber frame wall at building scale.",
+    "gap": "Construction prototypes do not establish unattended field operation or proprioceptive slab metrology.",
+    "relevance": "Connect measurement uncertainty to downstream cutting and placement corrections.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0926580524001808",
+    "video": "",
+    "verification": "Publisher abstract and highlights checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0926580524001808"
+      }
+    ]
+  },
+  {
+    "id": "through-tenon",
+    "title": "Design considerations for robotically assembled through-tenon timber joints",
+    "year": 2022,
+    "authors": "Nicolas Rogeau, Julien Gamerro, Pierre Latteur, Yves Weinand",
+    "group": "Timber joints & construction",
+    "method": "Joint design · robotic assembly",
+    "evidence": "Hardware · timber panels",
+    "inputs": "Known geometry and poses; wrist F/T measurements",
+    "action": "Industrial robot insertion; joint geometry and tolerance design",
+    "overview": "Studies how through-tenon geometry affects robotic assembly of timber plates.",
+    "achievement": "Demonstrates physical assembly and investigates insertion forces and joint design.",
+    "gap": "Does not establish learned perception, autonomous unknown-slab measurement, or arbitrary joint recovery.",
+    "relevance": "Read before choosing mortise/tenon geometry: part design can simplify the controller.",
+    "url": "https://link.springer.com/article/10.1007/s41693-022-00080-5",
+    "video": "",
+    "verification": "Primary article and experimental setup checked",
+    "version": "2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://link.springer.com/article/10.1007/s41693-022-00080-5"
+      }
+    ]
+  },
+  {
+    "id": "timber-hrc",
+    "title": "Robotic Assembly of Timber Structures in a Human-Robot Collaboration Setup",
+    "year": 2022,
+    "authors": "Kramberger, Kunic, Iturrate et al.",
+    "group": "Timber joints & construction",
+    "method": "Demonstrations · compliant control",
+    "evidence": "Hardware · pine joints",
+    "inputs": "Demonstrated robot poses and wrist force–torque feedback",
+    "action": "Cartesian dynamic movement primitives with force adaptation; digital-twin supervision",
+    "overview": "Combines demonstrated assembly motions with compliance for interlocking timber joints.",
+    "achievement": "Executes learned motions at different workspace locations on manufactured pine parts.",
+    "gap": "Uses predefined joint designs and demonstrations; includes human assistance, not unrestricted autonomous joinery.",
+    "relevance": "Useful for complex lap/interlocking joints and recoverable skill sequencing.",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.768038/full",
+    "video": "",
+    "verification": "Primary methods and experiments checked",
+    "version": "Published 27 Jan 2022; journal volume and DOI contain 2021",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.768038/full"
+      }
+    ]
+  },
+  {
+    "id": "timber-rl",
+    "title": "Robotic assembly of timber joints using reinforcement learning",
+    "year": 2021,
+    "authors": "Apolinarska, Pacher, Li et al.",
+    "group": "Timber joints & construction",
+    "method": "RL · force + pose",
+    "evidence": "Hardware · real timber",
+    "inputs": "Wrist F/T and end-effector pose; no visual policy required",
+    "action": "Ape-X DDPG; Cartesian corrections learned in simulation",
+    "overview": "Learns how to insert timber lap joints despite manufacturing and pose variation.",
+    "achievement": "Transfers a simulated policy to an ABB industrial robot assembling real timber.",
+    "gap": "Local, slow insertion with a valid robot configuration assumed; not a complete measure–machine–assemble pipeline.",
+    "relevance": "Direct starting point for lap joints and force-conditioned insertion.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0926580521000200",
+    "video": "",
+    "verification": "Primary paper methods and physical setup checked",
+    "version": "2021 · older work retained for direct woodworking relevance",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0926580521000200"
+      },
+      {
+        "label": "Primary full text",
+        "url": "https://www.research.autodesk.com/app/uploads/2023/03/Roboticassemblyoftimberjoints.pdf_rec4bw7CPrd5o02eT.pdf"
+      }
+    ]
+  },
+  {
+    "id": "resistography",
+    "title": "Rapid Resistography with Passive Overhead-perching Mechanism in an Unmanned Aerial System for Wood Structure Inspection",
+    "year": 2024,
+    "authors": "Shawndy Michael Lee et al.",
+    "group": "Drilling & process mechanics",
+    "method": "Drilling resistance · inspection",
+    "evidence": "Wood inspection · aerial system",
+    "inputs": "Drilling/inspection system with overhead attachment",
+    "action": "Perching mechanism supports resistographic inspection",
+    "overview": "Uses drilling into wood for structural inspection rather than making a precision assembly hole.",
+    "achievement": "Presents a physical aerial inspection system for elevated wood structures.",
+    "gap": "Different embodiment from your arm; does not establish joinery-hole accuracy or a vision-action drilling policy.",
+    "relevance": "Adjacent example of using drilling interaction to inspect wood; keep inspection and fabrication objectives separate.",
+    "url": "https://repository.sutd.edu.sg/esploro/outputs/conferenceProceeding/Rapid-Resistography-with-Passive-Overhead-perching-Mechanism/9911679709846",
+    "video": "",
+    "verification": "Primary repository metadata and paper abstract search checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://repository.sutd.edu.sg/esploro/outputs/conferenceProceeding/Rapid-Resistography-with-Passive-Overhead-perching-Mechanism/9911679709846"
+      }
+    ]
+  },
+  {
+    "id": "drill-posture",
+    "title": "Posture optimization in robotic drilling using a deformation energy model",
+    "year": 2022,
+    "authors": "Jae Ho Lee, Seong Hyeon Kim, Byung-Kwon Min",
+    "group": "Drilling & process mechanics",
+    "method": "Model-based · stiffness optimization",
+    "evidence": "Hardware + simulation · machining",
+    "inputs": "Robot configuration and compliance/deformation model",
+    "action": "Selects posture to reduce drilling deflection",
+    "overview": "Studies the mechanical accuracy problem created by a compliant serial robot.",
+    "achievement": "Jointly optimizes arm posture and workpiece placement; reports simulation and experimental validation.",
+    "gap": "Publisher summary checked; material-specific details and full experimental protocol not audited. Not established as wood drilling.",
+    "relevance": "Directly relevant mechanical issue: a good policy cannot erase tool deflection or poor arm stiffness.",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0736584522000825",
+    "video": "",
+    "verification": "Publisher abstract and author-university metadata checked; full text not audited",
+    "version": "2022",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0736584522000825"
+      },
+      {
+        "label": "Author-university record",
+        "url": "https://yonsei.elsevierpure.com/en/publications/posture-optimization-in-robotic-drilling-using-a-deformation-ener/"
+      }
+    ]
+  },
+  {
+    "id": "robopack",
+    "title": "RoboPack: Learning Tactile-Informed Dynamics Models for Dense Packing",
+    "year": 2024,
+    "authors": "Bo Ai et al.",
+    "group": "Foundations & adjacent sensing",
+    "method": "Learned dynamics · MPC",
+    "evidence": "Hardware · tactile required",
+    "inputs": "Vision and compliant Soft-Bubble tactile sensor histories",
+    "action": "Recurrent graph dynamics model with model-predictive control",
+    "overview": "Infers latent object physics to plan non-prehensile interactions.",
+    "achievement": "Physical pushing and dense-packing tests show touch-informed adaptation.",
+    "gap": "Requires tactile hardware absent from your planned setup; not direct evidence for wrist-F/T replacement.",
+    "relevance": "Adjacent reading showing an alternative to end-to-end policies: learn dynamics, then plan.",
+    "url": "https://arxiv.org/abs/2407.01418",
+    "video": "https://robo-pack.github.io/",
+    "verification": "Primary abstract / author project checked",
+    "version": "2024",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://arxiv.org/abs/2407.01418"
+      }
+    ]
+  },
+  {
+    "id": "transporters",
+    "title": "Transporter Networks: Rearranging the Visual World for Robotic Manipulation",
+    "year": 2020,
+    "authors": "Zeng et al.",
+    "group": "Foundations & adjacent sensing",
+    "method": "Visual imitation · spatial equivariance",
+    "evidence": "Hardware + simulation",
+    "inputs": "Visual scene observations",
+    "action": "Spatial feature transport predicts manipulation actions",
+    "overview": "Uses spatial structure to generalize rearrangement from demonstrations.",
+    "achievement": "Reports rigid and non-rigid rearrangement tasks with physical tests.",
+    "gap": "Structured tabletop action representations do not cover arbitrary dexterity or force regulation.",
+    "relevance": "Important visual-manipulation foundation preceding modern action transformers.",
+    "url": "https://arxiv.org/abs/2010.14406",
+    "video": "https://transporternets.github.io/",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2020 · first preprint year; source checked 29 Sep 2026",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/2010.14406"
+      }
+    ]
+  },
+  {
+    "id": "visuomotor",
+    "title": "End-to-End Training of Deep Visuomotor Policies",
+    "year": 2015,
+    "authors": "Levine, Finn, Darrell and Abbeel",
+    "group": "Foundations & adjacent sensing",
+    "method": "Guided policy search · image-to-torque",
+    "evidence": "Hardware · contact manipulation",
+    "inputs": "Camera images and robot state",
+    "action": "Neural motor-torque policy trained with trajectory-centric supervision",
+    "overview": "Connects visual learning to low-level motor actions.",
+    "achievement": "Demonstrates physical manipulation including contact-rich tasks.",
+    "gap": "Specialized training conditions do not establish open-world generalization.",
+    "relevance": "Distinguishes actual image-to-torque learning from modern pose-target policies.",
+    "url": "https://arxiv.org/abs/1504.00702",
+    "video": "",
+    "verification": "Primary abstract / author or publisher record checked; experimental protocol not independently audited",
+    "version": "2015 preprint · JMLR 2016",
+    "sources": [
+      {
+        "label": "Primary research record",
+        "url": "https://arxiv.org/abs/1504.00702"
+      }
+    ]
+  },
+  {
+    "id": "impedance",
+    "title": "Impedance Control: An Approach to Manipulation: Part I—Theory",
+    "year": 1985,
+    "authors": "Neville Hogan",
+    "group": "Foundations & adjacent sensing",
+    "method": "Model-based · impedance",
+    "evidence": "Foundational theory",
+    "inputs": "Motion and interaction variables; implementation-dependent sensing",
+    "action": "Desired mechanical relation between force and motion",
+    "overview": "Frames contact control as shaping how the robot responds mechanically to its environment.",
+    "achievement": "Provides the conceptual basis for compliant interaction rather than rigid position tracking alone.",
+    "gap": "Theory is not a tuned controller for a particular arm, tool or wood species.",
+    "relevance": "Essential background for the lower-level controller beneath a learned policy.",
+    "url": "https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/5/1384/files/2025/02/1985-impedance-control-an-approach-to-manipulation-part-I-theory.pdf",
+    "video": "",
+    "verification": "Primary abstract / author project checked",
+    "version": "1985 original paper; university-hosted copy uploaded later",
+    "sources": [
+      {
+        "label": "Primary paper / publisher",
+        "url": "https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/5/1384/files/2025/02/1985-impedance-control-an-approach-to-manipulation-part-I-theory.pdf"
+      }
+    ]
+  }
+]
